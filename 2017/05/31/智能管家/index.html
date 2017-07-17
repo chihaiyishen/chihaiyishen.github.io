@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            智能管家 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Kod">
+    <meta name="description" content="null">
+    <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="智能管家 | 痴海博客">
+    <meta property="og:description" content="null">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#智能管家-一"><span class="post-toc-number">1.</span> <span class="post-toc-text">智能管家 一</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-项目运行"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一 项目运行</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-项目部署"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">二 项目部署</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Application"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Application</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Activity"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">Activity</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Drawable"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">Drawable</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Values"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">Values</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#UtilTools"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">UtilTools</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#StaticClass"><span class="post-toc-number">1.2.6.</span> <span class="post-toc-text">StaticClass</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#类描述信息"><span class="post-toc-number">1.2.7.</span> <span class="post-toc-text">类描述信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#BaseActivity"><span class="post-toc-number">1.2.8.</span> <span class="post-toc-text">BaseActivity</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-主界面搭建"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">三 主界面搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#TabLayout"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">TabLayout</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#MainActivity"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">MainActivity</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MainActivity-中一些技巧"><span class="post-toc-number">1.3.2.1.</span> <span class="post-toc-text">MainActivity 中一些技巧</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#ViewPager-使用"><span class="post-toc-number">1.3.2.1.1.</span> <span class="post-toc-text">ViewPager 使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MainActivity-主要代码"><span class="post-toc-number">1.3.2.2.</span> <span class="post-toc-text">MainActivity 主要代码</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-工具类的封装"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">四 工具类的封装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Log-封装"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">Log 封装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SharedPreferences-封装"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">SharedPreferences 封装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#SharedPreferences"><span class="post-toc-number">1.4.2.1.</span> <span class="post-toc-text">SharedPreferences</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#SQLite"><span class="post-toc-number">1.4.2.2.</span> <span class="post-toc-text">SQLite</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ContentProvider"><span class="post-toc-number">1.4.2.3.</span> <span class="post-toc-text">ContentProvider</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#File"><span class="post-toc-number">1.4.2.4.</span> <span class="post-toc-text">File</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#封装步骤"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">封装步骤</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ShareUtils-主要代码"><span class="post-toc-number">1.4.4.</span> <span class="post-toc-text">ShareUtils 主要代码</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五-首页逻辑"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">五 首页逻辑</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SplashActivity"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">SplashActivity</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SplashActivity-中一些技巧"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">SplashActivity 中一些技巧</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#延时-2000ms"><span class="post-toc-number">1.5.2.1.</span> <span class="post-toc-text">延时 2000ms</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#isFirst（）判断程序是否第一次运行"><span class="post-toc-number">1.5.2.2.</span> <span class="post-toc-text">isFirst（）判断程序是否第一次运行</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#自定义字体"><span class="post-toc-number">1.5.2.3.</span> <span class="post-toc-text">自定义字体</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#全屏设置"><span class="post-toc-number">1.5.2.4.</span> <span class="post-toc-text">全屏设置</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SplashActivity-主要代码"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">SplashActivity 主要代码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#首页跳转逻辑开发"><span class="post-toc-number">1.5.4.</span> <span class="post-toc-text">首页跳转逻辑开发</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#GuideActivity"><span class="post-toc-number">1.5.5.</span> <span class="post-toc-text">GuideActivity</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GuideActivity-中一些技巧"><span class="post-toc-number">1.5.5.1.</span> <span class="post-toc-text">GuideActivity 中一些技巧</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#GuideAdapter"><span class="post-toc-number">1.5.5.1.1.</span> <span class="post-toc-text">GuideAdapter</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#setPointImg"><span class="post-toc-number">1.5.5.1.2.</span> <span class="post-toc-text">setPointImg</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#监听-ViewPager-滑动"><span class="post-toc-number">1.5.5.1.3.</span> <span class="post-toc-text">监听 ViewPager 滑动</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#GuideAdapter-1"><span class="post-toc-number">1.5.5.1.4.</span> <span class="post-toc-text">GuideAdapter</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#GuideActivity-主要代码"><span class="post-toc-number">1.5.6.</span> <span class="post-toc-text">GuideActivity 主要代码</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">总结</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                智能管家
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&s=400" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Kod</strong>
+        <span>5月 31, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=智能管家&url=http://yoursite.com//2017/05/31/智能管家/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=智能管家&url=http://yoursite.com//2017/05/31/智能管家/index.html&via=Kod" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/05/31/智能管家/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/05/31/智能管家/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="智能管家-一"><a href="#智能管家-一" class="headerlink" title="智能管家 一"></a>智能管家 一</h1><blockquote>
+<p>智能管家是自己真正意思上的第一个完整项目，它是一款集汇聚热门第三方的 app。使用最热门的安卓技术，用 Picasso,RXvolley,Bmob,Zxing 等热门第三方 SDK 及框架，开发一个完整的包含有语音陪聊，能看新闻，能查物流及电话号码归属地，能看美女相册，能扫描与生产个性化二维码，能定位与查看地图的生活类 APP。</p>
+</blockquote>
+<h2 id="一-项目运行"><a href="#一-项目运行" class="headerlink" title="一 项目运行"></a>一 项目运行</h2><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-18859874fffd94ab.gif?imageMogr2/auto-orient/strip" alt="智能管家"><br></div></p>
+<center> <strong>智能管家</strong> </center>
+
+<h2 id="二-项目部署"><a href="#二-项目部署" class="headerlink" title="二 项目部署"></a>二 项目部署</h2><p>准备工具，项目架构部署。</p>
+<ul>
+<li><p>项目架构</p>
+<blockquote>
+<p>Package<br><br>Application<br><br>Activity<br><br>Drawable<br><br>Values<br><br>UtilTools<br><br>StaticClass<br></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h3><p>进行统一的初始化。</p>
+<h3 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h3><p>实现 Activity 的基类，让它继承基类的时候实现一些标准的方法，提高代码利用率。</p>
+<h3 id="Drawable"><a href="#Drawable" class="headerlink" title="Drawable"></a>Drawable</h3><p>存放图片。</p>
+<h3 id="Values"><a href="#Values" class="headerlink" title="Values"></a>Values</h3><p>进行多语言适配。</p>
+<h3 id="UtilTools"><a href="#UtilTools" class="headerlink" title="UtilTools"></a>UtilTools</h3><p>工具包类，封装常用的工具类。</p>
+<h3 id="StaticClass"><a href="#StaticClass" class="headerlink" title="StaticClass"></a>StaticClass</h3><p>统一存放第三方 SDK 的 key，使调用更加方便。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-7632055f56b4809e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="400" alt="工程结构"><br></div></p>
+<center> <strong>工程结构</strong> </center>
+
+<h3 id="类描述信息"><a href="#类描述信息" class="headerlink" title="类描述信息"></a>类描述信息</h3><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-291d7333d5005e22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="350" alt="描述信息"><br></div></p>
+<center> <strong>描述信息</strong> </center>
+
+<p>在新建的类中，开头初添加一些信息，有利于开发方便。</p>
+<p>可以在设置界面进行设置。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-e15dffd3285a3a9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="350" alt="描述信息设置一"><br></div></p>
+<center> <strong>描述信息设置一</strong> </center>
+
+<p>在设置界面中搜索 code 在 code 底下有个 File and Code Templates</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-74ae92f1796bed44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="350" alt="描述信息设置二"><br></div></p>
+<center> <strong>描述信息设置二</strong> </center>
+
+<p>这里有个 Includes 点击进去，在 File Header 可以进行设置</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-e0cb6253071fb0d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="描述信息设置三"><br></div></p>
+<center> <strong>描述信息设置三</strong> </center>
+
+
+<h3 id="BaseActivity"><a href="#BaseActivity" class="headerlink" title="BaseActivity"></a>BaseActivity</h3><p>BaseActivity 是项目 Activity 的基类，主要使用于统一属性，统一接口，统一的方法。并且让继承 BaseActivity 有个返回的箭头。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-36f8866d64311a15.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="350" alt="BaseActivity"><br></div></p>
+<center> <strong>设置界面继承 BaseActivity</strong> </center>
+
+
+<pre><code>public class BaseActivity extends AppCompatActivity {
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    //设置阴影值
+    getSupportActionBar().setElevation(0);
+    //显示返回键
+    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+}
+
+//菜单栏操作
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+        case android.R.id.home:
+            finish();
+            break;
+    }
+    return super.onOptionsItemSelected(item);
+}
+}
+</code></pre><h2 id="三-主界面搭建"><a href="#三-主界面搭建" class="headerlink" title="三 主界面搭建"></a>三 主界面搭建</h2><h3 id="TabLayout"><a href="#TabLayout" class="headerlink" title="TabLayout"></a>TabLayout</h3><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-66f6bf9b78258f53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="TabLayout"><br></div></p>
+<center> <strong>TabLayout 流程图</strong> </center>
+
+<blockquote>
+<p>Google 官方在 14 年 Google I/O 上推出了全新的设计语言 —— Material Design。一并推出了一系列实现 Material Design 效果的控件库 —— Android Design Support Library。其中 TabLayoutttttt 就是之一。</p>
+</blockquote>
+<p>我们的主界面就是使用 TabLayout 来搭建，要使用 TabLayout 要在 build.gradle（app） 中添加远程库 (compile ‘com.android.support:design:24.2.0’)。</p>
+<p>MainActivity 布局文件中使用到的主要控件：</p>
+<p>TabLayout:</p>
+<pre><code>&lt;LinearLayout
+      android:layout_width=&quot;match_parent&quot;
+      android:layout_height=&quot;match_parent&quot;
+      android:orientation=&quot;vertical&quot;&gt;
+
+      &lt;!-- app:tabGravity=&quot;fill&quot; 居中--&gt;
+      &lt;!-- app:tabMode=&quot;fixed&quot; 模式--&gt;
+      &lt;!--  app:tabSelectedTextColor=&quot;@color/colorAccent&quot; 选择颜色--&gt;
+      &lt;!-- app:tabTextColor=&quot;@android:color/white&quot; 标题颜色--&gt;
+      &lt;android.support.design.widget.TabLayout
+          android:id=&quot;@+id/mTabLayout&quot;
+          android:layout_width=&quot;match_parent&quot;
+          android:layout_height=&quot;wrap_content&quot;
+          android:background=&quot;@color/colorPrimary&quot;
+          app:tabGravity=&quot;fill&quot;
+          app:tabIndicatorColor=&quot;@color/colorAccent&quot;
+          app:tabMode=&quot;fixed&quot;
+          app:tabSelectedTextColor=&quot;@color/colorAccent&quot;
+          app:tabTextColor=&quot;@android:color/white&quot;
+          /&gt;
+
+      &lt;android.support.v4.view.ViewPager
+          android:id=&quot;@+id/mViewPager&quot;
+          android:layout_width=&quot;match_parent&quot;
+          android:layout_height=&quot;0dp&quot;
+          android:layout_weight=&quot;1&quot;/&gt;
+  &lt;/LinearLayout&gt;
+</code></pre><p>FloationgActionButton (悬浮按钮):</p>
+<pre><code>&lt;android.support.design.widget.FloatingActionButton
+     android:layout_marginBottom=&quot;15dp&quot;
+     android:layout_marginRight=&quot;15dp&quot;
+     android:layout_alignParentBottom=&quot;true&quot;
+     android:layout_alignParentRight=&quot;true&quot;
+     android:id=&quot;@+id/fab_setting&quot;
+     android:layout_width=&quot;wrap_content&quot;
+     android:layout_height=&quot;wrap_content&quot;
+     android:src=&quot;@drawable/icon_setting&quot;/&gt;
+</code></pre><h3 id="MainActivity"><a href="#MainActivity" class="headerlink" title="MainActivity"></a>MainActivity</h3><p>在 MainActivity 中对主界面的一些东西进行初始化，如标题，滑动的各个 fragment。注意一点，一些中文字符串一定要写在 string.xml 文件中。</p>
+<h4 id="MainActivity-中一些技巧"><a href="#MainActivity-中一些技巧" class="headerlink" title="MainActivity 中一些技巧"></a>MainActivity 中一些技巧</h4><h5 id="ViewPager-使用"><a href="#ViewPager-使用" class="headerlink" title="ViewPager 使用"></a>ViewPager 使用</h5><blockquote>
+<p>ViewPager 预加载<br><br>ViewPager 设置适配器<br><br>绑定<br><br>ViewPager 滑动监听</p>
+</blockquote>
+<p>预加载</p>
+<pre><code>mViewPager.setOffscreenPageLimit(mFragment.size());
+</code></pre><p>设置适配器</p>
+<pre><code>mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+                //选中的item
+                @Override
+                public Fragment getItem(int position) {
+                    return mFragment.get(position);
+                }
+
+                //返回item的个数
+                @Override
+                public int getCount() {
+                    return mFragment.size();
+                }
+
+                //设置标题
+                @Override
+                public CharSequence getPageTitle(int position) {
+                    return mTitle.get(position);
+                }
+            });
+</code></pre><p>ViewPager 一般跟 TabLayout 一起使用，可以通过 setupWithViewPager() 方法进行绑定。</p>
+<pre><code>mTabLayout.setupWithViewPager(mViewPager);
+</code></pre><p>滑动监听</p>
+<pre><code>mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+               @Override
+               public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+               }
+
+               @Override
+               public void onPageSelected(int position) {
+                   Log.i(&quot;TAG&quot;, &quot;position:&quot; + position);
+                   if (position == 0) {
+                       fab_setting.setVisibility(View.GONE);
+                   } else {
+                       fab_setting.setVisibility(View.VISIBLE);
+                   }
+               }
+
+               @Override
+               public void onPageScrollStateChanged(int state) {
+
+               }
+           });
+</code></pre><h4 id="MainActivity-主要代码"><a href="#MainActivity-主要代码" class="headerlink" title="MainActivity 主要代码"></a>MainActivity 主要代码</h4><pre><code>public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    //TabLayout
+    private TabLayout mTabLayout;
+    //ViewPager
+    private ViewPager mViewPager;
+    //Title
+    private List&lt;String&gt; mTitle;
+    //Fragment
+    private List&lt;Fragment&gt; mFragment;
+    //悬浮窗
+    private FloatingActionButton fab_setting;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //去掉阴影
+        getSupportActionBar().setElevation(0);
+
+        initData();
+        initView();
+
+    }
+
+    //初始化数据
+    private void initData() {
+        mTitle = new ArrayList&lt;&gt;();
+        mTitle.add(getString(R.string.text_butler_service));
+        mTitle.add(getString(R.string.text_wechat));
+        mTitle.add(getString(R.string.text_girl));
+        mTitle.add(getStrin(R.string.text_user_info));
+
+        mFragment = new ArrayList&lt;&gt;();
+        mFragment.add(new ButlerFragment());
+        mFragment.add(new WechatFragment());
+        mFragment.add(new GirlFragment());
+        mFragment.add(new UserFragment());
+    }
+
+    //初始化View
+    private void initView() {
+        fab_setting = (FloatingActionButton) findViewById(R.id.fab_setting);
+        fab_setting.setOnClickListener(this);
+        //默认隐藏
+        fab_setting.setVisibility(View.GONE);
+        mTabLayout = (TabLayout) findViewById(R.id.mTabLayout);
+        mViewPager = (ViewPager) findViewById(R.id.mViewPager);
+        //预加载
+        mViewPager.setOffscreenPageLimit(mFragment.size());
+
+        //mViewPager滑动监听
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                Log.i(&quot;TAG&quot;, &quot;position:&quot; + position);
+                if (position == 0) {
+                    fab_setting.setVisibility(View.GONE);
+                } else {
+                    fab_setting.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        //设置适配器
+        mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+            //选中的item
+            @Override
+            public Fragment getItem(int position) {
+                return mFragment.get(position);
+            }
+
+            //返回item的个数
+            @Override
+            public int getCount() {
+                return mFragment.size();
+            }
+
+            //设置标题
+            @Override
+            public CharSequence getPageTitle(int position) {
+                return mTitle.get(position);
+            }
+        });
+        //绑定
+        mTabLayout.setupWithViewPager(mViewPager);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.fab_setting:
+                startActivity(new Intent(this, SettingActivity.class));
+                break;
+        }
+    }
+}
+</code></pre><h2 id="四-工具类的封装"><a href="#四-工具类的封装" class="headerlink" title="四 工具类的封装"></a>四 工具类的封装</h2><h3 id="Log-封装"><a href="#Log-封装" class="headerlink" title="Log 封装"></a>Log 封装</h3><p>Log 是日志，主要是在控制台打印一些我们运行中所产生的一些信息，我们把 Log 分为了五个等级。</p>
+<blockquote>
+<p>static Level DEBUG<br>staic Level INFO<br>staic Level WARN<br>static Level ERROR<br>static Level FATAL</p>
+</blockquote>
+<p>DEBUG level 指出细粒度信息事件对调试应用程序是非常有帮助的。</p>
+<p>INFO level 表明，消息在粗粒度级别上突出强调应用程序的运行过程。</p>
+<p>WARN level 表明会出现潜在错误的情形，会导致应用程序的退出。</p>
+<p>ERROR level 指出虽然发送错误事件，但仍然不影响系统的继续运行。</p>
+<p>FATAL level 指出每个严重的错误事件将会导致应用程序的退出。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-952aa06862cbf0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="LOG"><br></div></p>
+<center> <strong>LOG 封装思路图</strong> </center>
+
+
+<p>L Log封装类</p>
+<pre><code>public class L {
+
+    //开关
+    public static final  boolean DEBUG = true;
+    //TAG
+    public static final String TAG = &quot;Smartbutler&quot;;
+
+    //五个等级  DIWEF
+
+    public static void d(String text){
+        if(DEBUG){
+            Log.d(TAG,text);
+        }
+    }
+
+    public static void i(String text){
+        if(DEBUG){
+            Log.i(TAG,text);
+        }
+    }
+
+    public static void w(String text){
+        if(DEBUG){
+            Log.w(TAG,text);
+        }
+    }
+
+    public static void e(String text){
+        if(DEBUG){
+            Log.e(TAG,text);
+        }
+    }
+}
+</code></pre><h3 id="SharedPreferences-封装"><a href="#SharedPreferences-封装" class="headerlink" title="SharedPreferences 封装"></a>SharedPreferences 封装</h3><p>Android 数据四种存储方式</p>
+<blockquote>
+<p>SharedPreferences<br>SQLite<br>ContentProvider<br>File</p>
+</blockquote>
+<h4 id="SharedPreferences"><a href="#SharedPreferences" class="headerlink" title="SharedPreferences"></a>SharedPreferences</h4><p>SharedPreferences 是一种轻型的数据存储方式，它的本质是基于 XML 文件存储 key-value 键值对数据，通常用来存储一些简单的配置信息。</p>
+<p>SharedPreferences 对象本身只能获取数据而不支持存储和修改，存储修改是通过 Editor 对象实现。</p>
+<h4 id="SQLite"><a href="#SQLite" class="headerlink" title="SQLite"></a>SQLite</h4><p>SQLite 数据库存储</p>
+<h4 id="ContentProvider"><a href="#ContentProvider" class="headerlink" title="ContentProvider"></a>ContentProvider</h4><p>ContentProvider 内容提供者</p>
+<h4 id="File"><a href="#File" class="headerlink" title="File"></a>File</h4><p>文件存储是 Android 中最基本的一种数据存储方式，它不对存储的内容进行任何的格式化处理吗，所有数据都是原封不动地保存到文件当中的，因而它比较适合用于存储一些简单的文本数据或二进制数据。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-a65b1334728f22ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SharedPreferences"><br></div></p>
+<center> <strong>SharedPreferences 的使用</strong> </center>
+
+<h3 id="封装步骤"><a href="#封装步骤" class="headerlink" title="封装步骤"></a>封装步骤</h3><p>定义存取方式（get/put）,明确存取的数据类型 Int/String/Boolean<br>定义删除功能，可以删除单个也可以删除全部。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-38d3e3fdf9bb7ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SharedPreferences"><br></div></p>
+<center> <strong>SharedPreferences 封装步骤</strong> </center>
+
+<h3 id="ShareUtils-主要代码"><a href="#ShareUtils-主要代码" class="headerlink" title="ShareUtils 主要代码"></a>ShareUtils 主要代码</h3><pre><code>public class ShareUtils {
+
+    public static final String NAME = &quot;config&quot;;
+
+    //键 值
+    public static void putString(Context mContext,String key,String value){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        sp.edit().putString(key,value).commit();
+    }
+
+    //键 默认值
+    public static String getString(Context mContext,String key,String defValue){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        return sp.getString(key,defValue);
+    }
+
+    //键 值
+    public static void putInt(Context mContext,String key,int value){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        sp.edit().putInt(key,value).commit();
+    }
+
+    //键 默认值
+    public static int getInt(Context mContext,String key,int defValue){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        return sp.getInt(key,defValue);
+    }
+
+    //键 值
+    public static void putBoolean(Context mContext,String key,boolean value){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        sp.edit().putBoolean(key,value).commit();
+    }
+
+    //键 默认值
+    public static boolean getBoolean(Context mContext,String key,boolean defValue){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        return sp.getBoolean(key,defValue);
+    }
+
+    //刪除 单个
+    public static void deleShare(Context mContext,String key){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        sp.edit().remove(key).commit();
+    }
+
+    //刪除 全部
+    public static void deleAll(Context mContext){
+        SharedPreferences sp = mContext.getSharedPreferences(NAME,Context.MODE_PRIVATE);
+        sp.edit().clear().commit();
+    }
+</code></pre><h2 id="五-首页逻辑"><a href="#五-首页逻辑" class="headerlink" title="五 首页逻辑"></a>五 首页逻辑</h2><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-4a0469358fb43b67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="首页作用"><br></div></p>
+<center> <strong>首页作用</strong> </center>
+
+
+
+<h3 id="SplashActivity"><a href="#SplashActivity" class="headerlink" title="SplashActivity"></a>SplashActivity</h3><p>SplashActivity 闪屏页，延时2000ms，判断程序是否第一次运行并 使用自定义字体，Activity主题设置为全屏。</p>
+<h3 id="SplashActivity-中一些技巧"><a href="#SplashActivity-中一些技巧" class="headerlink" title="SplashActivity 中一些技巧"></a>SplashActivity 中一些技巧</h3><blockquote>
+<p>延时 2000ms<br>isFirst<br>自定义字体<br>全屏设置</p>
+</blockquote>
+<h4 id="延时-2000ms"><a href="#延时-2000ms" class="headerlink" title="延时 2000ms"></a>延时 2000ms</h4><p>通过 Handler 来进行延时设置。在 StaticClass 设置闪屏业延时变量 StaticClass.HANDLER_SPLASH。</p>
+<pre><code>//延时2000ms
+           handler.sendEmptyMessageDelayed(StaticClass.HANDLER_SPLASH, 2000);
+</code></pre><p>对 Handler 发出的变量进行处理</p>
+<pre><code>private Handler handler = new Handler() {
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                switch (msg.what) {
+                    case StaticClass.HANDLER_SPLASH:
+                        //判断程序是否是第一次运行
+                        if (isFirst()) {
+                            startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+                        } else {
+                            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                        }
+                        finish();
+                        break;
+                }
+            }
+        };
+</code></pre><h4 id="isFirst（）判断程序是否第一次运行"><a href="#isFirst（）判断程序是否第一次运行" class="headerlink" title="isFirst（）判断程序是否第一次运行"></a>isFirst（）判断程序是否第一次运行</h4><pre><code>private boolean isFirst() {
+    boolean isFirst = ShareUtils.getBoolean(this,StaticClass.SHARE_IS_FIRST,true);
+    if(isFirst){
+        ShareUtils.putBoolean(this,StaticClass.SHARE_IS_FIRST,false);
+        //是第一次运行
+        return true;
+    }else {
+        return false;
+    }
+
+}
+</code></pre><h4 id="自定义字体"><a href="#自定义字体" class="headerlink" title="自定义字体"></a>自定义字体</h4><p>在 UtilTools 中定义一个 setFont() 方法进行自定义字体设置,但要在程序中添加 assets 新的文件夹，创建 fonts 包在里面添加 fonts/FONT.TTF 文件。</p>
+<pre><code>//设置字体
+  public static void setFont(Context mContext, TextView textview) {
+      Typeface fontType = Typeface.createFromAsset(mContext.getAssets(), &quot;fonts/FONT.TTF&quot;);
+      textview.setTypeface(fontType);
+  }
+</code></pre><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-e58c5ef867bebd96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="字体文件"><br></div></p>
+<center> <strong>字体文件</strong> </center>
+
+
+<h4 id="全屏设置"><a href="#全屏设置" class="headerlink" title="全屏设置"></a>全屏设置</h4><pre><code>&lt;!--全屏主題--&gt;
+&lt;style name=&quot;NoActivityFullscreen&quot; parent=&quot;Theme.AppCompat.Light.NoActionBar&quot;&gt;
+    &lt;item name=&quot;windowNoTitle&quot;&gt;true&lt;/item&gt;
+    &lt;item name=&quot;windowActionBar&quot;&gt;false&lt;/item&gt;
+    是否全屏
+    &lt;item name=&quot;android:windowFullscreen&quot;&gt;true&lt;/item&gt;
+    分隔线
+    &lt;item name=&quot;android:windowContentOverlay&quot;&gt;@null&lt;/item&gt;
+&lt;/style&gt;
+</code></pre><h3 id="SplashActivity-主要代码"><a href="#SplashActivity-主要代码" class="headerlink" title="SplashActivity 主要代码"></a>SplashActivity 主要代码</h3><pre><code>public class SplashActivity extends AppCompatActivity {
+
+    /**
+     * 1.延时2000ms
+     * 2.判断程序是否第一次运行
+     * 3.自定义字体
+     * 4.Activity全屏主题
+     */
+
+    private TextView tv_splash;
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case StaticClass.HANDLER_SPLASH:
+                    //判断程序是否是第一次运行
+                    if (isFirst()) {
+                        startActivity(new Intent(SplashActivity.this, GuideActivity.class));
+                    } else {
+                        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                    }
+                    finish();
+                    break;
+            }
+        }
+    };
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash);
+
+        initView();
+    }
+    //初始化View
+    private void initView() {
+        //延时2000ms
+        handler.sendEmptyMessageDelayed(StaticClass.HANDLER_SPLASH, 2000);
+
+        tv_splash = (TextView) findViewById(R.id.tv_splash);
+        //设置字体
+        UtilTools.setFont(this,tv_splash);
+    }
+
+    //判断程序是否第一次运行
+    private boolean isFirst() {
+        boolean isFirst = ShareUtils.getBoolean(this,StaticClass.SHARE_IS_FIRST,true);
+        if(isFirst){
+            ShareUtils.putBoolean(this,StaticClass.SHARE_IS_FIRST,false);
+            //是第一次运行
+            return true;
+        }else {
+            return false;
+        }
+
+    }
+
+}
+</code></pre><h3 id="首页跳转逻辑开发"><a href="#首页跳转逻辑开发" class="headerlink" title="首页跳转逻辑开发"></a>首页跳转逻辑开发</h3><p>引导页的逻辑导图</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-7a486094185186b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><br></div></p>
+<center> <strong>引导页</strong> </center>
+
+<h3 id="GuideActivity"><a href="#GuideActivity" class="headerlink" title="GuideActivity"></a>GuideActivity</h3><p>GuideActivity 引导页使用 ViewPager 实现引导页的切换。通过 ViewPager 容器，并创建引导界面来添加到容器中进行设置。</p>
+<h4 id="GuideActivity-中一些技巧"><a href="#GuideActivity-中一些技巧" class="headerlink" title="GuideActivity 中一些技巧"></a>GuideActivity 中一些技巧</h4><blockquote>
+<p>自定义 ViewPager 适配器 GuideAdapter<br>setPointImg 封装圆点选中状态<br>监听 ViewPager 滑动</p>
+</blockquote>
+<h5 id="GuideAdapter"><a href="#GuideAdapter" class="headerlink" title="GuideAdapter"></a>GuideAdapter</h5><p>GuideAdapter 继承 PagerAdapter,重写几个方法。isViewFromObject() 对比你是否滑动切换。instantiateItem（）删除/添加 View。</p>
+<pre><code>class GuideAdapter extends PagerAdapter {
+
+        @Override
+        public int getCount() {
+            return mList.size();
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == object;
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            ((ViewPager) container).addView(mList.get(position));
+            return mList.get(position);
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            ((ViewPager) container).removeView(mList.get(position));
+            //super.destroyItem(container, position, object);
+        }
+    }
+</code></pre><h5 id="setPointImg"><a href="#setPointImg" class="headerlink" title="setPointImg"></a>setPointImg</h5><pre><code>//设置小圆点的选中效果
+   private void setPointImg(boolean isCheck1, boolean isCheck2, boolean isCheck3) {
+       if (isCheck1) {
+           point1.setBackgroundResource(R.drawable.point_on);
+       } else {
+           point1.setBackgroundResource(R.drawable.point_off);
+       }
+
+       if (isCheck2) {
+           point2.setBackgroundResource(R.drawable.point_on);
+       } else {
+           point2.setBackgroundResource(R.drawable.point_off);
+       }
+
+       if (isCheck3) {
+           point3.setBackgroundResource(R.drawable.point_on);
+       } else {
+           point3.setBackgroundResource(R.drawable.point_off);
+       }
+   }
+</code></pre><h5 id="监听-ViewPager-滑动"><a href="#监听-ViewPager-滑动" class="headerlink" title="监听 ViewPager 滑动"></a>监听 ViewPager 滑动</h5><p>onPageSelected() 方法中进行滑动监听设置。</p>
+<pre><code>//监听ViewPager滑动
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            //pager切换
+            @Override
+            public void onPageSelected(int position) {
+                L.i(&quot;position:&quot; + position);
+                switch (position){
+                    case 0:
+                        setPointImg(true,false,false);
+                        iv_back.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        setPointImg(false,true,false);
+                        iv_back.setVisibility(View.VISIBLE);
+                        break;
+                    case 2:
+                        setPointImg(false,false,true);
+                        iv_back.setVisibility(View.GONE);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+</code></pre><h5 id="GuideAdapter-1"><a href="#GuideAdapter-1" class="headerlink" title="GuideAdapter"></a>GuideAdapter</h5><h3 id="GuideActivity-主要代码"><a href="#GuideActivity-主要代码" class="headerlink" title="GuideActivity 主要代码"></a>GuideActivity 主要代码</h3><pre><code>public class GuideActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private ViewPager mViewPager;
+    //容器
+    private List&lt;View&gt; mList = new ArrayList&lt;&gt;();
+    private View view1, view2, view3;
+    //小圆点
+    private ImageView point1, point2, point3;
+    //跳过
+    private ImageView iv_back;
+
+    private TextView   tv_pager_1,tv_pager_2,tv_pager_3;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_guide);
+
+        initView();
+    }
+
+    //初始化View
+    private void initView() {
+
+        point1 = (ImageView) findViewById(R.id.point1);
+        point2 = (ImageView) findViewById(R.id.point2);
+        point3 = (ImageView) findViewById(R.id.point3);
+
+        iv_back= (ImageView) findViewById(R.id.iv_back);
+        iv_back.setOnClickListener(this);
+        //设置默认图片
+        setPointImg(true, false, false);
+        mViewPager = (ViewPager) findViewById(R.id.mViewPager);
+        view1 = View.inflate(this, R.layout.pager_item_one, null);
+        view2 = View.inflate(this, R.layout.pager_item_two, null);
+        view3 = View.inflate(this, R.layout.pager_item_three, null);
+        view3.findViewById(R.id.btn_start).setOnClickListener(this);
+
+        tv_pager_1 = (TextView) view1.findViewById(R.id.tv_pager_1);
+        tv_pager_2 = (TextView) view2.findViewById(R.id.tv_pager_2);
+        tv_pager_3 = (TextView) view3.findViewById(R.id.tv_pager_3);
+
+        UtilTools.setFont(this,tv_pager_1);
+        UtilTools.setFont(this,tv_pager_2);
+        UtilTools.setFont(this,tv_pager_3);
+
+        mList.add(view1);
+        mList.add(view2);
+        mList.add(view3);
+
+        //设置适配器
+        mViewPager.setAdapter(new GuideAdapter());
+
+        //监听ViewPager滑动
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            //pager切换
+            @Override
+            public void onPageSelected(int position) {
+                L.i(&quot;position:&quot; + position);
+                switch (position){
+                    case 0:
+                        setPointImg(true,false,false);
+                        iv_back.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        setPointImg(false,true,false);
+                        iv_back.setVisibility(View.VISIBLE);
+                        break;
+                    case 2:
+                        setPointImg(false,false,true);
+                        iv_back.setVisibility(View.GONE);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_start:
+            case R.id.iv_back:
+                startActivity(new Intent(this, LoginActivity.class));
+                finish();
+                break;
+        }
+    }
+
+    class GuideAdapter extends PagerAdapter {
+
+        @Override
+        public int getCount() {
+            return mList.size();
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == object;
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            ((ViewPager) container).addView(mList.get(position));
+            return mList.get(position);
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            ((ViewPager) container).removeView(mList.get(position));
+            //super.destroyItem(container, position, object);
+        }
+    }
+
+    //设置小圆点的选中效果
+    private void setPointImg(boolean isCheck1, boolean isCheck2, boolean isCheck3) {
+        if (isCheck1) {
+            point1.setBackgroundResource(R.drawable.point_on);
+        } else {
+            point1.setBackgroundResource(R.drawable.point_off);
+        }
+
+        if (isCheck2) {
+            point2.setBackgroundResource(R.drawable.point_on);
+        } else {
+            point2.setBackgroundResource(R.drawable.point_off);
+        }
+
+        if (isCheck3) {
+            point3.setBackgroundResource(R.drawable.point_on);
+        } else {
+            point3.setBackgroundResource(R.drawable.point_off);
+        }
+    }
+}
+</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>自此项目的大体框架已经完毕，项目的闪屏页，引导页的创建，并封装了一些常用的工具类，后面会继续带来各个模块的思路分析。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/05/01/仿知乎日报/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/06/20/android面试-0/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/b.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&amp;u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&amp;s=400" alt="Kod's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

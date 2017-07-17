@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            Android 面试 一 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Kod">
+    <meta name="description" content="null">
+    <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Android 面试 一 | 痴海博客">
+    <meta property="og:description" content="null">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-面试基础知识"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android 面试基础知识</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Activity-面试详解"><span class="post-toc-number">2.</span> <span class="post-toc-text">Activity 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-activity-生命周期"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">一 activity 生命周期</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-android-任务栈"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">二 android 任务栈</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-activity-启动模式"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">三 activity 启动模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四-scheme-跳转协议"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">四 scheme 跳转协议</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Fragment-面试详解"><span class="post-toc-number">3.</span> <span class="post-toc-text">Fragment 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Fragment-为什么被称为第五大组件"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">一 Fragment 为什么被称为第五大组件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-Fragment-的生命周期"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">二 Fragment 的生命周期</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-Fragment-通信"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">三 Fragment 通信</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四-Fragment-的-replace-add-remove-方法"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">四 Fragment 的 replace,add,remove 方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Service-面试详解"><span class="post-toc-number">4.</span> <span class="post-toc-text">Service 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Service-的应用场景，以及和-Thread-区别"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">一 Service 的应用场景，以及和 Thread 区别</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#service-基础"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">service 基础</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-开启-Service-的两种方式以及区别"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">二 开启 Service 的两种方式以及区别</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Broadcast-Receiver-面试详解"><span class="post-toc-number">5.</span> <span class="post-toc-text">Broadcast Receiver 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-广播"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">一 广播</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-实现广播-Receiver"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">二 实现广播-Receiver</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-广播内部实现机制"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">三 广播内部实现机制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四-LocalBroadcastManager-详解"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">四 LocalBroadcastManager 详解</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#WebView-面试详解"><span class="post-toc-number">6.</span> <span class="post-toc-text">WebView 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-WebView-常见的一些坑"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">一 WebView 常见的一些坑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-关于-WebView-的内存泄漏问题"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">二 关于 WebView 的内存泄漏问题</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Binder-面试详解"><span class="post-toc-number">7.</span> <span class="post-toc-text">Binder 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Linux-内核的基础知识"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">一 Linux 内核的基础知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-Binder-通信机制介绍"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">二 Binder 通信机制介绍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-Aidl"><span class="post-toc-number">7.3.</span> <span class="post-toc-text">三 Aidl</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Android 面试 一
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&s=400" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Kod</strong>
+        <span>6月 20, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 面试 一&url=http://yoursite.com//2017/06/20/android面试-0/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 面试 一&url=http://yoursite.com//2017/06/20/android面试-0/index.html&via=Kod" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/06/20/android面试-0/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/06/20/android面试-0/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Android-面试基础知识"><a href="#Android-面试基础知识" class="headerlink" title="Android 面试基础知识"></a>Android 面试基础知识</h2><p>技术要求和面试前的准备</p>
+<p>1万/2万/3万</p>
+<p>良好的开发习惯</p>
+<p>独立思考的能力</p>
+<p>主动并且善于沟通</p>
+<p>高级 Android 所要掌握的知识点</p>
+<p>1.基本知识点<br>2.深入知识点<br>3.基本知识点的细节<br>4.系统核心机制</p>
+<p>面试过程中的要求</p>
+<p>1.礼貌：态度谦虚<br>2.听懂问题直接回答</p>
+<p>选一个自己相对比较擅长的领域<br>基础要背<br>试着去了解这个领域市面上的技术<br>如果有时间的话，研究其中一份众所周知的库的源码</p>
+<h2 id="Activity-面试详解"><a href="#Activity-面试详解" class="headerlink" title="Activity 面试详解"></a>Activity 面试详解</h2><blockquote>
+<p>activity 生命周期<br><br>android 任务栈<br><br>activity 启动模式<br><br>scheme 跳转协议<br></p>
+</blockquote>
+<h3 id="一-activity-生命周期"><a href="#一-activity-生命周期" class="headerlink" title="一 activity 生命周期"></a>一 activity 生命周期</h3><blockquote>
+<p>activity 的 4 种状态<br><br>activity 生命周期分析<br><br>android 进程优优先级<br></p>
+</blockquote>
+<p><strong>什么是 Activity?</strong></p>
+<p><strong>1.activity 的 4 种状态</strong></p>
+<blockquote>
+<p>running<br><br>paused<br><br>stopped<br><br>killed<br></p>
+</blockquote>
+<p><strong>Running</strong></p>
+<p>running 表明 activity 处于活动状态，就是说用户可以点击屏幕，屏幕会做出响应，它是一个处于 activity 栈顶的状态。</p>
+<p><strong>paused</strong></p>
+<p>paused 表明 activity 失去焦点的时候或者是被一个非全屏的 activity 的占据或者有一种情况是被透明 activity 放置在栈顶这种情况下它会处于 paused 状态。但我们需要明白这个时候，acitivty 只是失去和用户交互的能力，就是用户对这个屏幕操作是没有反应的。但并不是说整个 activity 是被销毁的，这个时候内存状态信息和全员变量都还在。当然有一种情况，就是处于内存紧张的时候，这个 activity 会被回收。</p>
+<p><strong>stopped</strong></p>
+<p>stopped 出现在一种情况，就是当这个 activity 被另一个 activity 完全覆盖的时候，被覆盖的那个 activity 就会处于 stopped 状态，这个时候它不在是可见的了。但它跟 pasued 状态一样，它的内存状态信息，成员变量都可能还在。如果这时候内存不紧张情况下，它们都还在。</p>
+<p><strong>killed</strong></p>
+<p>killed 状态表明 activity 被系统回收掉，activity 就会处于 killed 状态，这时候保存的信息和成员变量都不存在了。</p>
+<p><strong>2.activity 生命周期</strong></p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-3b9090a2b502f6c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="activity 生命周期"><br></div></p>
+<center> <strong>activity 生命周期</strong> </center>
+
+<p><strong>2.1.activity 生命周期分析</strong></p>
+<p><strong>Activity 启动 -&gt; onCreate() -&gt; onStart() -&gt; onResume()</strong></p>
+<p><strong>onCreate()</strong></p>
+<p>onCreate() 这方法是在 Activity 创建的时候回调。它可以说是生命周期第一个调用的方法，我们在创建 Activity 的时候，就一定要重写这个方法，在这里面可以进行一些初始化的操作。比如说我们常见的 setContentView() 设置一些布局的资源。当然还可以做些数据的加载，图片预加载这些。</p>
+<p><strong>onStart()</strong></p>
+<p>onStart() 这方法表明 activity 正在启动，activity 已经处于用户可见的状态了。当然它还并没有处于前台显示，就是说这个时候用户还不能与这个 activity 进行交互，进行点击，进行滑动。所以说我们可以简单的理解，这时候 activity 我们已经可以看见但无法触摸的状态。</p>
+<p><strong>onResume()</strong></p>
+<p>onResume() 这个方法被调用的时候，表明 activity 前台是可见于用户交互，用户可以进行滑动，点击，触摸等。onResume() 和  onStart() 方法，它们的相同点都是 activity 可见，但是 onResume() 方法调用之后，activity 就能和用户进行交互。这里我们要注意的是在 onResume() 方法当中可以初始化一些资源和 onStart() 方法是一样的。</p>
+<p><strong>点击 Home 键回到主界面（Activity 不可见）-&gt; onPause() -&gt; onStop()</strong></p>
+<p><strong>onPause()</strong></p>
+<p>onPause() 这方法被回调的时候，表明了整个 activity 是处于停止的状态的。停止状态表明 activity 还是可见的，但是不能被触摸的状态。它对应的是 onResume() 这个方法。当用户使当前的 activity 退居到后台的时候 onPause() 方法就会被调用。 </p>
+<p><strong>onStop()</strong></p>
+<p>onStop() 一般在 onPause() 方法被执行完后被调用。这时候表明整个 activity 已经被停止或者被完全覆盖。因为这个时候 activity 是完全不可见的，它只是处在后台运行。当调用了 onStop() 方法之后，如果你整个手机系统的内存是紧张的吃紧的不够的话，activity 有可能会被系统回收调。</p>
+<p><strong>当我们在次回到原 Activity 时 -&gt; onRestart() -&gt; onStart() -&gt; onResume()</strong></p>
+<p><strong>onRestart()</strong></p>
+<p>onRestart() 表明 activity 正在重新的启动，而且这个 activity 是由处于不可见状态变为可见状态的时候会调用 onRestart() 方法。这种情况一般会是用户打开一个新的 activity 当前的 activity 会被占据。而接着用户又回到之前的 activity 这个时候 onRestart() 这个方法会被回调。</p>
+<p><strong>退出当前 Activity 是 -&gt; onPause() -&gt; onStop() -&gt; onDestroy()</strong></p>
+<p><strong>onDestroy()</strong></p>
+<p>onDestroy() 方法表明当前 activity 正在销毁，它是整个 activity 生命周期方法中的最后一个方法。在这个生命周期方法中，我们可以进行一些回收工作以及一些资源的释放。</p>
+<p><strong>3.android 进程优先级</strong></p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-2c63cae8b7659dda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="activity 生命周期"><br></div></p>
+<center> <strong>android 进程优先级</strong> </center>
+
+<p><strong>前台/可见/服务/后台/空</strong></p>
+<p><strong>前台</strong></p>
+<p>前台进程一般就是处于和前台正在与用户交互的 activity 或者你在前台  activity 绑定的 Service 这两种情况的进程就叫前台进程。</p>
+<p><strong>可见</strong></p>
+<p>可见进程：如果这时候有个 activity 它是处于可见但是它并不属于前台就是说用户不能点击的情况下，就是可见进程。</p>
+<p><strong>服务</strong></p>
+<p>服务进程：在后台开启的 Service 服务就叫服务进程。</p>
+<p><strong>后台</strong></p>
+<p>后台进程：假设当前 activity 是前台进程，用户可以点击可以交互，但在这时候我们按了 Home 键，这时候我们的前台进程就变成了后台进程。但是这个时候后台进程不会立马被 killed 掉，这时候会根据内存情况来进行相应的回收。这就叫做后台进程。</p>
+<p><strong>空</strong></p>
+<p>空进程：优先级最低，如果我们进程不属于前面四种任何一种进程，那么它就属于空进程。空进程表示的是未运行任何程序组件，此时出于缓存的目的而保留。当有新进程创建的时候，这个空进程可以加快进程创建速度。Android 系统可以随时杀掉它。</p>
+<h3 id="二-android-任务栈"><a href="#二-android-任务栈" class="headerlink" title="二 android 任务栈"></a>二 android 任务栈</h3><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-233a49578f423509.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="android 任务栈"><br></div></p>
+<center> <strong>android 任务栈</strong> </center>
+
+
+<p>android 任务栈是非常重要的概念，其内部是一个栈结构。用这个栈来存储 activity。我们每次新的打开 activity 或退出的时候，都会在一个任务栈中删除或添加一个组件。因此一个 task 包含了其实是一个 activity 的集合。Android 系统可以通过任务栈有序的管理每个 activity。任务栈跟启动模式是相关的，正因为需要启动模式，所有说我们需要任务栈，任务栈又通过启动模式来更好的显示出来。任务栈被销毁了，才是数据处于最安全的状态。当然如果你去删除它的话，就需要合理的去保存这个任务栈。这个时候任务栈就保留了每个 activity 的状态也会保存 activity 信息，但特别需要注意的是，一定要安全的保存任务栈。<br>任务栈并不是唯一的，一个 activity 当中可能不止一个任务栈，但是有些情况下，activity 可以独享一个任务栈。</p>
+<h3 id="三-activity-启动模式"><a href="#三-activity-启动模式" class="headerlink" title="三 activity 启动模式"></a>三 activity 启动模式</h3><blockquote>
+<p>standard<br><br>singletop<br><br>singletask<br><br>singleinstance<br></p>
+</blockquote>
+<p><strong>standard</strong></p>
+<p>standard 标准模式下，在这种模式下，我们去启动一个 activity ，它都会重新创建一个 activity 的实例，然后将它加到任务栈当中。并不会考虑 task 当前之前是不是已经有这个实例，不会去复用这个 activity ，它只会重新创建 activity 。这种模式下，每创建一个 activity 都会走相应的生命周期方法，这是非常消耗资源的。</p>
+<p>但是为什么 android 会给我们提供一个启动模式？</p>
+<p>我们在开发过程当中，一般我们都需要再不同页面之间跳转，不同页面之间跳转的实质就是多个 activity 之间的跳转。所以说我们肯定需要复用某些 activity。如果我们跳转到某个原来的 activity 实例的时候，我们希望这个 activity 是被复用的，而不是被重新创建的。因为重新创建实在是消耗资源，如果每次新创建 activity 放在 task 栈中像 standard 一样，对整个系统内存是很大的消耗。所以说 Android 为我们提供了 singletop 的启动模式 </p>
+<p><strong>singletop</strong></p>
+<p>singletop 标准模式下，中文可以翻译成栈顶复用模式，这模式就表明了它不是每创建一个 activity 都会放到任务栈当中，它会先去判断任务栈是否有这个 activity。但是它有个特殊的地方，它是栈顶！就是说如果你创建的 activity 是在任务栈的栈顶的话，它就不会去创建新的 activity 而是复用任务栈顶的 activity，这是最重要的一点。这也表明了如果创建的 activity 不是在栈顶，它是处于栈顶的第二位置的话，它还是会创建 activity 。所以说为了提高这个模式，Android 又提供另一个种启动模式 singletask。</p>
+<p><strong>singletask</strong></p>
+<p>singletask 又名为栈内复用模式，它其实是一个单例模式。它和 singletop 有点类似，只是栈顶复用 singletop 模式，它只是检测栈顶元素是否有需要启动的 acitivity。而 singletask 它检测整个任务栈中是否存在需要启动的 activity，若存在就把 activity 至于栈顶。这时候需要注意，它把 activity 至于栈顶，把这个至于 activity 以上的所有的 activity 都从任务栈中移除销毁，这时候它会回调一个 onNewIntent() 方法。</p>
+<p><strong>singleinstance</strong></p>
+<p>singleinstance 这个启动模式有点特殊，如果这个 activity 在系统当前，有且只有一个实例而且这个 activity 实例要独享这个任务栈，这种模式就叫 singleinstance 模式。这种模式在 Android 当中用的比较少，了解即可。</p>
+<h3 id="四-scheme-跳转协议"><a href="#四-scheme-跳转协议" class="headerlink" title="四 scheme 跳转协议"></a>四 scheme 跳转协议</h3><p>android 中的 scheme 是一种页面内跳转协议，是一种非常好的实现机制，通过定义自己的 scheme 协议，可以非常方便跳转 app 中的各个页面；通过 scheme 协议，服务器可以定制化告诉 app 跳转那个页面，可以通过通知栏消息定制化跳转页面，可以通过 H5 页面跳转页面等。</p>
+<p>scheme 应用场景主要有这几个：</p>
+<p>1 服务端下发一个 url 路径，然后客户端根据 url 跳转到相应的页面 </p>
+<p>2 从 H5 页面跳转到响应的 app activity 页面</p>
+<p>3 app 根据 url 跳转到另一个 app</p>
+<h2 id="Fragment-面试详解"><a href="#Fragment-面试详解" class="headerlink" title="Fragment 面试详解"></a>Fragment 面试详解</h2><blockquote>
+<p>Fragment 为什么被称为第五大组件<br>Fragment 的生命周期<br>Fragment 之间的通信<br>Fragment 管理器：FragmentManager</p>
+</blockquote>
+<h3 id="一-Fragment-为什么被称为第五大组件"><a href="#一-Fragment-为什么被称为第五大组件" class="headerlink" title="一 Fragment 为什么被称为第五大组件"></a>一 Fragment 为什么被称为第五大组件</h3><blockquote>
+<p>Fragment 为什么被称为第五大组件<br><br>Fragment 加载到 Activity 的两种方式<br><br>FragmnetPagerAdapter 与 FragmentStatePagerAdapter 区别<br></p>
+</blockquote>
+<p><strong>1.Fragment 为什么被称为第五大组件</strong></p>
+<p>众所周知 Android 开发的四大组件：Activity,Service,Broadcast Receiver,Content Provider。在实际项目开发过程中 fragment 使用频率和作用都是很突出的，所以说在这里把 fragment 列为第五大组件也是可以的。有些说法他把 View 列为第五大组件，但是由于 View 是没有自己的生命周期的，这是和 fragment 不同之处，有生命周期 fragment 就可以像 Activity 一样进行灵活的处理。 fragment 为什么会出现呢？它其实是 android 3.0 提出的，起初它是给大屏幕设备上灵活的展现 UI 所设计的。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-dd5338c37d1e13c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Fragment"><br></div></p>
+<center> <strong>Fragment 使用情况</strong> </center>
+
+<p>其实大家喜欢使用 fragment 的原因，主要是 fragment 相比 activity 更节约内存，同时它的 UI 切换效果更加舒适。</p>
+<p>首先在使用频率上，fragment 是不属于其他四大组件的，它有自己的生命周期，同时它可以动态灵活的加载到 activity 当中去。所以说 fragment 可以被称为第五大组件。同时 fragment 并不像 activity 那样完全独立的，虽然说有自己的生命周期，但是它必须依附在 activity 同时它要加载到 activity 当中。</p>
+<p><strong>2.Fragment 加载到 Activity 的两种方式</strong></p>
+<p>1）添加 Fragment 到 Activity 的布局文件当中</p>
+<p>静态加载：把 fragment 作为 xml 标签加载到 activity 布局当中。</p>
+<p>2）动态在 activity 中添加 fragment</p>
+<p>使用 FragmentManager 来管理所有要启动的 fragment，利用 FragmentTransaction 来替换添加相对应的 fragment，利用容器资源来作为标志位，设置 fragment 所要显示 activity 当前的位置。最后需要提交 commit（）方法。</p>
+<p>第一步通过 getFragmentManager() 创建一个 FragmentManager 对象，通过 FragmentManager 来创建 FragmentTransaction 对象。第二步通过调用 FragmentTransaction 里的 add（）方法加载 fragment 对象。最后调用 FragmentTransaction 对象的 commit() 方法使得 FragmentTransaction 实例的改变生效。</p>
+<pre><code>//步骤一：添加一个 FragmentTransaction 的实例
+FragmentManager fragmentManager = getFragmentManager();
+FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+//步骤二：用 add（）方法加上 Fragment 的对象 righTFragment
+RightFragment rightFragment = new RightFragment();
+transation.add(R.id.right_container,rightFragment,&quot;rightFragment&quot;);
+transaction.addToBackStack(&quot;rightFragment&quot;);
+
+//步骤三：调用 commit() 方法使得 FragmentTransaction 实例的改变生效
+transaction.commit();
+</code></pre><p><strong>3.FragmentPagerAdapter 与 FragmentStatePagerAdapter 区别</strong></p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-4902146d2f703931.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="viewpager"><br></div></p>
+<center> <strong>viewpager</strong> </center>
+
+<p>viewpager:实现界面左右滑动的界面，在开发过程中经常与 fragment 结合使用，fragment 是用来显示 viewpager 每次滑动所要显示的界面。</p>
+<p>FragmentPagerAdapter 适用于页面较少的情况，而 FragmentStatePagerAdapter 适用于页面较多的情况。 </p>
+<p>在 FragmentStatePagerAdapter 源码当中有个 destroyItem() 方法，这方法的最后一行</p>
+<pre><code>mCurTransation.remove(fragment)
+</code></pre><p>可知 FragmentStatePagerAdapter 真正的释放了 fragment 内存，所以 FragmentStatePagerAdapter 比 FragmentPagerAdapter 更加节省内存。</p>
+<p>在 FragmentPagerAdapter destroyItem() 方法最后一行</p>
+<pre><code>mCurTransaction.detach((Fragment)object);
+</code></pre><p>detach() 方法它只是把 fragment UI 和 activity 的 UI 所脱离开来，它并不回收内存。</p>
+<p>所以在面试的过程中可以这样说：由于 FragmentPagerAdapter 它在每次切换 ViewPager 的时候，它是回收内存的，所有说它是适合那种页面比较多的情况。因为页面比较多的时候会耗内存，所以说它会回收内存。而<br>FragmentPagerAdapter 我们大家都知道它在 destroyItem() 的时候它并没有回收内存，它只是把 UI 分离，所以说它是适合那种页面比较少的情况，以保存一些内存，也对系统内存没有多大的影响。</p>
+<h3 id="二-Fragment-的生命周期"><a href="#二-Fragment-的生命周期" class="headerlink" title="二 Fragment 的生命周期"></a>二 Fragment 的生命周期</h3><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-ef067d8ac58d8bad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="fragment 生命周期"><br></div></p>
+<center> <strong>fragment 生命周期</strong> </center>
+
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-a1031ee280a5b389.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="fragment 结合 activity 生命周期"><br></div></p>
+<center> <strong>fragment 结合 activity 生命周期</strong> </center>
+
+<p>onAttach():fragment 关联 activity 之后回调这个方法。</p>
+<p>onCreate():fragment 的 onCreate() 方法，是在初次创建 fragment 调用，它看起来和 activity onCreate() 方法是一样，但是这个方法只是用来创建 fragment，此时的 activity 还没有创建完成。</p>
+<p>onCreateView():是系统在首次绘制 fragment 界面的时候会调用的方法，如果你想要这个 fragment 或者 UI 或者界面，则从该方法返回的 View 必须是 fragment 布局的根视图。</p>
+<p>onViewCreated():这个方法被调用表明，fragment UI 或界面已经绘制好了。</p>
+<p>Activity-onCreate():初始化 activity 布局数据等等，你可以初始化 fragment 控件资源。</p>
+<p>onActivityCreated():这个方法一定要在 Activity-onCreate() 方法被调用之后才可以调用，这个方法被调用时机就是 activity 被渲染绘制成功以后的调用方法。</p>
+<p>Activity-onStart():这个方法被调用表明这个 activity 可见。</p>
+<p>Fragment-onStart():在 activity 可见之后就会调用 fragment-onStart() 方法，表明 fragment 也可见了。</p>
+<p>Activity-onResume():表示整个 activity 与用户可交互了。</p>
+<p>Fragment-onResume():在 Activity-onResume() 被调用以后就会相应的调用 Fragment-onResume(),表示 fragment 也可以和用户进行交互。到此方法 fragment 完全初始化完毕</p>
+<p>onPause():回退 fragment 时会先调用 fragment-onPause() 方法，表示 fragment 不能和用户点击了，不能和用户交互了。</p>
+<p>Activity-onPause():表示 fragment 依附的 activity 也是不能和用户交互了。</p>
+<p>Fragment-onStop()</p>
+<p>Actitvity-onStop()</p>
+<p>Fragment-onDestoryView():表示 fragment 即将结束，和 onCreateView() 方法对应，然后会被保存。</p>
+<p>onDestory():表示 fragment 不在使用了。</p>
+<p>onDetach():表示 fragment 对象被销毁。</p>
+<p>Activity-onDestory:表示整个 Activity 被回收。 </p>
+<h3 id="三-Fragment-通信"><a href="#三-Fragment-通信" class="headerlink" title="三 Fragment 通信"></a>三 Fragment 通信</h3><p><strong>1.在 Fragment 中调用 Activity 中的方法 getActivity</strong></p>
+<p><strong>2.在 Activity 中调用 Fragment 中的方法 接口回调</strong></p>
+<p><strong>3.在 Fragment 中调用 Fragment 中的方法 findFragmentById</strong></p>
+<h3 id="四-Fragment-的-replace-add-remove-方法"><a href="#四-Fragment-的-replace-add-remove-方法" class="headerlink" title="四 Fragment 的 replace,add,remove 方法"></a>四 Fragment 的 replace,add,remove 方法</h3><p>replace 其实是 FragmentManager 里的方法，它是把最上层 fragment 替换成想替换的 fragment实例。</p>
+<p>add（）将一个 fragment 实例添加在 activity 最上层。</p>
+<p>remove（）将 fragment 从 activity fragment 队列中删除，</p>
+<h2 id="Service-面试详解"><a href="#Service-面试详解" class="headerlink" title="Service 面试详解"></a>Service 面试详解</h2><h3 id="一-Service-的应用场景，以及和-Thread-区别"><a href="#一-Service-的应用场景，以及和-Thread-区别" class="headerlink" title="一 Service 的应用场景，以及和 Thread 区别"></a>一 Service 的应用场景，以及和 Thread 区别</h3><h4 id="service-基础"><a href="#service-基础" class="headerlink" title="service 基础"></a>service 基础</h4><p><strong>1.Service 是什么？</strong></p>
+<p>Service(服务) 是一个一种可以在后台执行长时间运行操作而没有用户界面的应用组件。</p>
+<p>Service 可以由其他组件，比如 activity ，Broadcast 等来启动。服务一旦启动后就将在后台一直运行，即使启动它的 activity，Broadcast 已经被销毁了，也不会受影响。另外你也可以把 Service 绑定到 activity ，然后可以让 service 和 activity 之间进行数据交互。甚至由于 service 和 activity 在不同进程里，你也可以通过进程间通信来进行数据传输。这里我们要注意一点 service 和 broadcast 有个共同点，<strong>它们都是运行在主线程当中，所以说在这里面都不能做长时间耗时的操作。</strong></p>
+<p>Service 作为 Android 四大组件之一，扮演着非常重要的角色。因为它可以在后台处理些耗时的逻辑，或者你可以用它执行一些你需要长时间执行的任务它可以在后台运行，而且不会看到它的界面，这对用户来说是非常好的体验。必要的时候我们可以在程序退出的时候，能让 Serivice 在后台保持继续运行的状态，这就是 Service 保活。</p>
+<p><strong>2.Service 和 Thread 的区别</strong></p>
+<p><strong>A.定义</strong></p>
+<p>Thread 是程序执行最小的单元线程，所以说我们可以用它来执行一些异步操作。而 Service 是 Android 一种机制，当它运行的时候，如果是本地 Service 那么它对应的 Service 是运行在主线程上的。也就是说 Thread 运行是相对独立的，而 Service 运行是依托于它所在的主线程上的，相比 Thread Service 并不是那么独立。</p>
+<p><strong>Service 和 Thread 有关系？什么时候该用 Service？什么时候该用 Thread？</strong></p>
+<p>说的狠一点，Service 和 Thread 之间没有任何关系的。之所以有人把它联系起来，主要我觉得是因为 Service 这翻译的原因，Service 翻译成中文是服务，而服务我们可以理解为后台。而 Thread 我们大家都知道去开一个子线程，而在子线程里去执行一些耗时的操作，就不会去阻塞主线程的运行。而 Service 我们最初理解的时候，总会认为它是处理一些后台任务，总觉得可以把一些耗时操作放在这里运行，这就大错特错！这就是把服务和后台的概念完全混淆了，或者说你把 Android 中服务的概念和后台混淆了。Service 是运行在主线程里，我们绝对不能运行耗时操作。Android 后台指的是它的运行完全不依赖于 UI 线程。即使 activity 被销毁了或程序被销毁了，这服务进程仍然存在。它会在后台进行一些计算，统计等，这时候 service 仍然可以继续运行。如果你要在 service 进行耗时操作，就要创建子线程，在子线程做耗时的操作。既然要在 service 创建子线程，那为什么不直接在 activity 创建子线程来进行操作？<strong>因为 activity 很难对子线程进行控制，特别是在 activity 被销毁的时候，你没有任何办法去获取之前创建的任何子线程的实例。</strong>而 service 来处理后台任务，activity 就可以很放心的销毁，完全不用担心无法对后台任务进行控制的情况。</p>
+<p><strong>B.实际开发</strong></p>
+<p>区别：首先定义上 Thread 是程序执行的最小单元，它是分配 CPU 的基本单位。Android 系统当中的我们常说的主线程，UI 线程等它也是线程的一种，当然线程里可以执行一些耗时的操作。而 Service 是 Android 当中一种特殊机制，Service 是运行在主线程当中的，所以说它不能做耗时的操作，它是由系统进程托管的。其实 Service 也是一种轻量级的 IPC 通信，因为 service 可以和 activity 绑定，然后 activity 可以和 service 进行数据通信，而且也有一种情况 activity 和 service 处于不同进程当中，所以说它们之间的数据通信要通过 IPC 进程间的通信来进行操作。第二点，在实际 Android 开发中，线程一般指的是工作线程也就是后台线程，即做一些耗时操作的线程。而主线程是一种特殊功能的线程，它只负责处理一些 UI 线程的绘制，UI 线程绝对不能做一些耗时的操作。而 Service 是 Android 当中四大组件之一，一般情况下它也是运行在主线程当中，因此 service 也是不能做一些耗时操作的，否则系统会报 ANR 异常（Application Not Responding  即应用程序无响应）。之所以 service 被称为后台服务大部分原因是因为它没有 UI 用户无法感知，但是它是在后台运行的。所以说要在 service 中运行一些耗时的操作，一定要创建子线程，把耗时的操作放在子线程里。</p>
+<p><strong>B.应用场景</strong></p>
+<p>当你需要执行耗时的网络，文件的查询以及其他阻塞 UI 线程的时候，都应该有工作线程即开启子线程的方式，这样才可以保证 UI 线程不被占用影响用户体验。而 Service 来说我们经常要长时间在后台运行，而且不需要交互的情况下才会使用到服务，比如在后台播放音乐，开启天气预报的统计，还有一些数据的统计等等。</p>
+<h3 id="二-开启-Service-的两种方式以及区别"><a href="#二-开启-Service-的两种方式以及区别" class="headerlink" title="二 开启 Service 的两种方式以及区别"></a>二 开启 Service 的两种方式以及区别</h3><p><strong>1.startservice</strong></p>
+<p>通过 activity 调用 startservice 启动 service 的时候，服务就处于启动的状态。而一旦这个服务开启，这个服务就会在后台无限期的运行。这时如果你的 activity 被销毁了，也对它的 service 运行不会有影响。除非你手动的去关闭这个 service ，服务才会停止。</p>
+<pre><code>public class ServiceActivity extends Activity implements View.OnClickListener {
+    private Button mBtnStartService, mBtnStopService;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_service);
+        mBtnStartService = (Button) findViewById(R.id.btn_start_service);
+        mBtnStopService = (Button) findViewById(R.id.btn_stop__service);
+
+        mBtnStopService.setOnClickListener(this);
+        mBtnStartService.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getApplicationContext(), FirstService.class);
+        switch (v.getId()) {
+            case R.id.btn_start_service:
+                startService(intent);
+                break;
+            case R.id.btn_stop__service:
+                stopService(intent);
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+public class FirstService extends Service {
+    /**
+     * 绑定服务时才会调用
+     * 必须要实现的方法
+     *
+     * @param intent
+     * @return
+     */
+    @Nullable
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
+
+    /**
+     * 首次创建服务时，系统将调用此方法来执行一次性设置程序（在调用 onStartCommand() 或 onBind() 之前）。
+     * 如果服务已在运行，则不会调用此方法。该方法只被调用一次
+     */
+    @Override
+    public void onCreate() {
+        System.out.println(&quot;onCreate invoke&quot;);
+        super.onCreate();
+    }
+
+    /**
+     * 每次通过startService()方法启动Service时都会被回调。
+     *
+     * @param intent
+     * @param flags
+     * @param startId
+     * @return
+     */
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        System.out.println(&quot;onStartCommand invoke&quot;);
+        return super.onStartCommand(intent, flags, startId);
+    }
+
+    /**
+     * 服务销毁时的回调
+     */
+    @Override
+    public void onDestroy() {
+        System.out.println(&quot;onDestroy invoke&quot;);
+        super.onDestroy();
+    }
+
+
+}
+</code></pre><p>onBind()：通过 startService(new Intent()) 这种方式来启动服务，在 onBind() 里面你可以放回一个空就可以。当你绑定服务的时候才会调用，必须要实现的方法。</p>
+<p>onCreate()：首次创建服务时，系统将调用此方法来执行一次性设置程序（在调用 onStartCommand() 或 onBind() 之前）。如果服务已在运行，则不会调用此方法，该方法只被调用一次。</p>
+<p>onStartCommand()：每次通过startService()方法启动Service时都会被回调，一旦执行了这个方法服务就被正式的开启了。</p>
+<p>onStartCommand() 方法它的返回值是 int，在源码中它返回的值是这样</p>
+<pre><code>return mStartCompatibility ? START_STICKY_CONPATIBILITY : START_STICKY；
+</code></pre><p>如果返回的是 START_STICKY 这个值，意味着当整个 service 因为整个系统内存不足而被系统杀掉的时候，一段时间内存在次空闲的时候，系统会尝试重新创建这个 service 。一旦成功创建 service 之后又会重新调用 onStartCommand() 这个方法，但返回的 int 将是为空。所以说这个  START_STICKY 值适合那些循环音乐播放器，天气预报那些数据这类的服务。</p>
+<p>onDestroy()：服务销毁时的回调，可以在这方法里面实现些资源的清理，比如线程，注册监听器等，在这里可以进行回收。因为这是服务接收的最后一个调用，所以说你所有的资源一定要在这个方法里面进行回收。</p>
+<p><strong>使用 startservice 创建服务的步骤</strong></p>
+<p>1.定义一个类继承 Service。</p>
+<p>2.在 Manifest.xml 文件中配置该 Service。</p>
+<p>3.使用 Context 的 startService(Intent) 方法启动该 Service。</p>
+<p>4.不在使用时，调用 stopService(Intent) 方法停止该服务。</p>
+<p><strong>2.bindService</strong></p>
+<p>bindService 即绑定服务，服务和 activity 处于绑定的状态。绑定服务它提供了一个客户端和服务端的接口，就相当于 activity 和 service 交互的接口，它允许 activity 和 service 进行交互发送请求获取结果等。甚至 service 和 activity 在不同进程当中的时候，可以进行进程间的通信来进行传输数据，这仅仅要在 service 绑定到 activity 之后才能运行。同时你多个 activity 可以绑定一个 service，但如果绑定全部取消之后这服务就会自动销毁，它并不一定要像 startservice 里一样调用 stopService() 才能进行销毁。</p>
+<p><strong>使用 bindService 创建服务的步骤</strong></p>
+<p>1.创建 BindService 服务端，继承自 Service 并在类中，创建一个实现 IBinder 接口的实例对象并提供公共方法给客户端调用。</p>
+<p>2.从 onBind() 回调方法返回此 Binder 实例。</p>
+<p>3.在客户端中，从 onServiceConnected() 回调方法接收 Binder,并使用提供的方法调用绑定服务。</p>
+<p>这里客户端指的是 activity，服务端指的是 service。</p>
+<pre><code>// 创建 Binder 对象，返回给客户端即 Activity 使用，提供数据交换的接口
+public class LocalBinder extends Binder{
+    // 声明一个方法，getService （提供给客户端使用）
+    BindService getService(){
+        // 返回当前对象 LocalService，这样我们就可在客户端调用 Service 的公共方法了
+        return BindService.this;
+    }        
+}
+
+public IBinder onBind(Intent intent){
+    return binder;
+}
+
+
+conn = ServiceConnection(){
+    // 与服务器端交互的接口方法，绑定服务的时候被回调，在这个方法获取绑定 Service 传递过来的 IBinder 对象，通过这个 IBinder 对象，实现宿主和 Service 的交互
+    public void onServiceConnected(ComponenetName name,IBinder service){
+        // 获取 Binder
+        BindService.LocalBinder binder = (BindService.LocalBinder) service;
+        mService = binder.getService();
+    }
+
+    // 当取消绑定的时候被调用，但正常情况下是不被调用的，它的调用时机是当 Service 服务被意外销毁时，例如内存的资源不足时这个方法才被自动调用
+    public void onServiceDisconnected(ComponentName name){mService = null;}
+}
+
+bindService(intent,conn,Service_BIND_AUTO_CREATE)；
+</code></pre><h2 id="Broadcast-Receiver-面试详解"><a href="#Broadcast-Receiver-面试详解" class="headerlink" title="Broadcast Receiver 面试详解"></a>Broadcast Receiver 面试详解</h2><h3 id="一-广播"><a href="#一-广播" class="headerlink" title="一 广播"></a>一 广播</h3><p><strong>1.广播的定义</strong></p>
+<p>Broadcast 是一种广泛运用的在应用程序之间传输信息的机制，Android 中我们要发送给的广播内容是一个 Intent，这个 Intent 中可以携带我们要传送的数据。</p>
+<p>在 Android 当中它是一个用的比较广泛的一个应用程序之间传输信息的机制。广播类似于 Java 当中的观察者模式（当一个被观察者数据变化的时候，它会通知相应的观察者做相应的处理）。Android 中如果我们要发出一个广播，它实质是一个 Intent ，在这 Intent 里我们可以携带一些我们要传输的数据。</p>
+<p>广播实现了不同程序之间的数据传输与共享，即只要和发送广播的 action 相同的接收者都能接收这个广播，你发送一个广播可以被多个广播 Receiver 接收。</p>
+<p>广播接收者还可以有个通知的作用，比如说你在服务中发送程序的 activity 来更新 UI。服务是没有界面的后台运行组件，这时候你可以通过广播接收者专门来接收从 service 中发过来的数据和通知，而不要让 service 和 activity 直接交互。</p>
+<p><strong>2.广播的场景</strong></p>
+<p>A.同一个 app 具有多个进程的不同组件之间的消息通信</p>
+<p>你在 app 里会开启多个进程，比如定位进程，会有个主进程，来进行相应的操作，这时候两个进程之间的通信就可以用到广播。</p>
+<p>B.不同 app 之间的组件之间消息通信</p>
+<p><strong>3.广播的分类</strong></p>
+<p>1) Normal Broadcast: Context.sendBroadcast<br></p>
+<p>2) System Broadcast: Context.sendOrderedBroadcast<br></p>
+<p>3) Local Broadcast: 只在自身 App 内传播</p>
+<h3 id="二-实现广播-Receiver"><a href="#二-实现广播-Receiver" class="headerlink" title="二 实现广播-Receiver"></a>二 实现广播-Receiver</h3><p><strong>1.静态注册：注册完成就一直运行</strong></p>
+<p>静态注册就是把广播接收者写在 Manifest.xml 文件当中，它有个特点就是它所依赖的 activity 销毁了，但它仍然可以接收广播。甚至你把 app 的进程杀死了，它依旧可以接收广播。</p>
+<p><strong>2.动态注册：跟随 activity 的生命周期</strong></p>
+<p>动态注册要在代码中调用 registerReceiver(BroadcastReceiver, IntentFilter, String, Handler)方法注册广播。但是一定在activity结束前，移除广播接收器，否则会引起内存泄漏。动态注册它的生命周期是跟随着 activity 的生命周期，所以说当 activity 销毁了这个广播也就失效了。</p>
+<p><strong>静态注册和动态注册的区别</strong></p>
+<p>第一：动态注册是在代码中调用 registerReceiver（）来进行注册的，而静态注册是写在 Manifest.xml 文件中的。第二：动态注册会受 activity 生命周期影响，activity 销毁了动态注册的广播接收者也就失效了。而静态广播即使 activity 被销毁了，甚至你把 app 的进程杀死了，它依旧可以接收广播。</p>
+<h3 id="三-广播内部实现机制"><a href="#三-广播内部实现机制" class="headerlink" title="三 广播内部实现机制"></a>三 广播内部实现机制</h3><p>1.自定义广播接收者 BroadcastReceiver,并复写 onRecvice() 方法</p>
+<p>2.通过 Binder 机制向 AMS(Activity Manager Service) 进行注册</p>
+<p>Binder：它是 Android 进程间通信的核心，它整体的设计架构是客户端，服务端的架构（CS 结构），客户端进程可以获取到服务端代理，并通过这个代理某个方法来读取数据完成进程间的数据通信。</p>
+<p>AMS：它是贯穿 Android 系统组件的核心服务，它负责启动四大组件的启动，切换，调动以及应用程序管理，调用工作。</p>
+<p>3.广播发送者通过 Binder 机制向 AMS 发送广播。</p>
+<p>4.AMS 查找符合相应条件（IntentFilter/Permission 等）的 BroadcastRceiver，将广播发送到 BroadcastReceiver (一般情况下是 Activity) 相应的消息循环队列中。</p>
+<p>5.消息循环执行拿到此广播，回调 BroadcastReceiver 中的 onReceive() 方法。</p>
+<h3 id="四-LocalBroadcastManager-详解"><a href="#四-LocalBroadcastManager-详解" class="headerlink" title="四 LocalBroadcastManager 详解"></a>四 LocalBroadcastManager 详解</h3><p>1.使用它发送的广播将只在自身 App 内传播，因此你不必担心泄露隐私数据。</p>
+<p>2.其他 App 无法对你的 App 发送该广播，因为你的 App 根本就不可能接收到非自身应用发送的该广播，因此你不必担心有安全漏洞可以利用。</p>
+<p>3.比系统的全局广播更加高效。</p>
+<p>如果你不是本地广播的话，如果别人反编译了你的 apk 后，知道了你的 action，那么第三方应用就可以发送于该 action 匹配的广播。而你的应用能够接收到，不像本地广播一样无法接收。这时候第三方应用就可以拿这广播进行很多事情，比如分享一个连接，让你跳转过去植入广告的形式。第二如果别人知道你用的 action ，当你使用广播来传输数据的时候，那别的应用也能接收到这个广播，通过 action 的匹配就能获取到私密的数据，比如用户名，地理位置，然后发送一些恶意的广告信息。</p>
+<p>LocalBroadcastManager 高效的原因主要是因为它内部是通过 Handler 实现的，它的 sendBroadcast() 方法含义并非和我们平时所用的一样，它的 sendBroadcast() 方法其实是通过 handler 发送一个 Message 实现的。</p>
+<p>既然它内部是通过 Handler 来实现广播的发送的，那么相比与系统广播通过 Binder 实现那肯定是更高效了，同时使用 Handler 来实现，别的应用无法向我们的应用发送该广播，而我们应用内发送的广播也不会离开我们的应用。</p>
+<p>LocalBroadcastManager 内部协作主要是靠这两个 Map 集合：mReceivers 和 mActions，当然还有一个 List 集合 mPendingBroadcasts，这个主要就是存储待接收的广播对象。</p>
+<h2 id="WebView-面试详解"><a href="#WebView-面试详解" class="headerlink" title="WebView 面试详解"></a>WebView 面试详解</h2><h3 id="一-WebView-常见的一些坑"><a href="#一-WebView-常见的一些坑" class="headerlink" title="一 WebView 常见的一些坑"></a>一 WebView 常见的一些坑</h3><p>1.Android API level 16 以及之前的版本存在远程代码执行安全漏洞，该漏洞源于程序没有正确限制使用 WebView.addJavascriptInterface 方法，远程攻击者可通过使用 Java Reflection API 利用该漏洞执行任意 Java 对象的方法。</p>
+<p>原理：通过 addJavascriptInterface 方法，它给 WebView 加上一份 JavaScript 桥接口，通过这个桥接口就可以调用本地的 Java 对象方法。</p>
+<p>2.WebView 在布局文件中的使用：WebView 写在其他容器中时。</p>
+<p>有很多情况下会把 WebView 写在其他文件当中的，比如说吧 webview 写在 linearlayout 里面，然后通过 addview 这个方法动态的把 webview 添加到这个 linearlayout 里面。需要注意，当你离开的时候，你需要销毁这个 webview ，这时候你在 onDestroy 方法里面，一定要先把 linearlayout 里面的 webview remove 掉，然后在调用 webview 的 removeofview 和 webview onDestroy 方法才能真正的销毁整个 webview 而不会导致内存泄漏问题。</p>
+<p>3.jsbridge</p>
+<p>jsbridge 通过 javascript 来构建自己的桥，桥的两端：一端是 web 端，一端是客户端。搭建桥的目的其实很简单，就是让我们本地端可以调用远端 web js 的代码，同时可以让远端调用本地端的代码。</p>
+<p>4.webviewClient.onPageFinished -&gt; WebChromeClient.onProgressChanged</p>
+<p>webviewClient.onPageFinished:表示加载这个页面的时候，页面完成的时候会回调这个方法。但这方法有很多坑，就是它会判断这个网页内容是否真的加载完毕了，而当前正在加载的网页，如果产生跳转的时候这个方法就会被调用无数次。所以当你的 webview 要加载各种各样网页，并要在网页上操作的时候，最好是调用 WebChromeClient.onProgressChanged 这个方法。</p>
+<p>5.后台耗电</p>
+<p>当你程序开启 webview 加载网页的时候，webview 它会自己开启线程，如果你没有很好的向 webview 销毁的话，这些残余的线程就会一直在后台运行而导致你的运用程序耗电量居高不下。可以采取在 activity onDestroy 里直接调用 siceten.exit 这个方法把虚拟机直接关闭。</p>
+<p>6.WebView 硬件加速导致页面渲染问题</p>
+<p>硬件加速是从 Android 3.0 开始的，当我们开启硬件加速的时候 webview 渲染页面它更加加速，拖动起来它会更加顺滑，但是这里要注意它有个负作用，就是容易页面加载太快同时页面闪烁的现象。解决这个问题最好的办法就是设置 webview 的时候关闭硬件加速，只能这么解决。</p>
+<h3 id="二-关于-WebView-的内存泄漏问题"><a href="#二-关于-WebView-的内存泄漏问题" class="headerlink" title="二 关于 WebView 的内存泄漏问题"></a>二 关于 WebView 的内存泄漏问题</h3><p><strong>为什么会造成 webview 的内存泄漏？</strong></p>
+<p>根本原因：首先 webview 肯定会关联一个 activity，而 webview 的内存执行的操作它会在新的线程当中，它的时间我们的 activity 是没有办法确定的，activity 这个生命周期和这个线程生命周期它是不一样的。导致 webview 一直持有 activity 的引用，不能回收。它的原理其实和我们的异名内部类持有外部类的引用导致外部类无法回收的原理是一样的。</p>
+<p><strong>解决 webview 内存泄漏方法</strong></p>
+<p>1.独立进程，简单暴力，不过可能涉及到进程间通信</p>
+<p>独立进程：开启单独一个进程给 webview 进行操作，不过它会牵扯到进程间的通信比较麻烦。</p>
+<p>2.动态添加 webview ，对传入 webview 中使用的 Context 使用弱引用，动态添加 webview 意思在布局创建 ViewGroup 用来放置 WebView，Activity 创建是 add 进来，在 Activity 停止时 remove 掉。</p>
+<h2 id="Binder-面试详解"><a href="#Binder-面试详解" class="headerlink" title="Binder 面试详解"></a>Binder 面试详解</h2><h3 id="一-Linux-内核的基础知识"><a href="#一-Linux-内核的基础知识" class="headerlink" title="一 Linux 内核的基础知识"></a>一 Linux 内核的基础知识</h3><p><strong>1.进程隔离 / 虚拟地址空间</strong></p>
+<p>我们知道在操作系统中，我们为了保护操作系统中某些进程互不干扰，它就设计了一个进程隔离的技术，而这个技术就是为了避免进程 A 可以操作进程 B 的数据情况下所实现的。进程的隔离实现它用到了虚拟的地址空间，进程 A 的虚拟地址空间，进程 B 的虚拟地址空间其实是不同的。这样就可以防止进程 A 的数据写到进程 B 里面。操作系统当中不同的进程之间数据是不共享的，所以对每个进程来说，它认为自己是独享操作系统，其实是虚拟的一个空间而已。</p>
+<p>如果要一个进程和另一个进程进行通信，需要某种进程间通信机制才能完成，在 Android 里就是 Binder 机制来完成。</p>
+<p><strong>2.系统调用</strong></p>
+<p>在 Linux 内核当中有个特别重要的概念：系统调用，我们对内核会有某些保护机制，来告诉应用程序你只可以访问一些许可的资源，不许可的资源你是不可以访问的。这也是把 Linux 内核层和上层程序抽象分离开，即内核层和用户空间。我们用户可以通过系统调用，在用户空间访问内核的某些程序。</p>
+<p><strong>3.binder 驱动</strong></p>
+<p>在 Android 系统当中，binder 是运行在内核空间当中的。它负责各个用户进程，通过 binder 通信的内核来进行交互的一个模块，即 binder 驱动。驱动程序一般指的是设备驱动程序，它是一种可以使计算机与设备通信的特殊程序。它其实也是一种软件，但是它又相当于硬件的接口，操作系统可以通过这个接口控制设备。</p>
+<h3 id="二-Binder-通信机制介绍"><a href="#二-Binder-通信机制介绍" class="headerlink" title="二 Binder 通信机制介绍"></a>二 Binder 通信机制介绍</h3><p><strong>1.为什么使用 binder</strong></p>
+<p>1) Android 使用的 Linux 内核拥有着非常多的跨进程通信机制</p>
+<p>2）性能</p>
+<p>在移动设备上，广泛的使用跨进程通信，肯定会对通信技术本身有严格的要求。而 binder 相对于传统的 socket 方式更加高效。</p>
+<p>3）安全</p>
+<p>由于传统的进程通信，对于进程双方的身份没有进行严格验证，只有上层协议才会进行架构。就是说 socket 通信机制 IP 地址是客户端手动填写的，你可以进行人为的伪造，而 binder 机制从协议本身支持双方进行身份校验，这是 binder 在安全性上所作出的努力。在这基础它大大提高了 Android 程序的安全性，binder 身份校验也是 Android 权限模型的基础。</p>
+<p><strong>2.binder 通信模型</strong></p>
+<p>1）通信录：binder 驱动</p>
+<p>我们可以把跨进程通信的双方划分为两端：一端服务进程，另一端称为客户进程。而我们知道由于进程隔离的存在，我们是没有手段从客户端进程访问到服务端的进程，如果不进行进程间通信方式的话。我们可以举个现实生活中的例子，比如说 A 同学通过通讯录找 B 同学，我们知道 A 同学要给 B 同学打电话，我们一定要有 B 同学的号码，而这个电话号码要怎么获取呢？我们大家都知道电话号码要从通讯录中获取，而我们通讯录都在手机里，道理也是一样的。我们在通讯录中保存了每个人的姓名和相对应的电话号码，这样 A 同学通过查找通讯录中 B 同学的电话号码，就可以给 B 同学打电话了。但是我们知道仅仅知道 B 同学的电话号码，是没有办法进行 A 同学和 B 同学之间的通信的。这里我们还需要很基础的东西：电话基站。电话基站是可以传递双方电话信号的，这样我们就可以看出一次通话的过程，除了双方 A 和 B，还隐藏了两个非常重要的角色：通讯录和电话基站。类比 binder 其实也是一样，两个运行在用户空间的进程要完成通信必须借助于内核的帮助，而这运行在内核中的程序就是 binder 驱动，它的功能类似于我们的电话基站，而通讯录就是一个叫做 service manager 的东西。</p>
+<p>2）电话基站：serviceManager</p>
+<p><img src="http://i.imgur.com/6mc1Rxy.png" alt=""></p>
+<center> <strong>通信步骤</strong> </center>
+
+<p>通信的步骤首先是 serviceManager 创建（相当于通信录），所以说你首先要有一个进程，向驱动提出申请为 serviceManager，而内核驱动同意以后 serviceManager 就管理所有的电话号码。这时候还没有同学向这个 serviceManager 进行注册，所以这个时候电话号码是没有的。第二步：A 同学想要联系 B 同学，这时候就需要把这些联系方式在 serviceManager 进行注册。在每个同学进程启动的之后就会向 serviceManger 进行报告，serviceManger 你好，这是我的电话号码你保存一份。这里是 service 1，这是 service 的地址。第二步的作用就是在 serviceManager 里建立一张表，对应着各个同学的电话号码。第三步：就是我们所要做的 A 同学与 B 同学进行通信，即图中 Client 向 Server 2 进行通信。首先会查询 serviceManager 告诉 Client，Server 2 的联系方式，而 serviceManager 收到 Client 查询通知之后，它会把电话号码告诉 Client，然后 Client 就可以通过 binder 来跟 Server 2 进行通信，这就是 binder 的通信模型。</p>
+<p><strong>binder 是如何进行跨进程间的通信？</strong></p>
+<p><img src="http://i.imgur.com/4R6Xvno.png" alt=""><br> <center> <strong>跨进程通信</strong> </center></p>
+<p>假设 Client 想要调用 server 端一个返回值是 Object 类型使用的 add 方法，这就是跨进程通信的一个例子。这过程首先 server 会向 serviceManager 中注册一张表，这里 server 会告诉 serviceManager 我这里 server 端有一个 object，它可以进行一个 add 方法的操作，于是 serviceManager 会建立一张表，这时候 Clietn 端向 serviceManager 查询，它会查询 servce 端有没有一个 Object 对象，Object 对象有没有一个 add 方法。我们知道进程间的通信，都是在内核空间里，这时候驱动会在数据流做一些手脚，它并不会返回给 Client 进程 Server 端的真正的 Object 对象，因为这是无法进行操作的。它而是返回一个 Object 代理的对象，而这个代理对象里面包含了一个 add（）方法，但是需要注意的是这个 add（）方法是空的方法它里面什么都没有，它没有做 add（）方法的能力，它唯一要做的是它把这个参数包装好之后交给驱动来实现。不过这一层对 Client 端是透明的，这就是分层的好处，它不知道驱动所做的，它只知道拿到了代理对象 add（）方法，它就调用这个 add（）方法。我们知道 add（）方法什么也没做，add（）方法必然调用给 binder 驱动。而这个时候驱动接收到了 Client 代理对象发送给它的 add（）方法，它一看就明白了这在 serviceManager 中有一张表，Object代理对象替换了 Object 对象。所以说我们真正访问的是 Server 进程当中 bject 对象O中 add（）方法，于是 binder 驱动就会通知 server 端调用  add（）方法，把结果返回给驱动，驱动又会返回给 Client。就这样驱动作为 Client 和 Serve 端的中介，进行了进程间通信的机制。</p>
+<p>客户端进程只不过持有了服务端的代理对象，然后我们通过代理对象协助了 binder 驱动完成了跨进程通信。</p>
+<p><strong>到底什么是 Binder!！</strong></p>
+<p>1）通常意义下，Binder 指的是一种跨进程的通信机制。</p>
+<p>2）对于 Server 进程来说，Binder 指的是 Binder 本地对象 / 对于 Client 来说，Binder 指的是 Binder 代理对象</p>
+<p>3）对于传输过程而言，Binder 是可以进行跨进程传递的对象</p>
+<h3 id="三-Aidl"><a href="#三-Aidl" class="headerlink" title="三 Aidl"></a>三 Aidl</h3><p>binder 实例 ：Aidl，在代码中在使用 Aidl 的时候，编译工具会给我们生成一个 Stub 静态内部类。这个静态内部类它继承是我们自己定义的 Aidl，说明它是 binder 本地对象，它具有了远程服务端承若传递给客户端数据的能力。又由于这个 Stub 抽象类，具体的实现要自己来完成。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/05/31/智能管家/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/07/15/Kotlin之旅一/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/b.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&amp;u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&amp;s=400" alt="Kod's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

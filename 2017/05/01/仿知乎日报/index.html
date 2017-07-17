@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            仿知乎日报 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Kod">
+    <meta name="description" content="null">
+    <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="仿知乎日报 | 痴海博客">
+    <meta property="og:description" content="null">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#仿知乎日报"><span class="post-toc-number">1.</span> <span class="post-toc-text">仿知乎日报</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-项目界面"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一 项目界面</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-工程介绍"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">二 工程介绍</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-知乎日报-API-分析"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">三 知乎日报 API 分析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-代码"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">四 代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#布局"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#DrawerLayot"><span class="post-toc-number">1.4.1.1.</span> <span class="post-toc-text">DrawerLayot</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CoordinatorLayout"><span class="post-toc-number">1.4.1.2.</span> <span class="post-toc-text">CoordinatorLayout</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#AppBarLayout"><span class="post-toc-number">1.4.1.3.</span> <span class="post-toc-text">AppBarLayout</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Toolbar"><span class="post-toc-number">1.4.1.4.</span> <span class="post-toc-text">Toolbar</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#SwipeRefreshLayout"><span class="post-toc-number">1.4.1.5.</span> <span class="post-toc-text">SwipeRefreshLayout</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#FloatingActionButton"><span class="post-toc-number">1.4.1.6.</span> <span class="post-toc-text">FloatingActionButton</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#NavigationView"><span class="post-toc-number">1.4.1.7.</span> <span class="post-toc-text">NavigationView</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据接收"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">数据接收</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#主界面数据展示"><span class="post-toc-number">1.4.3.</span> <span class="post-toc-text">主界面数据展示</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文章内容展示"><span class="post-toc-number">1.4.4.</span> <span class="post-toc-text">文章内容展示</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五-总结"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">五 总结</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                仿知乎日报
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&s=400" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Kod</strong>
+        <span>5月 01, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=仿知乎日报&url=http://yoursite.com//2017/05/01/仿知乎日报/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=仿知乎日报&url=http://yoursite.com//2017/05/01/仿知乎日报/index.html&via=Kod" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/05/01/仿知乎日报/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/05/01/仿知乎日报/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="仿知乎日报"><a href="#仿知乎日报" class="headerlink" title="仿知乎日报"></a>仿知乎日报</h1><blockquote>
+<p>至自学 Android 以来已有将近半年的时间，在这半年的时间内，认真的看完了郭霖《第一行代码》（第二版），关注了许多技术公众号，逐渐使用 Google 来搜索问题，查找资料。自此在这写了个简单的仿知乎日报的练习项目，一来巩固学习的知识，二来锻炼下解决问题的能力。故此写下这篇博客，来记录学习的路程，长路漫漫，唯 Android 作伴。</p>
+</blockquote>
+<h2 id="一-项目界面"><a href="#一-项目界面" class="headerlink" title="一 项目界面"></a>一 项目界面</h2><p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-a7f69d97aefeefaf.gif?imageMogr2/auto-orient/strip" width="500" height="500" alt="仿知乎日报主界面"><br></div></p>
+<center> <strong>仿知乎日报主界面</strong> </center>
+
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-528419b132b6add2.gif?imageMogr2/auto-orient/strip" width="500" height="500" alt="文章展示界面"><br></div></p>
+<center> <strong>文章展示界面</strong> </center>
+
+<h2 id="二-工程介绍"><a href="#二-工程介绍" class="headerlink" title="二 工程介绍"></a>二 工程介绍</h2><p>此项目非常简单，工程结构不算复杂，Activity 只有两个，一个 MainActivity 用来展示主界面，主界面用到 DrawerLayout 滑动菜单。另一个是 DailyContentActivity 用来展示具体的文章内容。<br>adapter 用来存放适配器，db 用于数据库的操作，ui 用来存放视图，util 用来存放一些工具类。</p>
+<p><div align="center"><br><img src="http://upload-images.jianshu.io/upload_images/4034742-838298485b5bf3ee.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="300" height="500" alt="工程结构"><br></div></p>
+<center> <strong>工程结构</strong> </center>
+
+<h2 id="三-知乎日报-API-分析"><a href="#三-知乎日报-API-分析" class="headerlink" title="三 知乎日报 API 分析"></a>三 知乎日报 API 分析</h2><p>此项目的内容都是来源于知乎日报 API 上获取的，获取最新文章的接口：<a href="http://news-at.zhihu.com/api/4/news/latest" target="_blank" rel="external">http://news-at.zhihu.com/api/4/news/latest</a></p>
+<p>返回的数据为 JSON 格式的</p>
+<pre><code>{
+      &quot;date&quot;: &quot;20170501&quot;,
+      &quot;stories&quot;: [
+    {
+      &quot;images&quot;: [
+        &quot;https://pic3.zhimg.com/v2-a2c638494e994fd327e6f8438c987a66.jpg&quot;
+      ],
+      &quot;type&quot;: 0,
+      &quot;id&quot;: 9392864,
+      &quot;ga_prefix&quot;: &quot;050117&quot;,
+      &quot;title&quot;: &quot;卖得那么多，vivo 不就是广告营销做得好吗？&quot;
+    },
+    {
+      &quot;images&quot;: [
+        &quot;https://pic3.zhimg.com/v2-0c643ed85c3ba99464e1442375892bc2.jpg&quot;
+      ],
+      &quot;type&quot;: 0,
+      &quot;id&quot;: 9392165,
+      &quot;ga_prefix&quot;: &quot;050115&quot;,
+      &quot;title&quot;: &quot;学（曾保持了二十年的统治地位的）C++ ，要先想清楚这些&quot;
+    },
+      ]
+}
+</code></pre><p>其中，date 代表当日时间，stories 为一个 JSON 数组，包含了一组文章数据，如 title（文章标题），images（文章配图），id（文章 ID），API 详细分析可以点击这里进行查看 <a href="https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90" target="_blank" rel="external">知乎日报 API 分析</a></p>
+<p>依靠得到的文章 ID，再加上获取文章详细内容的接口：<a href="http://news-at.zhihu.com/api/4/news/9392864，就可以获取数据。" target="_blank" rel="external">http://news-at.zhihu.com/api/4/news/9392864，就可以获取数据。</a><br>即为 html 格式的字符串，文章详细页的界面就是用 WebView 来呈现的，WebView 是最简单且呈现效果最好的方式，其中还包含了 CSS 文件的地址：  “css”: [“<a href="http://news-at.zhihu.com/css/news_qa.auto.css?v=4b3e3" target="_blank" rel="external">http://news-at.zhihu.com/css/news_qa.auto.css?v=4b3e3</a>“] 这个需要下载到本地（assets）然后导入工程中，因为 CSS 文件是连续使用的且一般不会频繁更改的，所以可以直接作为本地资源。</p>
+<h2 id="四-代码"><a href="#四-代码" class="headerlink" title="四 代码"></a>四 代码</h2><h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>主界面中使用了许多 Material Design 效果的控件。</p>
+<ul>
+<li><p>Material Design 控件</p>
+<blockquote>
+<p>DrawerLayot<br><br>CoordinatorLayout<br><br>AppBarLayout<br><br>Toolbar<br><br>SwipeRefreshLayot<br><br>FloationgActionButton<br><br>NavigationView<br></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="DrawerLayot"><a href="#DrawerLayot" class="headerlink" title="DrawerLayot"></a>DrawerLayot</h4><p>滑动菜单可以说是 Material Design 中最常见的效果之一了。虽说这个功能看上去好像挺复杂的，不过借助谷歌提供的各种工具，我们可以很轻松地实现非常炫酷的滑动菜单效果。</p>
+<p>所谓的滑动菜单就是将一些菜单选项隐藏起来，而不是放置在主屏幕上，然后可以通过滑动的方式将菜单显示出来。这种方式既节省了屏幕空间，又实现了非常好的动画效果，借助 DrawLayout 控件，可以轻松实现滑动菜单。</p>
+<h4 id="CoordinatorLayout"><a href="#CoordinatorLayout" class="headerlink" title="CoordinatorLayout"></a>CoordinatorLayout</h4><p>CoordinatorLayout 可以说是一个加强版的 FrameLayout，这个布局是由 Design Spport 库提供的。它在普通情况下的作用和 FrameLayout 基本一致，不过既然是 Design Support 库中提供的布局，那么就必然有一些 Material Design 的魔力了。</p>
+<p>CoordinatorLayout 可以监听其所有子控件的各种事件，然后自动帮助我们做出最为合理的响应。</p>
+<h4 id="AppBarLayout"><a href="#AppBarLayout" class="headerlink" title="AppBarLayout"></a>AppBarLayout</h4><p>AppBarLayout 实际上是一个垂直方向的 LinearLayout，它在内部做了很多滚动事件的封装，并应用了一些 Material Design 的设计理念。</p>
+<p>当 AppBarLayout 接收到的滚动事件的时候，它内部的子控件是可以指定如何去影响这些事件的，通过 app:layout_srcollFlags 属性就能实现。这个属性的值有 scroll|enterAlways|snap，其中，scroll 表示当布局中有 RecyclerView 向上滚动的时候，Toolbar 会跟着一起向上滚动并实现隐藏；enterAlways 表示当 RecyclerView 向下滚动的时候，Toolbar 会跟着一起向下滚动并重新显示；snap 表示当 Toolbar 还没有完全隐藏或显示的时候，会根据当前滚动的距离，自动选择是隐藏还是显示。</p>
+<h4 id="Toolbar"><a href="#Toolbar" class="headerlink" title="Toolbar"></a>Toolbar</h4><p>Toolbar 是乎有点陌生，但对于它的另一个相关控件 ActionBar，应该就比较熟悉。每个活动最顶部的那个标题栏其实就是 ActionBar。不过 ActionBar 由于其设计的原因，被限定只能位于活动的顶部，从而不能实现一些 Material Design 的效果，因此官方现在已经不再建议使用 ActonBar 了。</p>
+<p>Toolbar 的强大之处在于，它不仅继承了 ActionBar 的所有功能，而且灵活性很高，可以配合其他控件来完成一些 Material Design 的效果。</p>
+<h4 id="SwipeRefreshLayout"><a href="#SwipeRefreshLayout" class="headerlink" title="SwipeRefreshLayout"></a>SwipeRefreshLayout</h4><p>SwipeRefreshLayout 用于实现下拉刷新功能的核心类，它是由 support-v4 库提供的。我们把想要实现下拉刷新功能的控件放置到 SwipeRefreshLayout 中，就可以迅速让这个控件支持下拉刷新。在使用此控件的布局中，调用 setColorSchemeResources() 方法来设置下拉刷新进度条的颜色，调用 setOnRefreshListener() 方法来设置一个下拉刷新的监听器，当触发了下拉刷新操作的时候就会调用这个监听器的 onRefresh() 方法，然后我们在这里去处理具体的刷新逻辑就可以了。</p>
+<h4 id="FloatingActionButton"><a href="#FloatingActionButton" class="headerlink" title="FloatingActionButton"></a>FloatingActionButton</h4><p>FloationgActionButton 是 Design Support 库中提供的一个控件，这个控件可以帮助我们比较轻松地实现悬浮按钮的效果。其中可以通过，android:layout_gravity=”bottom|end” 属性指定将这个控件放置于屏幕的位置，其中 end 的工作原理和 start 一样，即如果系统语言是从左往右的，那么 end 就表示在右边，如果系统语言是从右往左的，那么 end 就表示在左边。既然是悬浮，那么就理所应当会有投影，这里通过 app:elevation 属性来为 FloatingActionButton 指定一个高度值，高度值越大，投影范围也越大，</p>
+<h4 id="NavigationView"><a href="#NavigationView" class="headerlink" title="NavigationView"></a>NavigationView</h4><p>NavigationView 是 Design Support 库中提供的一个控件，它不仅是严格按照 Material Design 的要求设计的，而且还可以将滑动菜单页面的实现变得非常简单。</p>
+<p>使用 NavigationView 之前，我们需要准备好两个东西：menu 和 headerLayout。menu 是用来在 NavigationView 中显示具体的菜单项的，headerLayout 则是用来在 NavigationView 中显示头部布局的。</p>
+<p><strong>activity_mian.xml 布局文件如下：</strong></p>
+<pre><code>&lt;android.support.v4.widget.DrawerLayout
+    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    android:id=&quot;@+id/drawer_layout&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;&gt;
+
+    &lt;android.support.design.widget.CoordinatorLayout
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;&gt;
+
+        &lt;android.support.design.widget.AppBarLayout
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;wrap_content&quot;&gt;
+
+            &lt;android.support.v7.widget.Toolbar
+                android:id=&quot;@+id/toolbar&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;?attr/actionBarSize&quot;
+                android:background=&quot;?attr/colorPrimary&quot;
+                android:theme=&quot;@style/ThemeOverlay.AppCompat.Dark.ActionBar&quot;
+                app:popupTheme=&quot;@style/ThemeOverlay.AppCompat.Light&quot;
+                app:layout_scrollFlags=&quot;scroll|enterAlways|snap&quot;/&gt;
+
+        &lt;/android.support.design.widget.AppBarLayout&gt;
+
+        &lt;android.support.v4.widget.SwipeRefreshLayout
+            android:id=&quot;@+id/swipe_refresh&quot;
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;match_parent&quot;
+            app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;&gt;
+
+            &lt;android.support.v7.widget.RecyclerView
+                android:id=&quot;@+id/recycler_view&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;match_parent&quot;
+                app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;/&gt;
+
+        &lt;/android.support.v4.widget.SwipeRefreshLayout&gt;
+
+        &lt;android.support.design.widget.FloatingActionButton
+            android:layout_width=&quot;wrap_content&quot;
+            android:layout_height=&quot;wrap_content&quot;
+            android:id=&quot;@+id/fab&quot;
+            android:layout_gravity=&quot;bottom|end&quot;
+            android:layout_margin=&quot;16dp&quot;
+            android:src=&quot;@drawable/ic_done_white_24dp&quot;
+            app:elevation=&quot;8dp&quot;/&gt;
+
+
+    &lt;/android.support.design.widget.CoordinatorLayout&gt;
+
+   &lt;android.support.design.widget.NavigationView
+        android:id=&quot;@+id/nav_view&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+       android:layout_gravity=&quot;start&quot;
+        app:menu=&quot;@menu/nav_menu&quot;
+        app:headerLayout=&quot;@layout/nav_header&quot;&gt;
+
+    &lt;/android.support.design.widget.NavigationView&gt;
+
+
+&lt;/android.support.v4.widget.DrawerLayout&gt;
+</code></pre><p><strong>文章展示界面（activity_daily_content.xml）:</strong></p>
+<p>在文章展示界面中借助 CollapsingToolbarLayout 实现可折叠式标题栏的效果。</p>
+<p>CollapsingToolbarLayout 是一个作用于 Toolbar 基础之上的布局，它也是由 Design Support 库提供的。CollapsingToolbarLayout 可以让 Toolbar 的效果变得更加丰富，不仅仅是展示一个标题栏，而是能够实现非常华丽的效果。</p>
+<p>不过，CollapsingToolbarLayout 是不能独立存在的，它在设计的时候就被限定只能作为 AppBarLayout 的直接子布局来使用。而 AppBarLayout 又必须是 CoordinatorLayout 的子布局。</p>
+<p>此控件中 app:contentScrim 属性用于指导 CollapsingToolbarLayout 在趋于折叠状态以及折叠之后的背景色。app:layout_scrollFlags 属性之前就有使用过，只不过之前是给 Toolbar 指定的，现在也移到外面来了。其中，scroll 表示 CollapsingToolbarLayout 会随着内容详情的滚动一起滚动，exitUntilCollapsed 表示当 CollapsingToolbarLayout 随着滚动完成折叠之后就保留在界面上，不在移除屏幕。</p>
+<pre><code>&lt;android.support.design.widget.CoordinatorLayout
+    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    android:id=&quot;@+id/activity_daily_content&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    &gt;
+
+    &lt;android.support.design.widget.AppBarLayout
+        android:id=&quot;@+id/appBar&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;250dp&quot;&gt;
+
+        &lt;android.support.design.widget.CollapsingToolbarLayout
+            android:id=&quot;@+id/collapsing_toolbar&quot;
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;match_parent&quot;
+            android:theme=&quot;@style/ThemeOverlay.AppCompat.Dark.ActionBar&quot;
+            app:contentScrim=&quot;?attr/colorPrimary&quot;
+            app:layout_scrollFlags=&quot;scroll|exitUntilCollapsed&quot;&gt;
+
+            &lt;ImageView
+                android:id=&quot;@+id/daily_images_view&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;match_parent&quot;
+                android:scaleType=&quot;centerCrop&quot;
+                app:layout_collapseMode=&quot;parallax&quot;/&gt;
+
+            &lt;android.support.v7.widget.Toolbar
+                android:id=&quot;@+id/daily_toolbar&quot;
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;?attr/actionBarSize&quot;
+                app:layout_collapseMode=&quot;pin&quot;&gt;
+
+            &lt;/android.support.v7.widget.Toolbar&gt;
+
+        &lt;/android.support.design.widget.CollapsingToolbarLayout&gt;
+
+    &lt;/android.support.design.widget.AppBarLayout&gt;
+
+    &lt;android.support.v4.widget.NestedScrollView
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+        app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;&gt;
+
+        &lt;LinearLayout
+            android:orientation=&quot;vertical&quot;
+            android:layout_width=&quot;match_parent&quot;
+            android:layout_height=&quot;wrap_content&quot;&gt;
+
+            &lt;android.support.v7.widget.CardView
+                android:layout_width=&quot;match_parent&quot;
+                android:layout_height=&quot;match_parent&quot;
+                android:layout_marginBottom=&quot;15dp&quot;
+                android:layout_marginLeft=&quot;15dp&quot;
+                android:layout_marginRight=&quot;15dp&quot;
+                android:layout_marginTop=&quot;15dp&quot;
+                app:cardCornerRadius=&quot;4dp&quot;&gt;
+
+                &lt;WebView
+                    android:id=&quot;@+id/daily_content_text&quot;
+                    android:layout_width=&quot;wrap_content&quot;
+                    android:layout_height=&quot;wrap_content&quot;
+                    android:layout_margin=&quot;10dp&quot;/&gt;
+
+            &lt;/android.support.v7.widget.CardView&gt;
+
+        &lt;/LinearLayout&gt;
+
+    &lt;/android.support.v4.widget.NestedScrollView&gt;
+
+    &lt;android.support.design.widget.FloatingActionButton
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_margin=&quot;16dp&quot;
+        app:layout_anchor=&quot;@id/appBar&quot;
+        app:layout_anchorGravity=&quot;bottom|end&quot;/&gt;
+
+&lt;/android.support.design.widget.CoordinatorLayout&gt;
+</code></pre><h3 id="数据接收"><a href="#数据接收" class="headerlink" title="数据接收"></a>数据接收</h3><p>此项目是通过 知乎日报 API 接收数据，其中涉及网络操作，网络操作封装成类于 util 包中。</p>
+<p><strong>HttpUtil 类</strong></p>
+<p>在 HttpUtil 类中封装静态 sendOkHttpRequest() 方法。此方法接收两个参数：String address，Callback callback。其中第一个参数表示访问的 url ，第二个参数通过 Callback ，进行回调来处理访问结果。</p>
+<pre><code>public class HttpUtil {
+
+    public static void sendOkHttpRequest(String address, Callback callback){
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder().url(address).build();
+        client.newCall(request).enqueue(callback);
+    }
+
+}
+</code></pre><p><strong>Utility 类</strong></p>
+<p>在 Utility 类中封装了静态 handleZhihuDailyResponse() 方法。此方法接收两个参数：String response, List<dailydate> dailyDataList。其中第一个参数是服务器返回的数据，第二个参数是 <dailydata> List 数组类用来存放接收的数据。DailyData 是继承 DataSupport 的数据库类。</dailydata></dailydate></p>
+<pre><code>public static boolean handleZhiHuDailyResponse(String response, List&lt;DailyData&gt; dailyDataList) {
+    try {
+        JSONObject jsonObject = new JSONObject(response);
+        JSONArray jsonArray = jsonObject.getJSONArray(&quot;stories&quot;);
+        for (int i = 0; i &lt; jsonArray.length();i++) {
+            Gson gson = new Gson();
+            Daily daily = gson.fromJson(jsonArray.getString(i), Daily.class);
+            DailyData dailyData = new DailyData();
+            dailyData.setId(daily.getId());
+            dailyData.setTitle(daily.getTitle());
+            dailyData.setImages(daily.getImages().get(0));
+        }
+        return true;
+    } catch (JSONException e) {
+        e.printStackTrace();
+    }
+    return false;
+}
+</code></pre><p><strong>DailtData 类</strong></p>
+<pre><code>public class DailyData extends DataSupport {
+    private int id;
+    private String title;
+    private String images;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getImages() {
+        return images;
+    }
+
+    public void setImages(String images) {
+        this.images = images;
+    }
+
+}
+</code></pre><h3 id="主界面数据展示"><a href="#主界面数据展示" class="headerlink" title="主界面数据展示"></a>主界面数据展示</h3><p>在主界面中使用 RecyclerView 来展示从知乎日报 API 中接收的数据，使用自定义的 DailyAdapter 适配器。DailyAdapter 通过 queryDaily()，requestDaily() 方法初始化，</p>
+<p><strong>queryDaily() 方法</strong></p>
+<pre><code>private void queryDaily() {
+      if (dailyList.size() &gt; 0) {
+          dailyAdapter = new DailyAdapter(dailyList);
+          recyclerView.setAdapter(dailyAdapter);
+      }
+      else
+      {
+          requestDaily();
+      }
+
+  }
+</code></pre><p><strong>requestDaily() 方法</strong></p>
+<pre><code>private void requestDaily() {
+       showProgressDialog();
+       String dailyUrl = &quot; http://news-at.zhihu.com/api/4/news/latest&quot;;
+       HttpUtil.sendOkHttpRequest(dailyUrl, new Callback() {
+           @Override
+           public void onFailure(Call call, IOException e) {
+               closeProgressDialog();
+               Toast.makeText(MyApplication.getContext(), &quot;加载失败&quot;, Toast.LENGTH_SHORT).show();
+           }
+
+           @Override
+           public void onResponse(Call call, Response response) throws IOException {
+               String reponseText = response.body().string();
+               boolean reslut = false;
+               reslut = Utility.handleZhiHuDailyResponse(reponseText,dailyList);
+               if (reslut) {
+                   MainActivity.this.runOnUiThread(new Runnable() {
+                       @Override
+                       public void run() {
+                           closeProgressDialog();
+                           queryDaily();
+                       }
+                   });
+               }
+           }
+       });
+
+   }
+</code></pre><h3 id="文章内容展示"><a href="#文章内容展示" class="headerlink" title="文章内容展示"></a>文章内容展示</h3><p>在 DailyContentActivity 中通过 WebView 来加载文章的内容，通过 showDailyContent() 方法来初始化内容。</p>
+<p><strong>showDailyContent() 方法</strong></p>
+<pre><code>private void showDailyContent(DailyContent dailyContent) {
+        String title = dailyContent.getTitle();
+        String imageId = dailyContent.getImage();
+        Log.d(&quot;gjg&quot;, &quot;ShowDailyContent : &quot; + imageId);
+        String css = &quot;&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;file:///android_asset/src.css\&quot; type=\&quot;text/css\&quot;&gt;&quot;;
+        String html = &quot;&lt;html&gt;&lt;head&gt;&quot; + css + &quot;&lt;/head&gt;&lt;body&gt;&quot; + dailyContent.getBody() + &quot;&lt;/body&gt;&lt;/html&gt;&quot;;
+        html = html.replace(&quot;&lt;div class=\&quot;img-place-holder\&quot;&gt;&quot;, &quot;&quot;);
+        Log.d(&quot;gjg&quot;, &quot;showDailyContent : &quot; + html);
+        WebSettings webSettings = dailyWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        dailyWebView.loadDataWithBaseURL(null,html, &quot;text/html&quot;, &quot;utf-8&quot;, null);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+        collapsingToolbarLayout.setTitle(title);
+        Glide.with(DailyContentActivity.this).load(imageId).into(dailyImageView);
+    }
+</code></pre><h2 id="五-总结"><a href="#五-总结" class="headerlink" title="五 总结"></a>五 总结</h2><p>自此项目的主要内容都以讲解完毕，通过此项目把之前学习的知识使用一遍，加深印象。在此项目中遇到的最大的问题就是对数据的处理，最初的时候对于访问到的 JSON 数据处理不是很好，展示的内容并不能按自己的意愿来展示，WebView 中的加载总是有问题，这部分花费了很多的时间。在此之间通过查看别人写的代码，查找相关的资料，逐渐解决问题。但此项目还有很大不足：主界面的数据还不能刷新，每次访问数据都要从网络上获取，没有做缓存，滑动菜单目前只有日报可以点击，其它都没有去实现。但随着技能的增长，会逐步完善。长路漫漫，唯 Android 作伴。<a href="https://github.com/chihaiyishen/ZhiHuImitate" target="_blank" rel="external">项目完整代码</a></p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/05/31/智能管家/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/b.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&amp;u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&amp;s=400" alt="Kod's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
