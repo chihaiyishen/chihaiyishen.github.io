@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            Android 面试 二 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Kod">
+    <meta name="description" content="null">
+    <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Android 面试 二 | 痴海博客">
+    <meta property="og:description" content="null">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-面试-二"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android 面试 二</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Handler-面试详解"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Handler 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-什么是-handler"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">一.什么是 handler</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-handler-的使用方法"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">二.handler 的使用方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-handler-机制的原理"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">三.handler 机制的原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四-handler-引起的内存泄漏以及解决办法"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">四. handler 引起的内存泄漏以及解决办法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#AsyncTask-面试详解"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">AsyncTask 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-什么是-AsyncTask"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">一.什么是 AsyncTask</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-AsyncTask-的使用方法"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">二.AsyncTask 的使用方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-AsyncTask-内部原理"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">三.AsyncTask 内部原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四-AsyncTask-的注意事项"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">四.AsyncTask 的注意事项</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#handlerThread-面试详解"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">handlerThread 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-handlerThread-是什么"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">一.handlerThread 是什么</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-handlerThread-源码解析"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">二.handlerThread 源码解析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#IntentService-面试详解"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">IntentService 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-IntentService-是什么"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">一.IntentService 是什么</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-IntenrService-使用方法"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">二.IntenrService 使用方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-IntentService-源码解析"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">三.IntentService 源码解析</span></a></li></ol></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Android 面试 二
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&s=400" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Kod</strong>
+        <span>7月 18, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 面试 二&url=http://yoursite.com//2017/07/18/Android 面试 二/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 面试 二&url=http://yoursite.com//2017/07/18/Android 面试 二/index.html&via=Kod" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/07/18/Android 面试 二/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/07/18/Android 面试 二/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Android-面试-二"><a href="#Android-面试-二" class="headerlink" title="Android 面试 二"></a>Android 面试 二</h1><h2 id="Handler-面试详解"><a href="#Handler-面试详解" class="headerlink" title="Handler 面试详解"></a>Handler 面试详解</h2><h3 id="一-什么是-handler"><a href="#一-什么是-handler" class="headerlink" title="一.什么是 handler"></a>一.什么是 handler</h3><p>在开发过程中经常遇到这种异常：</p>
+<p><img src="http://i.imgur.com/M8fqnIo.png" alt=""></p>
+<p>这异常代表只有创建 View 原始线程才能创建 UI，即在 Android 当中只有主线程才能更新 UI，如果你在子线程中更新 UI 就会抛出这个异常。根本原因是 Android 中的 View 它不是线程安全的，在 Android 应用启动时它会自动创建一个线程即程序的主线程。主线程主要用于 UI 的展示，UI 的事件消息的分发，所以说有时候我们会把主线程也称作 UI 线程，所以说 Android UI 控件是非线程安全的。</p>
+<p>在 Android 中我们引入 handler 机制，它可以通过子线程发送消息给主线程来更新 UI，我们即可在子线程中做一些耗时的操作。</p>
+<p>handler 是 Android 消息机制的上层接口，其实在我们日常的开发过程中，我们只需要知道如何创建 handler 以及如何复写 handlerMessager 方法就可以使用 handler 了。我们把 handler 当做更新 UI 的机制，但是它还有很多用途，比如：我们在应用场景中要做一些耗时的操作，如文件的读取，网络数据的获取，这时当耗时的操作完成后，我们需要在 UI 上进行相应的改变。但是这里有这样一个问题，耗时操作是在子线程中操作的，而 Android 又是线程不安全的，所以你不能再子线程中更新 UI，所以在这里 Android 引入了 handler 机制，它通过子线程进行耗时操作，在完成耗时操作后，通过 handler 发送消息的机制来通知主线程进行 UI 更新。</p>
+<p>handler 通过发送和处理 Message 和 Runnable 对象来关联相对应线程的 MessageQueue。</p>
+<p>Message 和 MessgeQueue 是 Android 内部四大组成部分的两大组成部分，Message 传递的是消息，而 MessageQueue 是一个消息队列。handler 机制里面有个 looper 的轮询器，它会不断的从消息队列中获取消息，交给 handler 来处理消息。</p>
+<p><strong>handler 作用</strong></p>
+<p>1.可以让对应的 Message 和 Runnable 在未来的某个时间点进行相应处理。</p>
+<p>2.让自己想要处理的耗时操作放在子线程，让更新 UI 的操作放在主线程。</p>
+<h3 id="二-handler-的使用方法"><a href="#二-handler-的使用方法" class="headerlink" title="二.handler 的使用方法"></a>二.handler 的使用方法</h3><p>1.post(runnable)</p>
+<p>如下创建 DownloadThread 线程代码：</p>
+<p><img src="http://i.imgur.com/1DbKT55.png" alt=""></p>
+<p>在所示代码中有个 uiHandler 它是在 Activity 类中进行创建的，在创建 handler 的时候，它会绑定当前代码的线程即主线程，所以说这个 uiHandler 它是默认在主线程当中。</p>
+<p>我们将一个 Runnable 对象通过 post 方法传入到 uiHandler 当中，所以这时当它完成耗时的操作的时候，通过 post 方法通知我们 uiHanlder 相绑定的主线程来进行主线程的操作。</p>
+<p>所以通过 post(runnable) 来进行消息之间的传递，主要有三个步骤。首先要在成员变量中创建一个 Handler，这个 Handler 它是关联在主线程的。所以在创建好 Handler 的时候，它就自动绑定到主线程。然后创建一个线程，线程里创建 Runnable 对象，在这里进行耗时的操作。 Runnable 对象完成耗时操作，通过 post 方法把 Runnable 传入到Handler 对象中，Handler 会在合适的时候让主线程执行 Runnable 中的代码，这样我们就完成了使 Runnable 在主线程执行代码的操作，从而正确更新主线程中的 UI。</p>
+<p>2.sendMessage(message)</p>
+<p>同样的使用 sendMessage 方法，也要创建一个 Handler 的变量，不同的是如下代码：</p>
+<p><img src="http://i.imgur.com/KSFcfwJ.png" alt=""></p>
+<p>这里创建一个 Message 对象，Message 对象就是用来发送消息的。 Message 有个 what 属性，它是我们自己自定义的一个识别码，它是用来在 Hanlder 的 hanlderMessage 中识别 what，然后通过 what 来识别不同的 Message，然后我们可以做相对应的不同操作。最后通过 sendMessage() 方法来把消息传递给主线程中的 Handler，然后在 handleMessage 方法中进行相对应的处理。</p>
+<h3 id="三-handler-机制的原理"><a href="#三-handler-机制的原理" class="headerlink" title="三.handler 机制的原理"></a>三.handler 机制的原理</h3><p><img src="http://i.imgur.com/grmxNow.png" alt=""></p>
+<p>这张图中包括四大部分，也就是 handler 机制完整的部分。</p>
+<p>首先是 Looper，它是每个线程所独有的，它通过 loop() 方法读出取MessageQueue 中的消息，读到消息后把消息发送到 Handler 中进行处理。</p>
+<p>MessageQueue 它是一个消息队列，是一个先进先出的队列，来管理 Message。在创建 Looper 的时候，就已经创建了 MessageQueue。所以说在创建 Looper 的时候已经和 MessageQueue 关联到一起。</p>
+<p>Message 就是一个消息对象，它有一些属性比如：what，arg1，arg2（可以传输一些简单的数据），obj（可以传送复杂的对象）。</p>
+<p>Handler 它有两个作用：发送消息和处理消息，处理的是 Looper 发送过来的消息，而 Looper 发送消息也是通过 Handler 来进行。我们知道 Handler 发送消息并不是漫无目的的发送，它不能发送到其他线程，它只能发送到它相关的线程，即它相关线程的 MessageQueue。而 MessageQueue 又是和 Looper 相关联的，所以说 Handler 要发送消息必须有一个维护它的 Looper。所以这时候，我们就把 Looper,Handler,MessageQueue 三者关联到一起。</p>
+<p><strong>Handler 源码 </strong></p>
+<p><img src="http://i.imgur.com/gTNuJzA.png" alt=""></p>
+<p>在 Handler 构造方法中，它创建了 Looper 和通过 Looper 创建了 MessageQueue。</p>
+<p>而 Looper 是通过 myLooper() 方法获取到的。</p>
+<p><img src="http://i.imgur.com/OB9kMrW.png" alt=""></p>
+<p>在 myLooper()　方法中是通过　sThreadLocal java 中的一个机制通过 get() 方法获取的。</p>
+<p>sThreadLocal 有这样一个作用：可以通过不同的线程访问同一个 sThreadLocal 不管是它的 set 或 get 方法，他们对 sThreadLocal 各种读写操作仅限于各自线程内部。这就是为什么 Handler 里面要用通过 sThreadLocal 来保存 Looper，这样它就可以使每一个线程都有单独唯一的 Looper。</p>
+<p>那什么时候调用了 sThreadLocal 的 set 方法？</p>
+<p>在 Looper 中有个 prepareMainLooper() 的方法：</p>
+<p><img src="http://i.imgur.com/etbCk6K.png" alt=""></p>
+<p>在这方法里我们可以看到，它在首行调用了 prepare() 方法，具体查看 prepare() 方法。</p>
+<p><img src="http://i.imgur.com/8drZBOg.png" alt=""></p>
+<p>在 prepare() 方法当中，它创建了 Looper 对象，并且它把这个 Looper 对象设置给了 sThreadLocal，这样就保证了每一个线程 Looper 的唯一性。</p>
+<p>这时候整个 MessageQueue 通过 Looper 跟线程关联上了，这样我们就可以在不同的线程访问不同的消息队列。</p>
+<p>回到 Handler 的构造方法当中，由于在构造方法当中创建了 Looper 对象，又根据 Looper 成员变量创建了 MessageQueue ，这时候 Handler 已经和 MessageQueue 关联到一起，而 MessageQueue 也是通过 Looper 来管理的。</p>
+<p>为什么只有主线程才能更新 UI?就是因为每一个 Handler 要于主线程中的消息队列关联上，所以说一定要在主线程中创建 Handler，这也是不能再内部类创建 Handler 的原因。这样才能让 Handler 中的 handlerMessage 执行在 UI 线程，这样才能保证 UI 线程是安全的，也就不会抛出之前的异常。</p>
+<p>现在大家都知道，我们创建好了 Looper 也创建好了 MessageQueue，我们创建 Handler 有两种方法：post(runnable) 和 sendMessage(message)。这两个方法都是要通过开启 Looper.loop() 这个方法才能从 MessageQueue 中获取消息。</p>
+<p>所以说我们应该去 Looper 中看下 loop() 方法：</p>
+<p><img src="http://i.imgur.com/nocPucT.png" alt=""></p>
+<p>loop() 方法实质，我们只要记住一点：它创建了一个 for(;;) 的死循环，然后从消息队列中逐个的获取消息，最后处理消息的过程。</p>
+<p>对于 Looper 我们可以总结下：它首先通过 prepare() 来创建 Looper<br>把它保存在 sThreadLocal 当中，然后通过 Looper.loop 开启循环，来进行消息的分发。在消息循环中，它最终会调用 msg.target.dispatchMessage(msg) 方法，target 就是一个 Handler，所以最终还是通过 Handler 把消息传递给消息队列，而消息队列又把消息分发给 Handler 来处理，所以说这就是 Handler 的两种作用。一个发送消息，一个处理消息。</p>
+<p>我们来看下 dispatchMessage() 方法：</p>
+<p><img src="http://i.imgur.com/RrRLyCt.png" alt=""></p>
+<p>从中可以看出，在 dispatchMessage()，可以把它看出一个中转器，我们首先可以判断　msg.callback 是否为空，如果为空就执行 handlCallback(msg) 这个方法。</p>
+<p><img src="http://i.imgur.com/JiL77Q0.png" alt=""></p>
+<p>该方法就是调用线程的 run() 方法。</p>
+<p>不管 Handler 是哪种方式处理的，最终它都会通过 Looper，不断从 MessageQueue 中获取消息，然后交给 dispatchMessage() 中的 handleMessage() 来进行处理。这样就形成一个循环，消息源源不断的产生，然后被 handlMessage() 添加到 MessageQueue 中，然后被 Handler 处理。</p>
+<p><img src="http://i.imgur.com/iQ6xMJu.png" alt=""></p>
+<p>Looper 开启了一个循环不断从 MessageQueue 中获取消息，然后从 MessageQueue 头部获取了 Message，以 Message Target 形式交由 Handler，由 Handler 的 handlerMessage 方法来进行处理。最终处理完之后，还是会返回到 Looper 中又开启循环，不断从 MessageQueue 中获取消息。</p>
+<h3 id="四-handler-引起的内存泄漏以及解决办法"><a href="#四-handler-引起的内存泄漏以及解决办法" class="headerlink" title="四. handler 引起的内存泄漏以及解决办法"></a>四. handler 引起的内存泄漏以及解决办法</h3><p>一般使用 Handler 创建的对象都不会是静态内部类，所以它就会隐匿的持有它所在的 Activity 的引用。所以当我们的 Activity 要回收的时候，由于它的 Handler 没有被释放，这时候 Handler 内部有可能在做一些耗时的操作，所以导致它的 Handler 没有被释放，所以 Handler 所持有 Activity 的引用它也不能被释放，所以导致 Activity 没有被回收，而停留在内存当中就造成了内存的泄漏。</p>
+<p>一个解决办法就是把 Handler 设置成 static，第二，你可以在 Activity onDestory() 方法当中调用 Handler removeCallback 这个方法。</p>
+<p>总结的来说，造成内存泄漏的原因：静态内部类持有外部类的匿名引用，导致外部 activity 无法释放。</p>
+<p>解决办法：handler 内部持有外部 activity 的弱引用，并把 handler 改为静态内部类，第二，就是在 Activity 的生命周期方法 onDestory() 方法中调用 mHandler.removeCallback()。</p>
+<h2 id="AsyncTask-面试详解"><a href="#AsyncTask-面试详解" class="headerlink" title="AsyncTask 面试详解"></a>AsyncTask 面试详解</h2><h3 id="一-什么是-AsyncTask"><a href="#一-什么是-AsyncTask" class="headerlink" title="一.什么是 AsyncTask"></a>一.什么是 AsyncTask</h3><p>AsyncTask 是 Android 提供的一个轻量级的异步类，使用时你可以继承 AsyncTask（它是一个抽象类），在类中你可以实现异步操作并提供接口反馈当前异步类执行的程度。</p>
+<p>它本质上就是一个封装了线程池和 handler 的异步框架，AsyncTask 相比 handler 有了更好的封装，但是它底层也是封装了 handler。AsyncTask 能让你避免使用线程类 swited 和 handler 直接处理后台操作。它可以直接把运算好的结果来交给 UI 线程来进行显示，不过我们需要注意的是 AsyncTask 只能做一些比较短的耗时操作。如果你想要做一些长的耗时操作，你还是尽量用线程池进行操作。</p>
+<p>总结的来说：AsyncTask 它本质上是封装了线程池和 handler，这个 AsyncTask 框架主要是用来执行异步任务的，所以说由于它内部继承了 handler，所以它能够方便的在工作线程和主线程之间灵活的切换。</p>
+<h3 id="二-AsyncTask-的使用方法"><a href="#二-AsyncTask-的使用方法" class="headerlink" title="二.AsyncTask 的使用方法"></a>二.AsyncTask 的使用方法</h3><p><strong>1.三个参数</strong></p>
+<p><img src="http://i.imgur.com/CIM4YTv.png" alt=""></p>
+<p>这里是一个实现了 AsyncTask 的实现类，三个参数就是泛型后面的三个参数：Integer,Integer,String。</p>
+<ul>
+<li><p>Integer</p>
+<p>  第一个 Integer 它代表的是在执行 AsyncTask 时需要传入的参数，这个参数你可以在后台任务中使用。</p>
+</li>
+<li><p>Integer</p>
+<p>  第二个参数 Integer 它表示的是在后台任务执行时，你需要在界面上显示当前的进度，在这里它指定泛型作为计数单位。</p>
+</li>
+<li><p>String</p>
+<p>  第三个参数 String 它表示的是 result 即当任务执行完毕后，如果需要对执行的结果进行返回，这使用这里的 String 作为返回值类型。</p>
+</li>
+</ul>
+<p><strong>2.5个方法</strong></p>
+<p><img src="http://i.imgur.com/3eLqQ42.png" alt=""></p>
+<ul>
+<li><p>onPreExecute()</p>
+<p>  第一方法 onPreExecute() 这方法表示在耗时操作还没做之前，进行一些初始化操作。这方法是在 UI 线程中调用的，这里会经常用来显示进度条之类的。</p>
+</li>
+<li><p>doInBackground()</p>
+<p>  第二个方法 doInBackground() 是 AsyncTask 里面比较重要的一个方法，因为它在这里做的是耗时操作。doInBackground() 这个回调函数它会在 onPreExecute() 这个方法调用完之后调用，通常会在这里做一些耗时的计算，但是计算结果要必须由该函数返回，并要传递到 onPostExecute() 这个函数里。</p>
+<p>  同时你也可以在 doInBackground() 里调用 publishProgress() 这个方法，来发布一个进度单位就可以不断渐变的显示你所进行的后台计算。</p>
+</li>
+<li><p>publishProgress()</p>
+<p>  显示进度条</p>
+</li>
+<li><p>onProgressUpdate()</p>
+<p>  onProgressUpdate() 这个方法通常会在 doInBackground() 里的 publishProgress() 方法调用完之后被调用。这方法也是动态的显示进度条，在这里我们通过 progressBar.setProgress(value) 来显示它的进度条的变化。</p>
+</li>
+<li><p>onPostExecute()</p>
+<p>  AsnycTask 最后会调用 onPostExecute() ，在后台计算完成之后它会调用这个方法。后台计算的结果它会通过 String result 这个参数传递给这个方法来进行显示。</p>
+</li>
+</ul>
+<h3 id="三-AsyncTask-内部原理"><a href="#三-AsyncTask-内部原理" class="headerlink" title="三.AsyncTask 内部原理"></a>三.AsyncTask 内部原理</h3><p>应该说我们在介绍了 Handler 了之后，我们知道 Android 应用的主线程，它肩负这绘制用户界面和及时响应用户操作的重任。所以说为了避免用户点击了按钮没有响应（ANR 的体验），所以我们要确保主线程时刻有较高的响应，为了做到这点我们就要把耗时的操作必须移到子线程中去执行。Android 中通常把主线程负责前台用户主界面的绘制，而工作线程在后台进行一些耗时的任务。</p>
+<p>异步框架我们也接触了不少，包括 Handler ，AsyncTask，它们本质上都是对线程和线程池的封装，所以说 AsyncTask 机制原理也是如此。</p>
+<ol>
+<li><p>AsyncTask 的本质是一个静态的线程池，AsyncTask 派生出的子类可以实现不同的异步任务，这些任务都是提交到静态的线程池中执行。</p>
+</li>
+<li><p>线程池中的工作线程执行 doInBackground(mParams) 方法执行异步任务</p>
+</li>
+<li><p>当任务状态改变之后，工作线程会向 UI 线程发送消息，AsyncTask 内部的 InternalHandler 响应这些消息，并调用相关的回调函数。</p>
+</li>
+</ol>
+<p>用一句话来概述 AsyncTask 的机制原理就是：它封装了线程池然后通过 Handler 来发送消息在 UI 线程和子线程中传递。</p>
+<h3 id="四-AsyncTask-的注意事项"><a href="#四-AsyncTask-的注意事项" class="headerlink" title="四.AsyncTask 的注意事项"></a>四.AsyncTask 的注意事项</h3><p><strong>一.内存泄漏</strong></p>
+<p>AsyncTask 会造成内存泄漏主要是因为它被声明为 Activity 的非静态内部类。在 Handler 里我们知道如果你是非静态内部类的话，会持有外部 Activity 的引用。所以说这时候如果你的 Activity 被销毁了，由于 AsyncTask 后台线程还在执行一些任务，并 AsyncTask 持有 Activity 的引用，导致 Activity 想被摧毁时，无法被内存回收，引起内存泄漏。</p>
+<p>总结的来说就是因为：非静态内部类持有外部类的匿名引用，导致外部类 Activity 想要被回收时，由于非静态内部类还持有外部类的引用导致外部类无法被内存回收，导致的内存泄漏。</p>
+<p>在这里解决方法和 Handler 是像类似的，你可以把 AsyncTask 设置成静态的 static ，同时你可以在 AsyncTask 内部持有外部的弱引用。这样在 Activity 想要被回收的时候，可以顺利的回收。同时你也可以在 onDestroy() 生命周期方法里面进行 AsyncTask 的 finish 方法的调用。</p>
+<p><strong>二.生命周期</strong></p>
+<p>其实很多开发者认为在 Activity 中创建的 AsyncTask 会随着 Activity 销毁而销毁，其实在内存泄漏中提到了它是不会的。因为 AsyncTask 有些后台任务它是在 doInBackground() 方法中执行，所以说如果你没有主动调用 AsyncTask cancel() 方法的话，它是不会被销毁的。也就是说如果我们在 Activity 销毁之前没有取消 AsyncTask，就有可能让我们 AsyncTask 在 Activity 销毁之前导致崩溃。因为 AsyncTask 想要处理依托在 Activity 的 View 已经不存在了，所以说这要让我们明确一个事实，我们必须要在 onDestroy() 生命周期方法里面调用 AsyncTask 的 cancel() 方法，来保证程序的稳定。</p>
+<p><strong>三.结果丢失</strong></p>
+<p>结果丢失和生命周期其实是异曲同工之处，主要是在屏幕旋转或 Activity 被后台杀掉（由于系统内存不够），会导致 Activity 会被重新创建。而之前创建的 AsyncTask 会持有之前的 Acticty 的引用，但是这个引用已经无效了，所以说这时你调用 onPreExecute() 方法去更新界面就不会在生效，这就是 AsyncTask 结果会丢失的原因。</p>
+<p><strong>四.并行 or 串行</strong></p>
+<p>其实在 Android 1.6 之前的版本 AsyncTask 都是串行，也就是它会把所有的任务都一串一串的放在线池中有序的进行。而在 1.6 到 2.3 的版本之后它改成了并行，但是 2.3 之后为了维护系统的稳定，又把它改成了串行。但是它还是可以执行并行，你想执行并行的时候你可以调用 asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, param) 这个方法就可以使用并行，但是一般建议只使用串行，这样能保证线程池的稳定。因为并发的话，整个线程池是不稳定的。虽然并行的效率很高，但是 AsyncTask 一般做不了什么高并发高耗时的操作。</p>
+<h2 id="handlerThread-面试详解"><a href="#handlerThread-面试详解" class="headerlink" title="handlerThread 面试详解"></a>handlerThread 面试详解</h2><h3 id="一-handlerThread-是什么"><a href="#一-handlerThread-是什么" class="headerlink" title="一.handlerThread 是什么"></a>一.handlerThread 是什么</h3><p><strong>handlerThread 产生背景</strong></p>
+<p>我们经常会在 Android 当中进行一些耗时的操作，一般我们会<strong>开启 Thread 子线程进行耗时操作</strong>。这是非常方便的，但是同时又是非常消耗资源你的。为什么这么说呢？因为当你一个 Android 的 Thread 线程执行完耗时操作之后线程就会被自动销毁，但如果又要在短时间之内又进行一些耗时任务呢？这时候我们就不得不在重新创建一个线程去执行该任务，这样存在一个性能的问题：<strong>多次创建和销毁线程是很耗系统资源的</strong>。</p>
+<p>为了解决这个问题，我们可以自己构建一个循环线程像 Looper，即通过在线程当中创建一个 Looper，来进行消息的轮询。当有耗时任务需要投放到该循环线程当中时，线程就会执行耗时任务。而执行完之后循环线程又会处于阻塞等待状态，直到下一个耗时任务投放进来。这机制不管是在 Java Android 当中都使用的很频繁，即通过阻塞等待来保证性能最优。</p>
+<p>虽然这样可以避免创建多次 Thread 线程，但是 Google 公司非常体贴，它已经给我们封装好一个框架，即 handlerThread 框架。</p>
+<p>handlerThread 它本质上就是一个 thread 线程，但是它和普通线程不同的地方就是它是一个 thread 内部有 looper，它开启了轮询器。</p>
+<p>回顾下在 handler 当中，子线程为什么不能开启 handler？因为 handlerSendMessage 还是 postRunnable，都是要一个 MessageQueu 消息队列来保存消息。而默认子线程当中它是没有开启轮询器的，而消息队列又是由 looper 管理的。所以说如果你想子线程中创建一个 handler 来发送消息的话，是没有关联到 MessageQueue 来让你存储消息，所以会抛出异常。而如果你想在子线程当中去创建一个 looper，你必须自己去初始化一个 looper，然后通过 looper.loops() 方法开启一个循环才能创建 handler。</p>
+<p><strong>handlerThread 的特点</strong></p>
+<ul>
+<li>HandlerThread 本质上是一个线程类，它继承了 Thread</li>
+<li>HandlerThread 有自己的内部 Looper 对象，可以进行 looper 循环</li>
+<li>通过获取 HandlerThread 的 looper 对象传递给 Handler 对象，可以在 handlerMessage 方法中执行异步任务</li>
+<li><p>优点是不会有堵塞，减少了对性能的销毁，缺点是不能同时进行多任务的处理，需要等待进行处理，处理效率较低。</p>
+<p>  我们知道 Handler 内部的 Looper 它默认绑定的是 UI 线程消息队列，那对于那些非 UI 线程又想使用消息机制的那些操作呢？那么 handlerThread 内部 Looper 是最合适的，它不会干扰阻塞 UI 线程。</p>
+</li>
+<li>与线程池注重并发不同，HandlerThread 是一个串行队列，HandlerThread 背后只有一个线程。</li>
+</ul>
+<h2 id="二-handlerThread-源码解析"><a href="#二-handlerThread-源码解析" class="headerlink" title="二.handlerThread 源码解析"></a>二.handlerThread 源码解析</h2><p><img src="http://i.imgur.com/Z5vUQMv.png" alt=""></p>
+<p>HandlerThread 它继承 Thread，它本质上也是一个线程。但是它和其他线程有不一样的地方。在 HandlerThread 里面你可以创建 handler 类，这和子线程当中创建 handler 是不一样的地方要特别注意。在源码当中我们可以看到它的成员变量：Looper mLooper，这表明 HandlerThread 它自己持有一个 Looper 对象。</p>
+<p><img src="http://i.imgur.com/imGNzbf.png" alt=""></p>
+<p>在构造方法当中，它传入两个参数 name，priority。name 表示一个线程的名称，prority 表示的是一个线程的优先级。</p>
+<p><img src="http://i.imgur.com/tYMslMR.png" alt=""></p>
+<p>在构造方面下面有一个空方法：onLooperPrepared()，它是留给我们必要的时候去重写的。但要注意这个重写方法必须要在开启 Looper.loops 方法之前才能调用，即它是有个顺序的，我们可以理解它是一个初始化的操作，它必然要在 Looper 开启之前做好，才能让 Looper 开启循环。</p>
+<p><img src="http://i.imgur.com/vCkz7iW.png" alt=""></p>
+<p>run() 是每个 Thread 必须去复写一个方法。在 run()　方法当中我们可以看到它初始化了一个 Looper（通过 Looper.prepare）。初始化之后它有一个同步锁的代码块，这是一个保证线程间安全的一个机制。synchronized 代码块它的应用场景主要是当有两个并发线程访问同一个对象即 Looper，一个时间内只有一个线程可以执行，而另一个线程也要进行它必须等待之前的线程执行完才能执行代码块。在这代码块中 mLooper 通过 Looper.myLooper() 方式给它赋值之后，它发出了一个通知 notifyAll()。notifyAll() 在线程通信中也是一个重要的方法，这个方法主要是通知当中等待的线程。在这里就是通知下面的 getLooper() 方法当中的 wait() 方法。</p>
+<p><img src="http://i.imgur.com/ADduHCc.png" alt=""></p>
+<p>在同步代码块之后，它设置了优先级，设置优先级它可以解决一些线程安全和内存泄漏的问题。随后就调用 onLooperPrepared()，这方法是留给我们自己去重写。最后再设置初始化完成之后，我们开启了Looper 循环 （Looper.loop()），这就完成了这个操作。</p>
+<p>在之前说过会调用 getLooper()，所以接下来我们看下 getLooper() 方法</p>
+<p><img src="http://i.imgur.com/d39mIMZ.png" alt=""></p>
+<p>和 run() 方法当中一样有同步代码块，在这同步代码块中我们可以看到它其实是通过阻塞的形式创建 Looper 的，即它会在这判断如果你的 Looper 没有创建成功它就会一直阻塞在这里，直到上面的 run() 方法创建好 Looper 之后，它会通过 notifyAll() 方法通知 getLooper() 方法这里已经创建完成然后可以去做相应的操作，它是一个阻塞等待的方式进行线程间通信。</p>
+<p>总结下我们在 notifyAll() 线程间通信的问题，就是说我们在获取 mLooper 的时候它存在一个同步的问题，只有当上面的线程创建成功并且 Looper 对象也创建成功之后，它会通过 notifyAll() 通知下面的 getLooper() 不要在处于阻塞状态可以进行下面的操作。而这里的阻塞和等待用的是 Java 当中常用的 wait() 和 notifyAll() 方法来完成同步问题。</p>
+<p><img src="http://i.imgur.com/yLR3ZAV.png" alt=""></p>
+<p>在看下 quit() 和 quitSafely()，它们都是使 Looper 退出消息循环，然后退出线程的。但是 quitSafely() 有点不同的地方，就是 quitSafely() 从字面上大家知道它比 quit() 方法更安全些，但效率上肯定是没 quit() 高。</p>
+<h2 id="IntentService-面试详解"><a href="#IntentService-面试详解" class="headerlink" title="IntentService 面试详解"></a>IntentService 面试详解</h2><h3 id="一-IntentService-是什么"><a href="#一-IntentService-是什么" class="headerlink" title="一.IntentService 是什么"></a>一.IntentService 是什么</h3><ul>
+<li>它本质是一种特殊的 Service 继承自 Service 并且本身就是一个抽象类</li>
+<li>它内部通过 HandlerThread 和 Handler 实现异步操作</li>
+</ul>
+<p>IntentService 是一个特殊的 Service,它继承 Service 同时它的优先级又比 Service 高，所以我们可以用 IntentService 执行一些高优先级的任务，同时它的内部封装了 HandlerThread 和 Handler。</p>
+<p>IntentService 是继承并处理异步请求的一个类，在 IntentService 内有一个工作线程来处理耗时操作，启动 IntentService 的方式和启动传统的 Service 一样，同时，当任务执行完后，IntentService 会自动停止，而不需要我们手动去控制或 stopSelf()。另外，可以启动 IntentService 多次，而每一个耗时操作会以工作队列的方式在 IntentService 的 onHandleIntent 回调方法中执行，并且，每次只会执行有一个工作线程，执行完第一个再执行第二个，这就说它的工作方式是串行的。</p>
+<h3 id="二-IntenrService-使用方法"><a href="#二-IntenrService-使用方法" class="headerlink" title="二.IntenrService 使用方法"></a>二.IntenrService 使用方法</h3><ul>
+<li>创建 IntentService 时，只需实现 onHandleIntent 和构造方法，onHandleIntent 为异步方法，可以执行耗时操作。 </li>
+</ul>
+<p>我们通过代码来看</p>
+<pre><code>public class MyIntentService extends IntentService {
+    public static final String DOWNLOAD_URL = &quot;download_url&quot;;
+    public static final String INDEX_FLAG = &quot;index_flag&quot;;
+    public static UpdateUI updateUI;
+
+
+    public static void setUpdateUI(UpdateUI updateUIInterface) {
+        updateUI = updateUIInterface;
+    }
+
+    public MyIntentService() {
+        super(&quot;MyIntentService&quot;);
+    }
+
+    /**
+     * 实现异步任务的方法
+     *
+     * @param intent Activity传递过来的Intent,数据封装在intent中
+     */
+    @Override
+    protected void onHandleIntent(Intent intent) {
+
+        Bitmap bitmap = downloadUrlBitmap(intent.getStringExtra(DOWNLOAD_URL));
+        Message msg1 = new Message();
+        msg1.what = intent.getIntExtra(INDEX_FLAG, 0);
+        msg1.obj = bitmap;
+        if (updateUI != null) {
+            updateUI.updateUI(msg1);
+        }
+
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+
+    @Override
+    public void onStart(Intent intent, int startId) {
+        super.onStart(intent, startId);
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return super.onStartCommand(intent, flags, startId);
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return super.onBind(intent);
+    }
+
+
+    public interface UpdateUI {
+        void updateUI(Message message);
+    }
+
+
+    private Bitmap downloadUrlBitmap(String urlString) {
+        HttpURLConnection urlConnection = null;
+        BufferedInputStream in = null;
+        Bitmap bitmap = null;
+        try {
+            final URL url = new URL(urlString);
+            urlConnection = (HttpURLConnection) url.openConnection();
+            in = new BufferedInputStream(urlConnection.getInputStream(), 8 * 1024);
+            bitmap = BitmapFactory.decodeStream(in);
+        } catch (final IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+            try {
+                if (in != null) {
+                    in.close();
+                }
+            } catch (final IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return bitmap;
+    }
+}
+</code></pre><p>我们的 MyIntentService 它继承的是 IntenttService，其中有两个方法是必需执行的，一个就是它的构造方法，一个就是 onHandleIntent(Intent intent)。在构造方法中很简单，你只需要传入一个字符串，即表示它的线程名称。我们在看 onHandleIntent(Intent intent) 方法，在这里我们可以做一些耗时的操作。参数当中的 Intent，其实和 Activity 中 startActivityIntent() 是一样的，这里的 Intent 可以附带从 Activity 中传过来的数据。在这例子中 Intent 主要用来实现图片的下载的，所以说我们通过回调监听的方法把下载完的 Bitmap，传递在 Message 中回调给 Activity，最后通过 Handler 来通知更新 UI。</p>
+<p>我们在 onHandleIntent() 方法当中，我们通过自定义的方法 donwloadUrlBitmap() 来获取 Bitmap 实例。然后把 Bitmap 传递给 Message 里面，最终通过 Activity 写的回调传递给 Activity。</p>
+<p>接下来我们看 MainActivity</p>
+<pre><code>public class MainActivity extends AppCompatActivity implements MyIntentService.UpdateUI {
+
+    /**
+     * 图片地址集合
+     */
+    private String url[] = {
+            &quot;http://pic6.huitu.com/res/20130116/84481_20130116142820494200_1.jpg&quot;,
+            &quot;http://sucai.qqjay.com/qqjayxiaowo/201210/26/1.jpg&quot;,
+            &quot;http://img02.tooopen.com/images/20140504/sy_60294738471.jpg&quot;,
+            &quot;http://img2.imgtn.bdimg.com/it/u=819201812,3553302270&amp;fm=214&amp;gp=0.jpg&quot;,
+            &quot;http://pic55.nipic.com/file/20141208/19462408_171130083000_2.jpg&quot;,
+            &quot;http://img05.tooopen.com/images/20150531/tooopen_sy_127457023651.jpg&quot;,
+            &quot;http://pic.58pic.com/58pic/17/41/38/88658PICNuP_1024.jpg&quot;
+    };
+
+    private static ImageView imageView;
+    private static final Handler mUIHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            imageView.setImageBitmap((Bitmap) msg.obj);
+        }
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        imageView = (ImageView) findViewById(R.id.image);
+
+        Intent intent = new Intent(this, MyIntentService.class);
+        for (int i = 0; i &lt; 7; i++) {
+            intent.putExtra(MyIntentService.DOWNLOAD_URL, url[i]);
+            intent.putExtra(MyIntentService.INDEX_FLAG, i);
+            startService(intent);
+        }
+        MyIntentService.setUpdateUI(this);
+    }
+
+    @Override
+    public void updateUI(Message message) {
+        mUIHandler.sendMessageDelayed(message, message.what * 1000);
+    }
+}
+</code></pre><p>MainActivity 其实比较简单，它的 onCreate() 方法里面通过 for 循环去启动 IntentService，然后去下载图片。这里要注意即使我们在 for 循环中开启了 7 次 IntentService，但 IntentService 实例只有一个。这和 Service 概念是一样的，但你开启了 IntentService 它会调用 onHandleIntent() 方法，去执行耗时的图片下载操作。</p>
+<pre><code>  @Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    imageView = (ImageView) findViewById(R.id.image);
+
+    Intent intent = new Intent(this, MyIntentService.class);
+    for (int i = 0; i &lt; 7; i++) {
+        intent.putExtra(MyIntentService.DOWNLOAD_URL, url[i]);
+        intent.putExtra(MyIntentService.INDEX_FLAG, i);
+        startService(intent);
+    }
+    MyIntentService.setUpdateUI(this);
+}
+</code></pre><p>不过我们有可能会有这样的疑惑，我们担心我们不断用 for 循环去启动任务，而实例又只有一个，那么我们又这么样保证前一个任务不会被后一个任务覆盖掉呢？其实这是不会，因为 IntentService 系统已经考虑到这一点，在 IntentService 里真正执行异步任务是 HandlerThread 和 Handler。HandlerThread 是内部开启的循环子线程，所以说当我们把图片加载的任务放到消息队列当中的时候，最终还是交给 Handler 来处理。它是会存储在 MessageQueue 消息队列的，所以说我们大可放心。</p>
+<h3 id="三-IntentService-源码解析"><a href="#三-IntentService-源码解析" class="headerlink" title="三.IntentService 源码解析"></a>三.IntentService 源码解析</h3><ul>
+<li>它本质上就是一个封装了 HandlerThread 和 handler 的异步框架</li>
+</ul>
+<p><img src="http://i.imgur.com/rvNRcgW.png" alt=""></p>
+<p>IntentService 源码不是很长就 170 行，我们知道不管是 IntetnService 还是传统的 Service 也好，它每次启动都是要调用 onCreate() 方法。</p>
+<p><img src="http://i.imgur.com/zwYsQDH.png" alt=""></p>
+<p>我们来看下 onCreate() 方法，我们可以看到它在内部会创建一个 HandlerThread，这就证明了 IntentService 内部其实就是用 HandlerThread 来进行异步消息传递的。紧接着它就创建了一个 ServiceHandler，它是一个继承了 Handler 的 Handler，进行了一个内部的封装。在创建 ServiceHandler 之前，创建了一个 Looper，这个 Looper 传入的是 HandlerThread 的 Looper 对象，这样 ServiceHandler 它就变成了处理异步线程的执行类。因为我们知道 Looper 对象与 HandlerThread 绑定，而 HandlerThread 又是一个异步线程，我们把 HandlerThread 持有的 Looper 对象 myServiceLooper 传递给 ServiceHandler，所以说 ServiceHandler 内部持有异步线程的 Looper 那样就可以执行异步任务了。</p>
+<p>那 IntentService 是怎么启动异步任务？其实 IntentService 启动后还会调用 onStartCommand() 方法。</p>
+<p><img src="http://i.imgur.com/BNLKGV0.png" alt=""></p>
+<p>onStartCommand() 方法很简单它就是调用 onStart() 方法，它的实际操作都是在 onStart() 方法里操作的。</p>
+<p><img src="http://i.imgur.com/bglhTgI.png" alt=""></p>
+<p>在 onStart() 方法中 IntentService 通过 mServiceHandler.sendMessage() 方法传递了一个消息，而这消息最终发送到 HandlerThread 中进行处理。因为 HandlerThread 持有 Looper 对象，即 Looper 对象取出消息队列中的消息进行处理,然后它会调用 handleMessage()。</p>
+<p>我们来看下 ServiceHandler 的源码</p>
+<p><img src="http://i.imgur.com/Im50c6k.png" alt=""></p>
+<p>在这里我们可以看到它调用的还是 ServiceHandler 中 handlerMessage 的方法，最终会回调一个 onHandleIntent 抽象方法</p>
+<p><img src="http://i.imgur.com/BZQita7.png" alt=""></p>
+<p>onHandleIntent() 是一个抽象方法，用来给其他的子类去继承做一些实际的操作。</p>
+<p>我们回到 handleMessage()，onHandleIntent() 之后主动调用了 stopSelf() 方法，是用来停止服务的。在这里 stopSelf() 里面传入了一个参数，如果 stopSelf() 方法里没有参数的话，它会立即停止服务的。而如果你在 stopSelf(msg.arg1) 传入 msg.arg1 的参数的话，它就会等待所有消息处理完之后才会终止任务。</p>
+<p>我们在来强调下 onHandleIntent() 方法</p>
+<p><img src="http://i.imgur.com/BZQita7.png" alt=""></p>
+<p>很明显 onHandleIntent() 它是一个抽象方法，在创建 IntentService 的时候一定要实现该方法。通过之前的分析，我们知道 onHandleIntent() 是一个异步方法。一定要记住是异步方法，这就是 IntentService 和 Service 不一样的地方。Service 方法里一定是不能进行耗时操作，而 IntentService 是可以进行耗时操作。还需要注意一点，当 onHandleIntent() 执行完之后，它的服务就会销毁。但如果后台有很多任务的时候 onHandleIntent() 会明确到最后一个任务执行完后，才会进行销毁。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/18/Kotlin之旅三/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/b.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&amp;u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&amp;s=400" alt="Kod's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
