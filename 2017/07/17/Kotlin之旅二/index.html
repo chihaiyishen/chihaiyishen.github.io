@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Koc">
     <meta name="description" content="null">
-    <meta name="keywords" content="Android，Kotlin，自学编程">
+    <meta name="keywords" content="Android，Kotlin，自学编程,Kotlin">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -60,7 +60,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Kotlin 之旅 二 | 痴海博客">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="Kotlin"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -146,7 +146,7 @@
 
     <style>
       body{
-        background-image: url(/img/bg.jpg);
+        background-image: url(http://img1.50tu.com/bizhi/guanggao/2014-01-07/c761aed9407bcac25acc0cd23fdf2eab.jpg);
       }
     </style>
 
@@ -195,7 +195,7 @@
 
     <!-- Custom Head -->
     
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
     
@@ -266,17 +266,8 @@
                 
     <!-- Paradox Post Header -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script>
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://upload-images.jianshu.io/upload_images/4034742-3603987c47713247.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)">
     
             <p class="article-headline-p">
                 Kotlin 之旅 二
@@ -293,7 +284,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&s=400" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" width="44px" height="44px" alt="Author Avatar"/>
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -322,7 +313,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/Kotlin/">Kotlin</a>
     </ul>
     
 
@@ -522,9 +513,9 @@ val i: Int = b // 错误
 </code></pre><p>字符字面值用单引号括起来：’1’，特殊字符可以用反斜杠转义。支持这几个转义序列：\t,\b,\n,\r,\’,\”,\ 和 \$。编码其他字符要用 Unicode 转义序列语法：’\uFF00’。</p>
 <p>我们可以显式把字符转换为 Int 数字</p>
 <pre><code>fun decimalDigitValue(c: Char): Int{
-    if(c !in &apos;0&apos;..&apos;0&apos;)
+    if(c !in &#39;0&#39;..&#39;0&#39;)
         throw IllegalArgumentException(&quot;Out of range&quot;)
-    return c.toInt() - &apos;0&apos;.toInt() // 显示转换为数字
+    return c.toInt() - &#39;0&#39;.toInt() // 显示转换为数字
 }
 </code></pre><p>当需要可空引用时，像数字，字符会被装箱，装箱操作不会保留同一性。</p>
 <h3 id="布尔"><a href="#布尔" class="headerlink" title="布尔"></a>布尔</h3><p>布尔用 Boolean 类型表示，它有两个值：true 和 false </p>
@@ -581,7 +572,7 @@ val s = &quot;i = $i&quot; // 求值结果为 &quot;i = 10&quot;
 val str = &quot;$s.length is $(s.length)&quot; // 求值结果为 &quot;abc.length is 3&quot;
 </code></pre><p>原生字符串和转义字符串内部都支持模板，如果你需要在原生字符串中表示字面值 $ 字符（它不支持反斜杠转义），你可以用下列语法</p>
 <pre><code>val price = &quot;&quot;&quot;
-${&apos;$&apos;}9.99
+${&#39;$&#39;}9.99
 &quot;&quot;&quot;
 </code></pre>
     
@@ -646,7 +637,7 @@ ${&apos;$&apos;}9.99
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
     <div id="sidebar-main">
         <!-- Sidebar Header -->
-        <div class="sidebar-header header-cover" style="background-image: url(/img/b.jpg);">
+        <div class="sidebar-header header-cover" style="background-image: url(/img/daily_pic.jpg);">
     <!-- Top bar -->
     <div class="top-bar"></div>
 
@@ -661,7 +652,7 @@ ${&apos;$&apos;}9.99
 
     <!-- Sidebar Avatar -->
     <div class="sidebar-image">
-        <img src="https://avatars0.githubusercontent.com/u/19601405?v=3&amp;u=74c1a822ede01596d2f0eb42655a9b711a4f8c98&amp;s=400" alt="Koc's avatar">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" alt="Koc's avatar">
     </div>
 
     <!-- Sidebar Email -->
@@ -715,7 +706,7 @@ ${&apos;$&apos;}9.99
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -742,7 +733,7 @@ ${&apos;$&apos;}9.99
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">7</span>
+                <span class="sidebar-badge">8</span>
             </a>
         </li>
         
