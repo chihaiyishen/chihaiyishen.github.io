@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            Android 面试 三 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Koc">
+    <meta name="description" content="null">
+    <meta name="keywords" content="Android，Kotlin，自学编程,Android 面试">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Android 面试 三 | 痴海博客">
+    <meta property="og:description" content="null">
+    <meta property="og:article:tag" content="Android 面试"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(http://img1.50tu.com/bizhi/guanggao/2014-01-07/c761aed9407bcac25acc0cd23fdf2eab.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#View-的绘制机制"><span class="post-toc-number">1.</span> <span class="post-toc-text">View 的绘制机制</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-view-树的绘制流程"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一.view 树的绘制流程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-measure-测量"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">二.measure 测量</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#measure-参数"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">measure 参数</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#measure-测量-重要方法"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">measure 测量-重要方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-layout"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">三.layout</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-draw"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">四.draw</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#事件分发机制"><span class="post-toc-number">2.</span> <span class="post-toc-text">事件分发机制</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-为什么会有事件分发机制"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">一.为什么会有事件分发机制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-三个重要的事件分发的方法"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">二.三个重要的事件分发的方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-事件分发流程"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">三.事件分发流程</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#listview-面试详解"><span class="post-toc-number">3.</span> <span class="post-toc-text">listview 面试详解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-什么是-listview"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">一.什么是 listview</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-listview-适配器模式"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">二.listview 适配器模式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-listview-的-recycleBin-机制"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">三.listview 的 recycleBin 机制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-listview-的优化"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">四.listview 的优化</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://i.imgur.com/TyjF0xG.jpg)">
+    
+            <p class="article-headline-p">
+                Android 面试 三
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Koc</strong>
+        <span>7月 18, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Android-面试/">Android 面试</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 面试 三&url=http://yoursite.com//2017/07/18/Android 面试三/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 面试 三&url=http://yoursite.com//2017/07/18/Android 面试三/index.html&via=Koc" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/07/18/Android 面试三/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/07/18/Android 面试三/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="View-的绘制机制"><a href="#View-的绘制机制" class="headerlink" title="View 的绘制机制"></a>View 的绘制机制</h1><h2 id="一-view-树的绘制流程"><a href="#一-view-树的绘制流程" class="headerlink" title="一.view 树的绘制流程"></a>一.view 树的绘制流程</h2><p><img src="http://i.imgur.com/ReHslOO.png" alt=""></p>
+<p>我们知道当 Activity 接收到用户触摸接触的焦点的时候，它就会被请求绘制布局。请求是用 Android frentwotent 处理绘制的，它从根节点开始进行测量和绘制。整个 View 的绘制流程是在 ViewRootImpl 类的 performTraversals() 方法中进行展开的。这个函数做的工作非常简单，它包括是否重新计算视图大小即 measure() 方法，是否需要重新安置视图位置即 layout() 方法，以及是否要重绘即 draw() 方法。</p>
+<p>我们可以看到整个 View 的绘制流程大体分为这三步，它会经过 measure -&gt; layout -&gt; draw 三大过程，然后一个对 View 的绘制工作。</p>
+<p>View 的绘制流程就像一个递归的过程，在 onMeasure() 方法里面它会对所有的子元素进行测量，然后测量的过程从父的 ViewGroup 传递到子 View 里面。经过子元素的递归，测量完所有的子元素的长度之后，然后进行递归反复之后它就完成了整个父元素 ViewGroup 的测量，而 layout 也是相类似树的递归过程。</p>
+<h2 id="二-measure-测量"><a href="#二-measure-测量" class="headerlink" title="二.measure 测量"></a>二.measure 测量</h2><p><img src="http://i.imgur.com/4dG5Rpl.png" alt=""></p>
+<p>measure 测量就是树的递归过程，它是从上到下有序的进行遍历。它会根据父容器对子容器的一些测量规格参数，获取到子容器的长宽高，然后把子容器的长宽高返回给父容器进行统一的测量。</p>
+<h3 id="measure-参数"><a href="#measure-参数" class="headerlink" title="measure 参数"></a>measure 参数</h3><p><strong>1.ViewGroup.LayoutParams</strong></p>
+<p>LayoutParams 是用来指定视图高度和宽度的参数，对应每个视图。你可以设定三种类型的值，比如你可以设置长宽高为具体的值，还有 FILL_PARENT 即子视图大小能和父控件一样大（但要注意这里是不包括 padding 值的），第三个就是 WRAP_CONTENT 即整个父控件是可以包括子控件的大小。</p>
+<p><strong>2.MeasureSpec</strong></p>
+<p>MeasureSpec 中文解释测量规格，它其实是一个 32 位的 Int 值。最高的两位表示的是 specMode（模式占位符），而后面的 30 位表示的是测量规格的大小。也就是说前两位是表示的是测量模式，而后 30 位表示的是在这种测量模式下的尺寸大小。</p>
+<p>在一个 View 的控件的 measure 过程中，系统会将这个 View 的 LayoutParams 结合父容器生成一个 MeasureSpec，然后这个 MeasureSpec 测量规格它就会去规定好怎样去测量 View 控件的大小。其实不管是 ViewGroup.LayoutParams 还是其他的大小，它最终都会包装成 MeasureSpec 这个测量规格，然后它会返还给父容器告诉如何测量这个 View 控件的大小。</p>
+<p>MeasureSpec 它有三种选择</p>
+<ul>
+<li><p>MeasureSpec.UNSPECIFIED</p>
+<p>  未指定模式，父 View 完全依据子 View 的设计值来决定</p>
+</li>
+<li><p>MeasureSpec.EXACTLY</p>
+<p>  确定模式，父 View 希望子 View 的大小是确定的，由 specSize 决定。父容器会为子视图确定一个容器的大小，而这时候无论子视图希望多大，它都必须在这个父容器指定的范围内。</p>
+</li>
+<li><p>MeasureSpec.AT_MOST</p>
+<p>  最多模式，父 View 希望子 View 的大小最多是 specSize 指定的值。父容器为子视图指定的一个最大的尺寸，子视图的所有大小必须包括在这个最大的尺寸范围内。它在 Layout 中对应的属性值 conten ，这种模式下父控件无法获得子控件的尺寸，只能根据子控制需求自己去测量尺寸。</p>
+</li>
+</ul>
+<p>总的来说，在 measure 中说两个重要的参数，其实就是一个参数即 MeasureSpec，因为 LayoutParams 最后也会封装成 MeasureSpec。MeasureSpec 的作用就是在 mesaure 过程当中系统会将 ViewGroup.LayoutParms 根据父容器所施加的规则转化成对应的 MeasureSpec，然后我们会在测量 measure 方法当中根据这个测量规则确定 View 的长宽高。</p>
+<h3 id="measure-测量-重要方法"><a href="#measure-测量-重要方法" class="headerlink" title="measure 测量-重要方法"></a>measure 测量-重要方法</h3><ul>
+<li>measure()</li>
+<li>onMeasure()</li>
+<li>setMeasuredDimension()</li>
+</ul>
+<p>我们来看下在 mesaure 测量中重要的几个回调方法</p>
+<p><strong>1.measure()</strong></p>
+<p>这个方法是定义 View Java 类当中的</p>
+<p><img src="http://i.imgur.com/uHezuW0.png" alt=""></p>
+<p>它的前部是用 MeasureSpec 的方法，获得它的宽高的测量规格</p>
+<p><img src="http://i.imgur.com/EPO6zVB.png" alt=""></p>
+<p>我们直接看最后它还是调用到了 onMeasure() 方法，来进行它的测量</p>
+<p><img src="http://i.imgur.com/x43UT5M.png" alt=""> </p>
+<p>所以说我们在自定义 View 的时候只要复写 onMeasure()　方法就可以了。</p>
+<p><strong>2.onMeasure()</strong></p>
+<p>不管调用 measure() 方法，最终底部还是会调用 onMeasure() 方法。所以说 onMeasure() 方法是在我们自定义 View 当中，需要去实现测量的逻辑方法。</p>
+<p><img src="http://i.imgur.com/Wbybv3j.png" alt=""></p>
+<p>在 onMeasure() 方法中有两个参数：witdthMeasureSpec,heightMeasureSpec，第一个参数就是宽的测量规格，第二个参数就是高的测量规格。在 onMeasrue() 方法里面它调用了 setMeasuredDimension() 方法，这个方法是测量终极也是实现的方法。</p>
+<p><strong>3.setMeasuredDimension()</strong></p>
+<p><img src="http://i.imgur.com/bnAKI34.png" alt=""></p>
+<p>在这方法里我们可以看到，这个方法的实现它就是我们会将在 onMeasure() 方法里面获得的计算的尺寸传给 setMeasuredDimension() 这个方法，这是一个测量阶段结束的方法，这个方法是必需被调用的，否则你会报异常。而我们在自定义 View 的过程的时候，不需要去关心系统实现的过程，甚至测量规格，但是我们要知道最终会调用 setMeasuredDimension() 这个方法。</p>
+<p>最后总计下，measure 测量它有三个方法的步骤，第一个 measure() 方法，在 measure() 方法里面它会调用 onMeasure() 方法，而 onMeasure() 方法里面它会把所有的长宽高的规格传给 setMeasuredDimension() 方法，然后在这里完成整个的测量过程。</p>
+<p>measure 它是根据树遍历的，从上到下整个遍历的过程。所以说 measure 过程它会为每个 View 的所有的子节点的宽高去复杂，该值通过 get() 方法能够获取到。但是要注意这两个宽高必须在父视图的约束内，通过测量规格 MeasureSpec 来约束，这样才能保证所有父视图能够接受子视图给它传递的测量。并 Android 当中有这样的机制，就是父视图如果发现子视图给它传递的宽高有它觉得不对的地方它会在次请求子视图进行测量。第二次 measure，也就是说父视图它会根据未给定的 dimension 测量每个视图，如果最终的子视图超过它的约束或者太小的时候，父视图就会使用确切的大小给它设置成 AT_MOST 或者 EXACTLY 这个形式再次给子视图进行测量的过程。这就是 Android 绘制中最重要的一个方法，就是测量过程。</p>
+<p>measure 测量其实很简单，它开始于我们的父控件 ViewGroup，它会通过不断的遍历子控件的 measure() 方法，然后会根据 ViewGroup 的 MeasureSpec 和子 View 的 layoutParmas 来决定我们子视图的 MeasureSpec 的测量规格。通过这个测量规格 MeasureSpec 来进一步获取到子 View 的测量宽高，然后一层一层的向下传递不断的保存整个父控件的测量宽高。整个 measure 测量调用流程，它就是一个树形的递归过程，为整个 View 树计算树形大小，每一个 View 控件的实际宽和高，都是由父视图和 LayoutParams 觉得的。</p>
+<h2 id="三-layout"><a href="#三-layout" class="headerlink" title="三.layout"></a>三.layout</h2><p><img src="http://i.imgur.com/yUieUJW.png" alt=""></p>
+<p>layout 它和 measure 其实是一样的，它也是对 View 树的自上而下进行遍历，在这过程中 layout 会根据测量的尺寸来摆放自己的位置。首先要明确的是子视图的具体位置，即相对父视图而言的。所以说你要自定义 View 的话，必须要实现 onLayout() 方法，然后重新摆放的自己想要的位置。</p>
+<p>在 layout 方法中比较简单，layout 方法中最终还是会调用 onLayout() 方法。</p>
+<p>在 ViewGroup 中，onLayout() 是抽象的实现</p>
+<p><img src="http://i.imgur.com/hsXgIi1.png" alt=""></p>
+<p>所以说我们如果要自定义 ViewGroup 的话，一定要去实现 onLayout()。</p>
+<h2 id="四-draw"><a href="#四-draw" class="headerlink" title="四.draw"></a>四.draw</h2><p>在经过测量和绘制，你就可以进行绘制。但在 draw() 方法里有两个比较容易混淆的方法</p>
+<ul>
+<li><p>1.invalidate()</p>
+<p>  该方法的调用会引起 View 树的重绘，常用于内部调用或者需要刷新界面的时候，需要在主线程中调用该方法。当这个方法被调用的时候，就是请求 Android 系统，如果这个时候视图大小没有变化就不会调用 layout() 放置的过程。</p>
+</li>
+<li><p>2.requestLayout()</p>
+<p>  当布局发送变化的时候，比如说它的方向变化，尺寸的变化我们就会去调用 requestLayout() 这个方法。而自定义视图当中，经常会调用这个方法。比如说在某种情况下重新测量尺寸大小，然后就会手动去调用这个方法。而调用完这个方法后，它就会去触发 measure layout 的过程，但是它不会调用 draw() 方法。</p>
+</li>
+</ul>
+<h1 id="事件分发机制"><a href="#事件分发机制" class="headerlink" title="事件分发机制"></a>事件分发机制</h1><h2 id="一-为什么会有事件分发机制"><a href="#一-为什么会有事件分发机制" class="headerlink" title="一.为什么会有事件分发机制"></a>一.为什么会有事件分发机制</h2><p>Android 上的 View 是以树形结构存在的，View 的控件可能会重叠在一起。但当我们点击一块的时候，多个重叠的 View 它 就会重叠相应。这时候系统会把这个点击事件判给谁？为了解决这个问题，就引入了事件分发机制。</p>
+<p><img src="http://i.imgur.com/1nh7pJF.png" alt=""></p>
+<p>在如图所示中当我们点击 View1 的时候，下面蓝色的 ViewGroupA 和黑色的 RootView 也是能够响应的。为了确定到底是哪个 View 是 View1，ViewGroupA 还是 RootView 来处理点击事件，这里就引入了事件分发机制。</p>
+<p>我们来进一步来看下 Layout 结构</p>
+<p><img src="http://i.imgur.com/yxnJygq.png" alt=""></p>
+<p>我们可以看到它最上方是一个 PhoneWindow 和 DecorView，这两个我们在 Layout 布局中都没有见过，它到底是什么？</p>
+<p>在回头看下之前的布局</p>
+<p><img src="http://i.imgur.com/1nh7pJF.png" alt=""></p>
+<p>这个透明的布局当中，我们顶层的 Layout，它的大小并没有填充到整个父窗体，我们可以看到它的父窗体当中留下了大片的空白区域。由于我们的手机屏幕不能透明，所以说在这空白区域肯定会显示一些东西。那么会显示什么？有经验的 Android 开发程序员都知道，屏幕上没有 View 的部分，就会显示主题的颜色。不仅如此最上面的标题，也没有显示在 Layout 当中，那这个标题又是显示在哪里的呢？这里的主题的颜色和标题栏的内容就是显示在下方的 DecorView 当中的。</p>
+<p><strong>Phonewindow</strong></p>
+<p>那 PhoeWindow 是用来做什么的呢？</p>
+<p>Phonewindow 它是一个抽象类 window 的实现类，那抽象类 window 又是什么？window 可以说是所有视图最顶层的容器，包括在 window 里面 所有的 View 视图和 ViewGroup 外观，行为，都是归 window 来管。这里包括了背景的显示，标题栏和背景的显示，都是在 window 的管理范畴里面。其实我们可以把它当成 View 最顶层的管理容器，但虽然看起来它管理的是很多，但由于它是一个抽象类它无法真正的去实现，所以说要交给它唯一的实现类 Phonewindow 来实现。</p>
+<p>Phonewindow 作为 window 的唯一实现类，它就是我们的 View 事件的管理容器，不过 Phonewindow 一般是使用内部 DecorView 类来进行消息传递的。Phonewindow 它通过指示告诉 DecorView 传递给下面的 View，下面的 View 也通过 DecorView 返回给 Phonewindow，大体是这样的一个流程。</p>
+<h2 id="二-三个重要的事件分发的方法"><a href="#二-三个重要的事件分发的方法" class="headerlink" title="二.三个重要的事件分发的方法"></a>二.三个重要的事件分发的方法</h2><p>我们一直在说事件传递，事件分发它到底是一个什么过程？它具体的流程，其实就是通过三个方法实现的。</p>
+<ul>
+<li>1.dispatchTouchEvent</li>
+<li>2.onInterceptTouchEvent</li>
+<li>3.onTouchEvent</li>
+</ul>
+<p>在介绍这三个方法之前，我们要清楚 Activity 和 View 是没有拦截事件的。因为 Activity 它作为整个事件的原始分发者，如果你的 Activity 拦截了这个事件，就会导致整个屏幕无法相应事件。而 View 作为事件传递的最末端，要么就把事件销毁掉，要么就不处理进行回传。所以说它根本就没必要进行事件拦截，因为它下面已经没有分发的子控件。</p>
+<p><strong>1.dispatchTouchEvent</strong></p>
+<p>dispatchTouchEvent 是最重要的一个方法，dispatchTouchEvent 它决定了触摸事件 onTouchEvent 来处理，还是分发给子 View 让子 View 递归调用自身的 dispatchTouchEvent 来处理。如果我们去看 dispatchTouchEvent 源码我们就会看到，它会调用 onInterceptTouchEvent 来判断是否进行拦截事件。</p>
+<p><strong>2.onInterceptTouchEvent</strong></p>
+<p>onInterceptTouchEvent 是用来拦截事件的方法，当父控件下发事件给子控件进行处理的时候，如果子控件需要对事件进行处理，它就会在 onInterceptTouchEvent 进行拦截的，然后它就会进入到子控件的 onTouchEvent 里面做触摸事件监听以及一些逻辑的判断。所以说如果子控件需要进行一些事件的响应，它就会拦截这个事件，然后在它 onTouchEvent 里面进行处理。</p>
+<p><strong>3.onTouchEvent</strong></p>
+<p>onTouchEvent 它其实是 View 当中一个方法，它处理传递到 View 的事件，一些事件包括：你按下屏幕，在屏幕上移动，抬起屏幕以及取消等四个事件。</p>
+<h2 id="三-事件分发流程"><a href="#三-事件分发流程" class="headerlink" title="三.事件分发流程"></a>三.事件分发流程</h2><p><img src="http://i.imgur.com/HovJKzF.png" alt=""></p>
+<p>当屏幕被点击的时候，由于 View 是树形结构的，事件首先会传递给 Activity，然后它会传递给 View 的实现管理类 PhoneWindow，而 PhoneWindow 是通过它内部的 DecorView 来进行消息的传递的。DecorView 又会传递给外面最大的父容器 ViewGroup，而 ViewGroup 依次传递给它的子 View。</p>
+<p>事件分发机制的流程是非常清晰，但你是否注意到这样一个问题。如果最后分发到最后一个 View，而这个 View 没有处理事件那怎么办？那这事件会被浪费掉吗？其实是不会的，因为 Android 中有这样的一个机制。</p>
+<p>如果最后一个 View 没有销毁事件，那这个事件会依次反转最后回转到最高位的 Activity。如果最后的 Activity 没有进行处理，这个事件才会被抛弃。它不会在传递到 View 的时候就被抛弃，它会回传。这处理模式其实是 Android 当中非常经典的，责任事件设计模式。这设计模式非常精巧，上层的 View 既可以拦截事件自己处理，也可以下发询问子 View 你要不要处理，你要处理你就处理，如果你是最顶层的话就返回给我，这样既保证了事件的有序性又非常的灵活。</p>
+<p><img src="http://i.imgur.com/5Di81d4.png" alt=""></p>
+<p>我们来结合之前的事件，来看这张图。首先事件会传给 Activity，Activity 在它的 superDispatchTouchEvent 进行处理。它会传给整个 View 的管理容器 PhoneWindow，这时候管理容器所有操作是在它的内部类 DecorView 当中做的。这时候 dispatchTouchEvent 它会判断是否需要进行拦截，如果不拦截的话就会传递给它下面的 RootView 当中。RootView 会做 dispatchTouchEvent 里面也会做相应的判断，在它的 onInterceptTouchEvent 拦截事件里面，如果它不拦截它会返回 false，返回 false 它就会交给子控件 ViewGroupA 的 dispatchTouchEvent 进行事件的分发。而事件分发里面如果 ViewGroupA 里也不拦截事件，它就会在它的拦截事件 onInterceptTouchEvent 里面返回 false，这时候 ViewGroupA 也不进行拦截。它就会把消息传递给它的子 View：View1。View1 在它的 dispatchTouchEvent 它会做相应的处理，这时候由于它是最底层的 View 它就没有拦截事件了。这时如果它的 onTouchEvent 方法返回 true，那就说明 View 是销毁掉了。这时候我们就会依次返回 true 交给 dispatchTouchEvent 来告诉上层的 View，这事件已经被我处理了，我们就不要进行响应了。</p>
+<h1 id="listview-面试详解"><a href="#listview-面试详解" class="headerlink" title="listview 面试详解"></a>listview 面试详解</h1><h2 id="一-什么是-listview"><a href="#一-什么是-listview" class="headerlink" title="一.什么是 listview"></a>一.什么是 listview</h2><p>ListView 就是一个能数据集合以动态滚动的方式展示到用户界面上的 View。它本质上也是一个 View，应该说在 Android 当中常用的控件当中 listview 用法是比较复杂的，所以它用来处理那些数据很多但同时手机又无法展示所有内容的情况。ListView 经常用列表的形式来展示内容，超出屏幕内容的部分只要手指滑动，就可以移动到屏幕内了。</p>
+<h2 id="二-listview-适配器模式"><a href="#二-listview-适配器模式" class="headerlink" title="二.listview 适配器模式"></a>二.listview 适配器模式</h2><p><img src="http://i.imgur.com/snpn4oH.png" alt=""></p>
+<p>适配器模式大家应该不会陌生，我们在使用 ListView 的时候肯定会用到它。但是什么是 Adapter ？因为 Android 的 ListView 它需要把各种可能的数据和用户自定义的 View 全部显示在屏幕上。而 ListView<br>它本身又是一个 View，它不关心数据是什么它只是一个垂直显示的列表而已，它最关心的就是 ListView 的 item，哪个一个 position 位置显示哪一个 View，它只是关心把要显示的 View 显示到相应的 item 上。</p>
+<p>ListView 和数据是分开的不直接接触，所以说只能通过 Adapter 适配器把数据加载到屏幕上。所以 Adapter 就像图中一样，它是数据源和 ListView 之间的桥梁。Adapter 为每一个数据制作 View，然后交给 ListView 来显示。</p>
+<p>Adapter 这个机制的出现，就是为了保证数据和 View 的分离。其实这也是一种 MVC 的设计模式，它只会通过 Adapter 真正处理数据源。同时 Adapter 接口又是统一的，所以这样 ListView 就不用担心数据适配的问题。同时由于 Adapter 又是一个接口，所以每一个子类都可以去实<br>现自己的逻辑，去完成某一个功能，然后去完成某个场景下的业务操作。</p>
+<p>我们来看下代码</p>
+<pre><code>public class MainActivity extends AppCompatActivity {
+
+    private ListView mListview;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mListview = (ListView) findViewById(R.id.listview);
+        mListview.setAdapter(new MyAdapter(this));
+    }
+
+
+
+    class MyAdapter extends BaseAdapter {
+        private Context context;
+
+        public MyAdapter(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        public int getCount() {
+            return 0;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        class ViewHolder {
+            public ImageView img;
+            public TextView title;
+            public TextView info;
+        }
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            ViewHolder holder;
+            if (convertView == null) {
+                holder = new ViewHolder();
+                convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.list_item, null);
+                holder.img = (ImageView) convertView.findViewById(R.id.img);
+                holder.title = (TextView) convertView.findViewById(R.id.title);
+                holder.info = (TextView) convertView.findViewById(R.id.info);
+                convertView.setTag(holder);
+            } else {
+                holder = (ViewHolder) convertView.getTag();
+            }
+            holder.title.setText(&quot;Hello&quot;);
+            holder.info.setText(&quot;World&quot;);
+            return convertView;
+        }
+
+
+    }
+
+}
+</code></pre><p>在这类里面简单的写了个 BaseAdapter，然后 BaseAdapter 通过 ListView 的 setAdapter 的方式 把数据传递给 ListView。</p>
+<p>在 BaseAdapter 里面最重要的是两个方法</p>
+<ul>
+<li><p>getCount()</p>
+<p>  getCount() 是返回整个数据的大小，即你有多少数据就返回多少</p>
+</li>
+<li><p>getView()</p>
+<p>  getView() 是用来绘制每一个 item 用的</p>
+</li>
+</ul>
+<p>Adapter 模式最重要的就是让 ListView 绘制相应的数据到它的 item 上。它的绘制原理其实是很简单，就是我们上面提到的 getView() 方法，就是用来绘制每一个 item 用的。在 ListView 开始绘制的时候，系统首先会调用上面提到的 getCount() 方法，而 getCountt() 方法就是返回数据的长度。根据这个长度它会调用 getView() 方法，用来绘制 ListView 每一个 item。也就是说 ListView 当中有多少个 item 就会调用多少次 getView() 方法来绘制相应的 item。可是大家一定会有这样的疑惑，如果 ListView 当中的数据有很多，成百上千，这时候每一次的滑动会不会造成内存的 OOM 呢？这里就要介绍 ListView 当中一个神奇的机制：recycleBin 机制。</p>
+<h2 id="三-listview-的-recycleBin-机制"><a href="#三-listview-的-recycleBin-机制" class="headerlink" title="三.listview 的 recycleBin 机制"></a>三.listview 的 recycleBin 机制</h2><p>recycleBin 机制是什么？其实它就是写在 ListView 所继承的 AbsListView 当中的一个内部类。</p>
+<p><img src="http://i.imgur.com/Ui8IPts.png" alt=""></p>
+<p>我们来看下AbsListView，它里面有一个内部类 RecycleBin</p>
+<pre><code>class RecycleBin {  
+    private RecyclerListener mRecyclerListener;  
+
+    /** 
+     * The position of the first view stored in mActiveViews. 
+     */  
+    private int mFirstActivePosition;  
+
+    /** 
+     * Views that were on screen at the start of layout. This array is 
+     * populated at the start of layout, and at the end of layout all view 
+     * in mActiveViews are moved to mScrapViews. Views in mActiveViews 
+     * represent a contiguous range of Views, with position of the first 
+     * view store in mFirstActivePosition. 
+     */  
+    private View[] mActiveViews = new View[0];  
+
+    /** 
+     * Unsorted views that can be used by the adapter as a convert view. 
+     */  
+    private ArrayList&lt;View&gt;[] mScrapViews;  
+
+    private int mViewTypeCount;  
+
+    private ArrayList&lt;View&gt; mCurrentScrap;  
+
+    /** 
+     * Fill ActiveViews with all of the children of the AbsListView. 
+     *  
+     * @param childCount 
+     *            The minimum number of views mActiveViews should hold 
+     * @param firstActivePosition 
+     *            The position of the first view that will be stored in 
+     *            mActiveViews 
+     */  
+    void fillActiveViews(int childCount, int firstActivePosition) {  
+        if (mActiveViews.length &lt; childCount) {  
+            mActiveViews = new View[childCount];  
+        }  
+        mFirstActivePosition = firstActivePosition;  
+        final View[] activeViews = mActiveViews;  
+        for (int i = 0; i &lt; childCount; i++) {  
+            View child = getChildAt(i);  
+            AbsListView.LayoutParams lp = (AbsListView.LayoutParams) child.getLayoutParams();  
+            // Don&#39;t put header or footer views into the scrap heap  
+            if (lp != null &amp;&amp; lp.viewType != ITEM_VIEW_TYPE_HEADER_OR_FOOTER) {  
+                // Note: We do place AdapterView.ITEM_VIEW_TYPE_IGNORE in  
+                // active views.  
+                // However, we will NOT place them into scrap views.  
+                activeViews[i] = child;  
+            }  
+        }  
+    }  
+
+    /** 
+     * Get the view corresponding to the specified position. The view will 
+     * be removed from mActiveViews if it is found. 
+     *  
+     * @param position 
+     *            The position to look up in mActiveViews 
+     * @return The view if it is found, null otherwise 
+     */  
+    View getActiveView(int position) {  
+        int index = position - mFirstActivePosition;  
+        final View[] activeViews = mActiveViews;  
+        if (index &gt;= 0 &amp;&amp; index &lt; activeViews.length) {  
+            final View match = activeViews[index];  
+            activeViews[index] = null;  
+            return match;  
+        }  
+        return null;  
+    }  
+
+    /** 
+     * Put a view into the ScapViews list. These views are unordered. 
+     *  
+     * @param scrap 
+     *            The view to add 
+     */  
+    void addScrapView(View scrap) {  
+        AbsListView.LayoutParams lp = (AbsListView.LayoutParams) scrap.getLayoutParams();  
+        if (lp == null) {  
+            return;  
+        }  
+        // Don&#39;t put header or footer views or views that should be ignored  
+        // into the scrap heap  
+        int viewType = lp.viewType;  
+        if (!shouldRecycleViewType(viewType)) {  
+            if (viewType != ITEM_VIEW_TYPE_HEADER_OR_FOOTER) {  
+                removeDetachedView(scrap, false);  
+            }  
+            return;  
+        }  
+        if (mViewTypeCount == 1) {  
+            dispatchFinishTemporaryDetach(scrap);  
+            mCurrentScrap.add(scrap);  
+        } else {  
+            dispatchFinishTemporaryDetach(scrap);  
+            mScrapViews[viewType].add(scrap);  
+        }  
+
+        if (mRecyclerListener != null) {  
+            mRecyclerListener.onMovedToScrapHeap(scrap);  
+        }  
+    }  
+
+    /** 
+     * @return A view from the ScrapViews collection. These are unordered. 
+     */  
+    View getScrapView(int position) {  
+        ArrayList&lt;View&gt; scrapViews;  
+        if (mViewTypeCount == 1) {  
+            scrapViews = mCurrentScrap;  
+            int size = scrapViews.size();  
+            if (size &gt; 0) {  
+                return scrapViews.remove(size - 1);  
+            } else {  
+                return null;  
+            }  
+        } else {  
+            int whichScrap = mAdapter.getItemViewType(position);  
+            if (whichScrap &gt;= 0 &amp;&amp; whichScrap &lt; mScrapViews.length) {  
+                scrapViews = mScrapViews[whichScrap];  
+                int size = scrapViews.size();  
+                if (size &gt; 0) {  
+                    return scrapViews.remove(size - 1);  
+                }  
+            }  
+        }  
+        return null;  
+    }  
+
+    public void setViewTypeCount(int viewTypeCount) {  
+        if (viewTypeCount &lt; 1) {  
+            throw new IllegalArgumentException(&quot;Can&#39;t have a viewTypeCount &lt; 1&quot;);  
+        }  
+        // noinspection unchecked  
+        ArrayList&lt;View&gt;[] scrapViews = new ArrayList[viewTypeCount];  
+        for (int i = 0; i &lt; viewTypeCount; i++) {  
+            scrapViews[i] = new ArrayList&lt;View&gt;();  
+        }  
+        mViewTypeCount = viewTypeCount;  
+        mCurrentScrap = scrapViews[0];  
+        mScrapViews = scrapViews;  
+    }  
+
+}  
+</code></pre><p>在 RecyleBin 中有三个比较重要的存储变量</p>
+<ul>
+<li><p>mActiveViews</p>
+<pre><code>   private View[] mActiveViews = new View[0]; 
+</code></pre><p>  mActiveViews 从字面上我们可以看到，它存储的就是活动的 View。那活动的 View 在 ListView 中代表什么呢？代表的就是屏幕上课见的 View，而这些 View 它是可以被复用的。</p>
+</li>
+<li><p>mScrapViews</p>
+<pre><code>  private ArrayList&lt;View&gt;[] mScrapViews;
+</code></pre><p>  mScrapViews 它是一个二维数组，它表示的是所有废弃类型的 View的 List，即当你的屏幕滑出去的时候它的 item 就变成了 ScrapView，而所有的废弃的集在一起就组成了 mScrapViews。</p>
+</li>
+<li><p>mCurrentScrap</p>
+<pre><code>   private ArrayList&lt;View&gt; mCurrentScrap;
+</code></pre><p> mCurrentScrap 它表示的是当前废弃 View 的 List，即不是表示上面的所有的 ，而是当前被滑出去的废弃的 View 的 List。</p>
+</li>
+</ul>
+<p>我们知道 ListView 滑动的时候，它会把滑出屏幕的 View 删除，这样就不会绘制那些看不见的 View 了。而那些看不见的 View 最终会到哪里呢？它会放在 RecylcBin 里面存储起来，其实大家可以把 RecylcBin 理解成一个回收站，它会把那些无用的资源放在回收站里，等你想用的时候在通过回收站的还原把它还原出来。</p>
+<p>接下来我们看 RecyclBin 当中几个重要的方法</p>
+<ul>
+<li><p>setViewTypeCount</p>
+<pre><code>  public void setViewTypeCount(int viewTypeCount) {  
+      if (viewTypeCount &lt; 1) {  
+          throw new IllegalArgumentException(&quot;Can&#39;t have a viewTypeCount &lt; 1&quot;);  
+      }  
+      // noinspection unchecked  
+      ArrayList&lt;View&gt;[] scrapViews = new ArrayList[viewTypeCount];  
+      for (int i = 0; i &lt; viewTypeCount; i++) {  
+          scrapViews[i] = new ArrayList&lt;View&gt;();  
+      }  
+      mViewTypeCount = viewTypeCount;  
+      mCurrentScrap = scrapViews[0];  
+      mScrapViews = scrapViews;  
+  }  
+</code></pre><p>  这方法的作用就是为 ListView 中的每一个类型的数据项，建立一个 RecycleBin 机制，即我们可以在 ListView 当中设置不同的数据类型，每一个 item 可以有不同的样式，所以对每一个样式都要设置 RecycleBin 机制，setViewTypeCount 方法就是这样一个作用。</p>
+<p>  它默认的情况下，返回的是 1 默认每一个 item 只有一种类型。</p>
+</li>
+<li><p>fillActiveViews</p>
+<pre><code>  void fillActiveViews(int childCount, int firstActivePosition) {  
+  if (mActiveViews.length &lt; childCount) {  
+      mActiveViews = new View[childCount];  
+  }  
+  mFirstActivePosition = firstActivePosition;  
+  final View[] activeViews = mActiveViews;  
+  for (int i = 0; i &lt; childCount; i++) {  
+      View child = getChildAt(i);  
+      AbsListView.LayoutParams lp = (AbsListView.LayoutParams) child.getLayoutParams();  
+      // Don&#39;t put header or footer views into the scrap heap  
+      if (lp != null &amp;&amp; lp.viewType != ITEM_VIEW_TYPE_HEADER_OR_FOOTER) {  
+          // Note: We do place AdapterView.ITEM_VIEW_TYPE_IGNORE in  
+          // active views.  
+          // However, we will NOT place them into scrap views.  
+          activeViews[i] = child;  
+      }  
+  }  
+</code></pre><p>  }</p>
+<p>  这方法接收的是两个参数：childCount,firstActivePosition。第一个参数表示的是存储的数量，第二个参数表示的是 ListView 当中第一个可见元素的 postition 值。RecycleBin 当中使用 mActiveViews 这个数组来存储 View。调用这个方法的之后它就会根据传入的参数将 ListView 中的指定元素，存储到这个 mActiveViews 数组当中。</p>
+</li>
+<li><p>getActiveView</p>
+<pre><code>    View getActiveView(int position) {  
+      int index = position - mFirstActivePosition;  
+      final View[] activeViews = mActiveViews;  
+      if (index &gt;= 0 &amp;&amp; index &lt; activeViews.length) {  
+          final View match = activeViews[index];  
+          activeViews[index] = null;  
+          return match;  
+      }  
+      return null;  
+  }  
+</code></pre><p>  这方法从字面意义上就能猜出来，它其实是和 fillActiveView 是对应的。fillActiveView 它是填充 ActiveView，而 getActiveView 获取相应屏幕上所显示的 View，它的参数 position 表示的是当中 View 所在的位置。</p>
+<p>  不过这方法神奇的地方，就是它会把 position 的值转换成 activeViews 数组下标的值。还有最重要一点就是，当它被获取之后，这个 activeViews 就会设置为 null。就是说下次获取同样的 View，它的 activeViews 的值也是 null。所以 activeViews 屏幕上的 View，它是不能被重复利用的。</p>
+</li>
+<li><p>addScrapView</p>
+<pre><code>  void addScrapView(View scrap) {  
+  AbsListView.LayoutParams lp = (AbsListView.LayoutParams) scrap.getLayoutParams();  
+  if (lp == null) {  
+      return;  
+  }  
+  // Don&#39;t put header or footer views or views that should be ignored  
+  // into the scrap heap  
+  int viewType = lp.viewType;  
+  if (!shouldRecycleViewType(viewType)) {  
+      if (viewType != ITEM_VIEW_TYPE_HEADER_OR_FOOTER) {  
+          removeDetachedView(scrap, false);  
+      }  
+      return;  
+  }  
+  if (mViewTypeCount == 1) {  
+      dispatchFinishTemporaryDetach(scrap);  
+      mCurrentScrap.add(scrap);  
+  } else {  
+      dispatchFinishTemporaryDetach(scrap);  
+      mScrapViews[viewType].add(scrap);  
+  }  
+
+  if (mRecyclerListener != null) {  
+      mRecyclerListener.onMovedToScrapHeap(scrap);  
+  }  
+</code></pre><p>  }  </p>
+<p>  这方法就是用来把废弃的 View 缓存最重要的一个方法，它的方法接收一个参数：View scrap，即将要被废弃的 View，也就是说这个 View 刚滑出屏幕以后它就会添加到 mScrapViews 这个数组当中。<br>  RecycleBin 机制就是调用这个方法来缓存的。</p>
+</li>
+</ul>
+<p>我们来总结下 RecycleBin 机制</p>
+<p><img src="http://i.imgur.com/G3MivAO.png" alt=""></p>
+<p>这张图就解释了，为什么 ListView 中存储了很多数据也能不造成 OOM 的原因。它就有屏幕上可见的元素 1 到元素 5 是存储在内存里面的，其他移除屏幕外的它都会保存在 RecycleBin 当中。</p>
+<p>当元素 0 滑出屏幕的时候，RecycleBin 里面会有一个容器把它存储在这个机制里面。而当下面的元素 6 要显示在屏幕上的时候，而这缓存的 item，它就会通过 getView() 方法获取到元素 0 这个位置，然后达到复用的效果。元素 6 从底部慢慢升起被用户可见的时候，表示的是元素 6 保存的是在内存当中，所以它会复用元素 0 当中的 item。</p>
+<h2 id="四-listview-的优化"><a href="#四-listview-的优化" class="headerlink" title="四.listview 的优化"></a>四.listview 的优化</h2><p><strong>convertview重用/viewHolder</strong></p>
+<p>在之前的代码中我们看到 getView() 当中有一个参数 convertView</p>
+<pre><code>public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder;
+        if (convertView == null) {
+            holder = new ViewHolder();
+            convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.list_item, null);
+            holder.img = (ImageView) convertView.findViewById(R.id.img);
+            holder.title = (TextView) convertView.findViewById(R.id.title);
+            holder.info = (TextView) convertView.findViewById(R.id.info);
+            convertView.setTag(holder);
+        } else {
+            holder = (ViewHolder) convertView.getTag();
+        }
+        holder.title.setText(&quot;Hello&quot;);
+        holder.info.setText(&quot;World&quot;);
+        return convertView;
+    }
+</code></pre><p>convertView 是什么？它其实就是做一个缓存的作用，你利用缓存 convertView，你可以做判断。如果缓存中它不存在，只有它为空的时候才去创建 View。如果创建了已存在就可以走 else 这部分，它提升了性能。但是每次显示一个 item 的时候，它都会调用 getView()。但每次调用的时候 convertView 都为空，但一触屏的时候 convertView 就不是空了，它就一触碰屏幕的 item 值。</p>
+<p>我们定义一个 ViewHolder 里面定义三个变量，使用 ViewHolder 我们可以避免多次 findViewById()。我们知道所有的 View 它是二叉树的形式，所以它每次遍历非常耗时，这样利用 ViewHolder 就能减少 findViewById() 的次数。</p>
+<pre><code>    class ViewHolder {
+        public ImageView img;
+        public TextView title;
+        public TextView info;
+    }
+</code></pre><p><strong>三级缓存/监听滑动事件</strong></p>
+<p>三级缓存就是在你图片加载的时候，需要用到缓存的机制来进行。同时在 getView() 尽量少做耗时操作，就是保证 ListView 的滑动性。就是说你一旦在 ListView 中做耗时操作的时候，会显的 ListView 的卡顿。如果一定要在 ListView 加载图片，我们可以设置监听事件。你可以在 ListView 滑动停止的时候，去加载图片。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/18/Android 面试 二/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/07/19/Kotlin 之旅四/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/daily_pic.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" alt="Koc's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        kocd726@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: kocd726@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">10</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chihaiyishen" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
