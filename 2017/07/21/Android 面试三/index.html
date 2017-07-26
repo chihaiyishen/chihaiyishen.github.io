@@ -381,7 +381,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h1 id="View-的绘制机制"><a href="#View-的绘制机制" class="headerlink" title="View 的绘制机制"></a>View 的绘制机制</h1><h2 id="一-view-树的绘制流程"><a href="#一-view-树的绘制流程" class="headerlink" title="一.view 树的绘制流程"></a>一.view 树的绘制流程</h2><p><img src="http://i.imgur.com/ReHslOO.png" alt=""></p>
-<p>我们知道当 Activity 接收到用户触摸接触的焦点的时候，它就会被请求绘制布局。请求是用 Android frentwotent 处理绘制的，它从根节点开始进行测量和绘制。整个 View 的绘制流程是在 ViewRootImpl 类的 performTraversals() 方法中进行展开的。这个函数做的工作非常简单，它包括是否重新计算视图大小即 measure() 方法，是否需要重新安置视图位置即 layout() 方法，以及是否要重绘即 draw() 方法。</p>
+<p>我们知道当 Activity 接收到用户触摸接触的焦点的时候，它就会被请求绘制布局。请求是用 Android framwork 处理绘制的，它从根节点开始进行测量和绘制。整个 View 的绘制流程是在 ViewRootImpl 类的 performTraversals() 方法中进行展开的。这个函数做的工作非常简单，它包括是否重新计算视图大小即 measure() 方法，是否需要重新安置视图位置即 layout() 方法，以及是否要重绘即 draw() 方法。</p>
 <p>我们可以看到整个 View 的绘制流程大体分为这三步，它会经过 measure -&gt; layout -&gt; draw 三大过程，然后一个对 View 的绘制工作。</p>
 <p>View 的绘制流程就像一个递归的过程，在 onMeasure() 方法里面它会对所有的子元素进行测量，然后测量的过程从父的 ViewGroup 传递到子 View 里面。经过子元素的递归，测量完所有的子元素的长度之后，然后进行递归反复之后它就完成了整个父元素 ViewGroup 的测量，而 layout 也是相类似树的递归过程。</p>
 <h2 id="二-measure-测量"><a href="#二-measure-测量" class="headerlink" title="二.measure 测量"></a>二.measure 测量</h2><p><img src="http://i.imgur.com/4dG5Rpl.png" alt=""></p>
@@ -875,6 +875,14 @@
 
     <!-- Next Nav -->
     
+        <a href="/2017/07/26/Kotlin 六/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
 </nav>
 
         </div>
@@ -959,7 +967,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -986,7 +994,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">10</span>
+                <span class="sidebar-badge">11</span>
             </a>
         </li>
         

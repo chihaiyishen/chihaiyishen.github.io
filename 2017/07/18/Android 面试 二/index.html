@@ -440,7 +440,7 @@
 <p>总结的来说，造成内存泄漏的原因：静态内部类持有外部类的匿名引用，导致外部 activity 无法释放。</p>
 <p>解决办法：handler 内部持有外部 activity 的弱引用，并把 handler 改为静态内部类，第二，就是在 Activity 的生命周期方法 onDestory() 方法中调用 mHandler.removeCallback()。</p>
 <h2 id="AsyncTask-面试详解"><a href="#AsyncTask-面试详解" class="headerlink" title="AsyncTask 面试详解"></a>AsyncTask 面试详解</h2><h3 id="一-什么是-AsyncTask"><a href="#一-什么是-AsyncTask" class="headerlink" title="一.什么是 AsyncTask"></a>一.什么是 AsyncTask</h3><p>AsyncTask 是 Android 提供的一个轻量级的异步类，使用时你可以继承 AsyncTask（它是一个抽象类），在类中你可以实现异步操作并提供接口反馈当前异步类执行的程度。</p>
-<p>它本质上就是一个封装了线程池和 handler 的异步框架，AsyncTask 相比 handler 有了更好的封装，但是它底层也是封装了 handler。AsyncTask 能让你避免使用线程类 swited 和 handler 直接处理后台操作。它可以直接把运算好的结果来交给 UI 线程来进行显示，不过我们需要注意的是 AsyncTask 只能做一些比较短的耗时操作。如果你想要做一些长的耗时操作，你还是尽量用线程池进行操作。</p>
+<p>它本质上就是一个封装了线程池和 handler 的异步框架，AsyncTask 相比 handler 有了更好的封装，但是它底层也是封装了 handler。AsyncTask 能让你避免使用线程类 new thread 和 handler 直接处理后台操作。它可以直接把运算好的结果来交给 UI 线程来进行显示，不过我们需要注意的是 AsyncTask 只能做一些比较短的耗时操作。如果你想要做一些长的耗时操作，你还是尽量用线程池进行操作。</p>
 <p>总结的来说：AsyncTask 它本质上是封装了线程池和 handler，这个 AsyncTask 框架主要是用来执行异步任务的，所以说由于它内部继承了 handler，所以它能够方便的在工作线程和主线程之间灵活的切换。</p>
 <h3 id="二-AsyncTask-的使用方法"><a href="#二-AsyncTask-的使用方法" class="headerlink" title="二.AsyncTask 的使用方法"></a>二.AsyncTask 的使用方法</h3><p><strong>1.三个参数</strong></p>
 <p><img src="http://i.imgur.com/CIM4YTv.png" alt=""></p>
@@ -844,7 +844,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">8</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
             </ul>
         </li>
         
@@ -871,7 +871,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">10</span>
+                <span class="sidebar-badge">11</span>
             </a>
         </li>
         
