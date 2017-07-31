@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            Android 面试 四 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Koc">
+    <meta name="description" content="null">
+    <meta name="keywords" content="Android，Kotlin，自学编程,Android 面试">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Android 面试 四 | 痴海博客">
+    <meta property="og:description" content="null">
+    <meta property="og:article:tag" content="Android 面试"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(http://img1.50tu.com/bizhi/guanggao/2014-01-07/c761aed9407bcac25acc0cd23fdf2eab.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-项目构建相关面试问题"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android 项目构建相关面试问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#android-studio-目录结构面试问题"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">android studio 目录结构面试问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-构建"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Android 构建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Android-构建流程"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">1.Android 构建流程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-jenkins-持续集成构建"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.jenkins 持续集成构建</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#git"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">git</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-git-容易混淆的两个概念"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">一.git 容易混淆的两个概念</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-一些常用-git-命令"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">二.一些常用 git 命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-git-的两种工作流"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">三.git 的两种工作流</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#gradle-面试问题讲解"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">gradle 面试问题讲解</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Proguard-代码混淆面试问题"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Proguard 代码混淆面试问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Proguard-到底是什么"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">一. Proguard 到底是什么</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-ProGuard-技术的功能"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">二.ProGuard 技术的功能</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-ProGuard-工作原理"><span class="post-toc-number">1.5.3.</span> <span class="post-toc-text">三.ProGuard 工作原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#为什么要进行混淆"><span class="post-toc-number">1.5.4.</span> <span class="post-toc-text">为什么要进行混淆</span></a></li></ol></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://i.imgur.com/3ju8ZAV.jpg)">
+    
+            <p class="article-headline-p">
+                Android 面试 四
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Koc</strong>
+        <span>7月 31, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Android-面试/">Android 面试</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 面试 四&url=http://yoursite.com//2017/07/31/Android 面试四/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 面试 四&url=http://yoursite.com//2017/07/31/Android 面试四/index.html&via=Koc" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/07/31/Android 面试四/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/07/31/Android 面试四/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Android-项目构建相关面试问题"><a href="#Android-项目构建相关面试问题" class="headerlink" title="Android 项目构建相关面试问题"></a>Android 项目构建相关面试问题</h1><h2 id="android-studio-目录结构面试问题"><a href="#android-studio-目录结构面试问题" class="headerlink" title="android studio 目录结构面试问题"></a>android studio 目录结构面试问题</h2><p><img src="http://i.imgur.com/QWGtI3P.png" alt=""></p>
+<p>在讲解 android studio 目录结构之前，我们来分清楚下 project 和 moudle 模块。如图所示 android studio 最外层就是我们的工作区间，下面的 project 会把项目相关的放在同一个区间内，这点和我们以前用 eclipse 是不一样的。eclipse 它每一个 project 是独立的，而在 android studio 里每一个 project 是可以相关连的。在每一个 project 下面，又包含了每个 module 模块。</p>
+<p>在这里 app 这个模块</p>
+<p><img src="http://i.imgur.com/mLgm94e.png" alt=""></p>
+<p>每一个模块 module 都是独立可运行的程序，这样我们就可以把若干个模块关联到 project 下面。</p>
+<p>整个目录结构大致分为三个部分</p>
+<ul>
+<li><p>编译系统</p>
+<p>  android studio 是用 gradle 来处理的</p>
+</li>
+<li><p>配置文件</p>
+<p>  配置文件会配置一些 id 文件，属性之内。</p>
+</li>
+<li><p>应用模块</p>
+</li>
+</ul>
+<p><strong>我们先来看下最外层的 Project 结构</strong></p>
+<p><img src="http://i.imgur.com/QWGtI3P.png" alt=""></p>
+<ul>
+<li><p>.gradle</p>
+<p>  <img src="http://i.imgur.com/h1LwnFz.png" alt=""></p>
+<p>  这里包含一些 gradle 编译的脚本，gradle 是 Google 推荐的编译脚本，它的底层语音是 Groovy 的语言。gradle 编译系统版本是由我们 warpper 来指定的，因为 gradle 更新的比较快，为了兼容以前的版本，它做了一个包装 raple 这个包装类。</p>
+</li>
+<li><p>.idea</p>
+<p>  <img src="http://i.imgur.com/79Y6t1q.png" alt=""></p>
+<p>  这个文件包含了 android studio 这个工具所需要的文件，里面有很多文件夹：copyright（版权的声明），dictionaries（词典），libraries（jar 库的使用），以及配置文件。</p>
+</li>
+<li><p>app</p>
+<p>  <img src="http://i.imgur.com/yAamCbi.png" alt=""></p>
+<p>  这里是一个 module 文件，里面是我们编写的独立业务代码。</p>
+</li>
+<li><p>build</p>
+<p>  <img src="http://i.imgur.com/HvNw6LN.png" alt=""></p>
+<p>  build 文件是指我们的 project 或者 module，编译好之后所生成的一个文件，它就会生成在 build 里面，它会生成一些 apk，jar 文件，还有一些测写的临时文件。</p>
+</li>
+<li><p>gradle</p>
+<p>  <img src="http://i.imgur.com/mxw5QoA.png" alt=""></p>
+<p>  它里面有个 warpper 文件，这是 Android 对我们的 gradle 进行的一个封装：gradle-wrapper。这样做是因为，gradle-wrapper 更新速度的非常快，它比 android studio 的更新速度快很多。所以为了兼容的角度，Google 推出了一个 gradle-wrapper.jar 的文件，然后它会更新以前旧版本的 gradle。</p>
+</li>
+<li><p>.gignore</p>
+<p>  <img src="http://i.imgur.com/RYZQGgs.png" alt=""></p>
+<p>  这文件是和我们的 git 工具有关系的，它可以配置 git 上传时不需要上传的文件。</p>
+</li>
+<li><p>build.gradle</p>
+<p>  <img src="http://i.imgur.com/Gue7S7Z.png" alt=""></p>
+<p>  这文件里面是做一些相关配置的文件</p>
+<p>  <img src="http://i.imgur.com/Wotwv0p.png" alt=""></p>
+</li>
+<li><p>gradle.properties</p>
+<p>  <img src="http://i.imgur.com/pJLfcPZ.png" alt=""></p>
+<p>  这里就是做一些配置文件，但这里配置的是全局的，它适用于整个 module。</p>
+<p>  <img src="http://i.imgur.com/siN03Zg.png" alt=""></p>
+</li>
+<li><p>gradlew</p>
+<p>  <img src="http://i.imgur.com/kgWmvWD.png" alt=""></p>
+<p>  Linux 下可执行的文件</p>
+</li>
+<li><p>gradlew.bat</p>
+<p>  <img src="http://i.imgur.com/IYeCldP.png" alt=""></p>
+<p>  windows 下 gradlew 的可执行文件</p>
+</li>
+<li><p>local.properties</p>
+<p>  <img src="http://i.imgur.com/Sp6J1MW.png" alt=""></p>
+<p>  这是设置本地的属性，这文件不推荐上传到 git 库中。</p>
+</li>
+<li><p>settings.gradle</p>
+<p>  <img src="http://i.imgur.com/wFLJ63n.png" alt=""></p>
+<p>  这是和设置相关的，比如 gradle 的脚本会在这里设置。</p>
+</li>
+</ul>
+<p><strong>在来看下 module 目录结构</strong></p>
+<p><img src="http://i.imgur.com/q65ptmz.png" alt=""></p>
+<ul>
+<li><p>build</p>
+<p>  <img src="http://i.imgur.com/GBCKiXw.png" alt=""></p>
+<p>  这 build 文件也是生成编译后文件存在的位置，这个文件存在的位置主要是针对这我们的 module app，也包括会生成的 apk 和临时文件也会在这里。</p>
+</li>
+<li><p>libs</p>
+<p>  <img src="http://i.imgur.com/KDxieqT.png" alt=""></p>
+<p>  libs 主要存在第三方的 jar 文件和 aar 包，</p>
+</li>
+<li><p>src</p>
+<p>  <img src="http://i.imgur.com/eaqVNw3.png" alt=""></p>
+<p>  src 里面主要包括 java 代码和布局文件等等，我们的开发操作基本上是在这里进行的。</p>
+</li>
+<li><p>build.gradle</p>
+<p>  <img src="http://i.imgur.com/wVjhXMf.png" alt=""></p>
+<p>  整个模块相关的配置都会在这里</p>
+</li>
+<li><p>proguadrd-rules.pro</p>
+<p>  <img src="http://i.imgur.com/osy7auW.png" alt=""></p>
+<p>  <img src="http://i.imgur.com/fiBIL9v.png" alt=""></p>
+<p>  这个文件是有个混淆配置的文件，混淆对我们的 app 的保户，缩小 app 的大小有很大的关系。</p>
+</li>
+</ul>
+<h2 id="Android-构建"><a href="#Android-构建" class="headerlink" title="Android 构建"></a>Android 构建</h2><h3 id="1-Android-构建流程"><a href="#1-Android-构建流程" class="headerlink" title="1.Android 构建流程"></a>1.Android 构建流程</h3><p>Android 把 java 文件编译成 class 字节码文件，然后把字节码文件和我们依赖的第三方的 jar 文件，打包成 classes.dex Android 可执行的文件，然后在打包我们的资源文件，在把我们的 dex 文件和 assets文件合并成未签名的包，最后通过签名打包成完整的包。</p>
+<p><img src="http://i.imgur.com/Myqr27L.png" alt=""></p>
+<p>从图中可以看出，首先它有个叫 aapt 的工具。aapt 是 Android 资源打包工具，它就会将包中的 Application Resources 打包成资源文件，包括我们的 AndroidManifest.xml、layout 布局文件等等，将这些 xml 文件编译成二进制的形式。当然我们知道在 Android 当中 assets 资源文件它不会被编译，因为它图中一些图片它要保存原来的状态，不过这些资源文件它会生成资源 ID。aapt 生成之后就会加载相应的 R.java 文件。这是 Android 构建的第一步：通过 aapt 打包项目中资源文件。第二步有个 aidl 工具，这是一个 bundle 应用，这里我们会将响应 aidl 的接口转换成 Java 接口。第三步我们把所有的 R.java、Application Source Code、Jva Interfaces 通过 Java Compiler(Java 编译器) 转换成 .class 字节码文件。第四步我们会通过在 Android 当中的 dex 工具，结合上诉产生的字节码文件，打包编译成 dex 文件，dex 文件 是 Android 虚拟机中可以执行的模式。最终我们所有的 dex 文件，会打包成 apk 文件。在打包成 dex 文件之后，Android 中的 apkbuilder 会将我们编译过的资源和未编译过的资源包括图片等等，结合上面打包成的 .dex 文件，打包成我们最熟悉的 apk 文件，这就是我们的 Android 中 Package (apk)。但是这个生成的 apk 如果你要把它安装到设备上，你必须要对它签名。这就是我们的第六步：Jarsigner，这个工具对我们的 apk 进行 Debug or Release Keystore进行签名。最后当我们对 apk 进行签名之后，还需要通过 zipalign 这个工具对 apk 进行对齐操作，这样做的目的减少我们 apk 所占内存中的开销。</p>
+<h3 id="2-jenkins-持续集成构建"><a href="#2-jenkins-持续集成构建" class="headerlink" title="2.jenkins 持续集成构建"></a>2.jenkins 持续集成构建</h3><p>在项目开发过程中，随着我们业务需求的引进工程复杂度会增加，这时候我们不可能每开发一个版本就去打包，所以自动化的构建我们的 apk 是我们的努力的目标，而 jenkins 提供我们这样的功能。jenkins 它可以持续的集成我们的 apk，同时需要配置一些 gradle 的文件。</p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><h3 id="一-git-容易混淆的两个概念"><a href="#一-git-容易混淆的两个概念" class="headerlink" title="一.git 容易混淆的两个概念"></a>一.git 容易混淆的两个概念</h3><p><strong>1.工作区</strong></p>
+<p>工作区就是我们电脑当中所看见的文件目录，比如说我们的 project 就是我们的工作区。在这工作区目录中我们有个隐藏目录：.git，这里面是一些 git 版本库的内容。</p>
+<p><strong>2.gitigonre 文件</strong></p>
+<p>这文件配置一些我们不想上传到版本控制的一些文件，在这里我们可以进行配置。</p>
+<h3 id="二-一些常用-git-命令"><a href="#二-一些常用-git-命令" class="headerlink" title="二.一些常用 git 命令"></a>二.一些常用 git 命令</h3><p><strong>1.git init</strong></p>
+<p>git init：创建仓库命令，有经验的开发人员，会知道调用这个命令之后，目录下会多一个 .git 的隐藏目录，这目录里面就是放置 git 版本。</p>
+<p><strong>2.git status</strong></p>
+<p>git status：查看当前目录的状态</p>
+<p><strong>3.git diff</strong></p>
+<p>git diff + 文件名：就可与看到这一次和上一次相比，我们修改了哪些内容，会已标注的形式展现出来。</p>
+<p><strong>4.git add</strong></p>
+<p>git add + 文件名：会把我们现在所要添加的文件，放到我们的栈存区当中。注意是放在栈存区当中，而不是代码区中。</p>
+<p><strong>5.git commit</strong></p>
+<p>git commit：把 git add 到栈存区的内容，提交到我们的代码区中。</p>
+<p>我们在创建 git 版本库的时候，git 自动为我们了分支：master 分支。所以我们这里不指定分支的话，git commit 命令就会直接往 master 分支上提交命令。所以我们可以这样理解，git add 命令就是把我们所有的提交放存到我们的栈存 stack 中，然后通过 git commit 命令，把我们栈存区的所有代码，提交到我们的代码分支上。</p>
+<p><strong>6.git clone</strong></p>
+<p>git clone：从远程的仓库去克隆一份代码到本地仓库</p>
+<p><strong>7.git branch</strong></p>
+<p>git branch：查看当中的分支到底是什么</p>
+<p><strong>8.git checkout</strong></p>
+<p>git checkout：切换分支命令</p>
+<h3 id="三-git-的两种工作流"><a href="#三-git-的两种工作流" class="headerlink" title="三.git 的两种工作流"></a>三.git 的两种工作流</h3><p><strong>1.fork / clone</strong></p>
+<p><img src="http://i.imgur.com/5u5Xqaj.png" alt=""></p>
+<p>首先如果已 fork / clone 这种工作形式，它第一步比如说从 Joe’s GitHub repo 的远程仓库，这里可以理解成代码的远程仓库，已 fork 的形式复制一份代码仓库到我们自己的远程仓库上。复制好仓库并不是在我们的本地，而是保存在我们的远程仓库里面。这时候你的计算机本地没有对仓库做任何操作，这只是第一步。第二步 clone 你的仓库，这会让你的代码远程仓库发送一份复制文件到你的本地文件上，这时远程仓库的代码就会复制一份到你本地文件上。第三步你可以 Update a file，即更新某些文件。第四你可以通过 add 之后 commit 你的文件，然后这时候 commit 操作其实是提交到自己本地仓库上。然后可以通过第五步的 push 在把本地仓库中的代码提交到远程的仓库上，这就完成了第五步。第六步：pull request，即你要远程仓库中的代码提交到项目中的仓库上，这时候你需要发送一个 pull request 命令。项目仓库的管理员会看到你发送的 pull request，他会核实你的代码。如果你的代码没有太大的错误，他就会把你代码合并到仓库上。</p>
+<p><strong>2.clone</strong></p>
+<p><img src="http://i.imgur.com/5u5Xqaj.png" alt=""></p>
+<p>clone 形式就是跳过 fork 到自己的远程仓库中，直接 clone 到本地仓库中，然后就 Push 到项目仓库，这样就缺少了管理员。而 fork / clone 它有一个管理员，它可以保证代码的质量。</p>
+<h2 id="gradle-面试问题讲解"><a href="#gradle-面试问题讲解" class="headerlink" title="gradle 面试问题讲解"></a>gradle 面试问题讲解</h2><p>在我们创建一个新的项目的时候会创建三个新的 gradle 文件，一个是 project 下面的 build.gradle 和 settings.gradle，以及我们的 app 包里面的 build.gradle。</p>
+<p><strong>settings.gradle</strong></p>
+<p><img src="http://i.imgur.com/TJNKbk6.png" alt=""></p>
+<p>settings.gradle 文件它只包含在一个 Android 的项目当中，对于一个新的项目来说，它只会包含一个 moudle 模块，这个文件就是包含 moudle 模块用的。settings.gradle 文件它在初始化阶段会被执行，它会定义 app new 的 moudle 在我们的构建范围内。如果是一个人单独开发的话，你不一定需要这个文件。但如果是多模块开发的话，每个人开发不同的模块，这时候你需要 settings.gradle 来编制一定的规则，让我们的业务逻辑开发更有条理。</p>
+<p><strong>bulid.gradle(project)</strong></p>
+<p><img src="http://i.imgur.com/OHnVBnz.png" alt=""></p>
+<p>这文件一般包含两个代码块：buildecript、allprojects，实际的构建它会在 buildecript 这个代码块里</p>
+<pre class=" language-java"><code class="language-java">buildscript <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+        classpath <span class="token string">'com.android.tools.build:gradle:2.3.0'</span>
+
+        <span class="token comment" spellcheck="true">// NOTE: Do not place your application dependencies here; they belong</span>
+        <span class="token comment" spellcheck="true">// in the individual module build.gradle files</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>repositories 是我们代码的仓库，意味着依赖包，比如我们可以依赖第三方的 jar 包或者代码，这里 jcenter() 是一个很有名的代码库。</p>
+<p>dependecies 是代码块在构建过程中所需要依赖的那些包，这就意味你不能将你的应用或者依赖项目所需要的依赖包，包含在顶层的构建文件当中，因为默认的情况下是 Android 的 gradler 应用插件。每一个 Android 模块都需要有 Android 插件，因为该插件可以执行该模块的相关任务。</p>
+<pre class=" language-java"><code class="language-java">allprojects <span class="token punctuation">{</span>
+    repositories <span class="token punctuation">{</span>
+        <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>allprojects 是用来定义模块的属性，你甚至也可以在这里创建任务，在上面我们可以看到它也有 repositories 代码块。但需要注意的是你一旦使用 allprojects 属性，这个模块就耦合到你所在的项目当中。这就意味着很有可能在主项目没有构建的情况下，你这个模块是无法构建的。所以说这在刚开始 Android studio 这是一个问题，你后面如果想把它单独的分离到自己的项目当中，你就需要重新创建 builde 文件。</p>
+<p><strong>build.gradle(app)</strong></p>
+<pre class=" language-java"><code class="language-java">apply plugin<span class="token operator">:</span> <span class="token string">'com.android.application'</span>
+
+android <span class="token punctuation">{</span>
+    compileSdkVersion <span class="token number">25</span>
+    buildToolsVersion <span class="token string">"25.0.2"</span>
+    defaultConfig <span class="token punctuation">{</span>
+        applicationId <span class="token string">"cn.com.mjj.coolspider.myapplication"</span>
+        minSdkVersion <span class="token number">15</span>
+        targetSdkVersion <span class="token number">25</span>
+        versionCode <span class="token number">1</span>
+        versionName <span class="token string">"1.0"</span>
+        testInstrumentationRunner <span class="token string">"android.support.test.runner.AndroidJUnitRunner"</span>
+    <span class="token punctuation">}</span>
+    buildTypes <span class="token punctuation">{</span>
+        release <span class="token punctuation">{</span>
+            minifyEnabled <span class="token boolean">false</span>
+            proguardFiles <span class="token function">getDefaultProguardFile</span><span class="token punctuation">(</span><span class="token string">'proguard-android.txt'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'proguard-rules.pro'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+dependencies <span class="token punctuation">{</span>
+    compile <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token operator">:</span> <span class="token string">'libs'</span><span class="token punctuation">,</span> include<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'*.jar'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token function">androidTestCompile</span><span class="token punctuation">(</span><span class="token string">'com.android.support.test.espresso:espresso-core:2.2.2'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        exclude group<span class="token operator">:</span> <span class="token string">'com.android.support'</span><span class="token punctuation">,</span> module<span class="token operator">:</span> <span class="token string">'support-annotations'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    compile <span class="token string">'com.android.support:appcompat-v7:25.3.1'</span>
+    compile <span class="token string">'com.android.support.constraint:constraint-layout:1.0.1'</span>
+    testCompile <span class="token string">'junit:junit:4.12'</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>这个文件是属于 app 自己的模块，而且它是可以覆盖顶层的 build.gradle 文件。这文件一般有 android 和 dependencies 两个标签所构成，dependencies 主要用于我们模块所依赖的一些包。</p>
+<p>在上面的配置文件中，我们看第一行就是我们所用到的 Android 插件。在顶层配置构建文件当中，这个插件被配置成我们一些依赖。这是由谷歌的工具团队复杂 Android 插件编写和维护的，所以这一块是官方提供的，它用于构建、测试、打包 Android 项目所使用。</p>
+<p>接下来看下 android 的标签，在这里包含全部的 Android 所有的配置。这些配置之所以可以使用，是因为第一行配置了 Android 插件。其中有很多属性，但有两个属性是必备的：compileSdkVersion、buildToolsVersion。compileSdkVersion 表示用来编译应用的 Android api 版本号，buildToolsVersion 表示用于构建和编译使用的版本号。这里还有一个 defaultConfig，这里就是整个代码配置的核心属性，我们来依依看下。</p>
+<ul>
+<li><p>applicationId </p>
+<p>  这属性覆盖了 AndroidMainfest.xml 里的 package name，即你可以用它来覆盖我们的包的名字。不过这个 applicationId 和包名它有一些不同，在 gradle 被作用默认 Android 构建系统之前，这 AndroidMainfest.xml 和 packageName 它两个用途：作为应用的唯一标记和在 as 资源中它使用的包名。</p>
+</li>
+<li><p>minSdkVersion</p>
+<p>  配置运行最小的 Android api 版本</p>
+</li>
+<li><p>targetSdkVersion</p>
+</li>
+</ul>
+<pre><code>通知应用已经在某个 Android 版本已经通过测试，就可以让系统不用在向前兼容。
+</code></pre><ul>
+<li><p>versionCode</p>
+<p>  版本号</p>
+</li>
+<li><p>versionName </p>
+<p>  版本名称，构建文件中的属性都可以覆盖 Mainfest.xml 中的属性。</p>
+</li>
+</ul>
+<p>接下来看下 dependencies 依赖包，依赖包它是我们标准配置的一部分，这就是把它放在 android 代码块之外的原因。虽然它是标准的，但是它是独立于 Android 标准的一部分。在这里我定义了应用和所有项目的依赖包，所有的依赖包都定义在这里。</p>
+<h2 id="Proguard-代码混淆面试问题"><a href="#Proguard-代码混淆面试问题" class="headerlink" title="Proguard 代码混淆面试问题"></a>Proguard 代码混淆面试问题</h2><h3 id="一-Proguard-到底是什么"><a href="#一-Proguard-到底是什么" class="headerlink" title="一. Proguard 到底是什么"></a>一. Proguard 到底是什么</h3><p>ProGuard 工具是用于压缩，优化，混淆我们的代码，主作用是可以移除代码中的无用类，字段，方法和属性同时可以混淆。最终会使我们打包后的 apk 体积更加小，也可以让我们的 apk 更加难以编辑。</p>
+<h3 id="二-ProGuard-技术的功能"><a href="#二-ProGuard-技术的功能" class="headerlink" title="二.ProGuard 技术的功能"></a>二.ProGuard 技术的功能</h3><p><strong>1.压缩</strong></p>
+<p>在打包的时候，通过 ProGuard 来检查并移除代码中没有用到的类、方法和属性。因为我们在业务迭代的时候，有时候会用到别人的开发过的一些业务模块。有时如果你把它代码删掉了，即没用引用它的时候，这段代码它其实是没有用的。但如果你把它删掉的话又怕以后有用，这时候你用 ProGuard 技术，你可以在打包的时候把无用的类删掉就不会影响日常开发。</p>
+<p><strong>2.优化</strong></p>
+<p>ProGuard 它会优化通过 Java-C 编译后的字节码文件，它会移除那些无用的 .class 文件里的指令。</p>
+<p><strong>3.混淆</strong></p>
+<p>如果我们使用一些无意义的名称来命名类，例如：1234，abcd 这些名称，这样我们的类的字段方法可能重名，这时候即使我们的代码被编译了对方也很难读懂。这就是 ProGuard 的作用，它会把开发当中有意义的名称变成无意义的名称，这样恶意的竞争对手反编译了我们的 apk 仍然是无法知道我们代码是做什么用的。</p>
+<p><strong>4.预检测</strong></p>
+<p>在 Java 平台对那些处理过后的代码在进行检测</p>
+<h3 id="三-ProGuard-工作原理"><a href="#三-ProGuard-工作原理" class="headerlink" title="三.ProGuard 工作原理"></a>三.ProGuard 工作原理</h3><p><strong>EntryPoint</strong></p>
+<p>在讲 ProGuard 工作原理之前，我们要先引入 EntryPoint 概念。EntryPoint 我们可以把它理解成一个标志，它是在 ProGuard 处理过程中不会被处理的类或者方法。在 PorGuard 进行压缩过程的时候，它会从上述的 EntryPoint 类中，开始搜索那些类和它的成员在使用。被标记为 EntryPoint 的类和方法，有些在使用。并且这些在配置混淆配置文件中，不希望被混淆的类和方法，但是有些它是没有使用的。对于那些没有使用的类和成员，在压缩阶段被我们的 PorGuard 所丢弃。这在进一步优化 ProGuard 中，它不是 EntryPoint 的类，我们就会把它设置为不是参数也会被移除。最后 PorGuard 会对那些没使用 EntryPoint 的类，进行重名，以便于我们预检测来保证我们代码的稳定性。</p>
+<h3 id="为什么要进行混淆"><a href="#为什么要进行混淆" class="headerlink" title="为什么要进行混淆"></a>为什么要进行混淆</h3><p>我们知道 Java 是跨平台的解释性语言，而 Java 的源代码会被编译成字节码保存在我们 .class 文件中。由于跨平台的需要，Java 字节码中包括了很多源代码的信息，变量名、方法名等等，并且通过这些名称来访问变量和方法。这些符号其实很多是无用的，但是又很容易被反编译成源代码。为了防止这个现象，我们就需要通过 ProGuard，来对 Java 的字节码进行混淆。混淆就是对发布出去的程序，进行重新的组织和处理。ProGuard 的作用就是对那些即将发布出去的程序，进行重新的组在这种和处理。使得处理后的代码和未处理过的代码，有相同的功能，但是代码完全不一样，同时这个代码不容易被反编译。而且即使你真的反编译成功之后，也很难读懂这代码是做什么用的。那些被混淆过的代码，仍然遵循原来的格式去执行，执行结果是一样的。所以说这就是 ProGuard 的作用，它对外保证了我们程序的安全性，但是对内是透明的，程序执行结果是一样的。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/26/Kotlin 之旅六/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/daily_pic.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" alt="Koc's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        kocd726@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: kocd726@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">9</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">12</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chihaiyishen" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
