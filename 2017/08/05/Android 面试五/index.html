@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.3 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+            Android 面试 五 | 
+        
+        痴海博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Koc">
+    <meta name="description" content="null">
+    <meta name="keywords" content="Android，Kotlin，自学编程,Android 面试">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="痴海博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Android 面试 五 | 痴海博客">
+    <meta property="og:description" content="null">
+    <meta property="og:article:tag" content="Android 面试"> 
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/t1.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+
+    <!-- Custom Head -->
+    
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-面试五"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android 面试五</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#OkHttp-网络框架面试问题讲解"><span class="post-toc-number">2.</span> <span class="post-toc-text">OkHttp 网络框架面试问题讲解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#OkHttp-源码解析"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">OkHttp 源码解析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-OkHttp-使用简介"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">一.OkHttp 使用简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-OkHttp-源码剖析"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">二.OkHttp 源码剖析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OkHttp-同步请求"><span class="post-toc-number">2.1.2.1.</span> <span class="post-toc-text">OkHttp 同步请求</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OkHttp-异步请求"><span class="post-toc-number">2.1.2.2.</span> <span class="post-toc-text">OkHttp 异步请求</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#总结"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">总结</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#retrofit-网络框架面试问题讲解"><span class="post-toc-number">3.</span> <span class="post-toc-text">retrofit 网络框架面试问题讲解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#retrofit-源码解析"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">retrofit 源码解析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-retrofit-使用简介"><span class="post-toc-number">3.1.1.</span> <span class="post-toc-text">一.retrofit 使用简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-retrofit-源码剖析"><span class="post-toc-number">3.1.2.</span> <span class="post-toc-text">二.retrofit 源码剖析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#动态代理"><span class="post-toc-number">3.1.2.1.</span> <span class="post-toc-text">动态代理</span></a></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Volley-网络框架面试问题讲解"><span class="post-toc-number">4.</span> <span class="post-toc-text">Volley 网络框架面试问题讲解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Volley-源码解析"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">Volley 源码解析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Volley-使用简介"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">一.Volley 使用简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-Volley-源码剖析"><span class="post-toc-number">4.1.2.</span> <span class="post-toc-text">二.Volley 源码剖析</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Butterknife-注解框架面试问题讲解"><span class="post-toc-number">5.</span> <span class="post-toc-text">Butterknife 注解框架面试问题讲解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Butterknife-原理"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">Butterknife 原理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-Butterknife-使用简介"><span class="post-toc-number">5.1.1.</span> <span class="post-toc-text">一.Butterknife 使用简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-Butterknife-原理"><span class="post-toc-number">5.1.2.</span> <span class="post-toc-text">二.Butterknife 原理</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Glide-图片框架面试问题"><span class="post-toc-number">6.</span> <span class="post-toc-text">Glide 图片框架面试问题</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://i.imgur.com/p7DbpkS.jpg)">
+    
+            <p class="article-headline-p">
+                Android 面试 五
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Koc</strong>
+        <span>8月 05, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Android-面试/">Android 面试</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 面试 五&url=http://yoursite.com//2017/08/05/Android 面试五/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 面试 五&url=http://yoursite.com//2017/08/05/Android 面试五/index.html&via=Koc" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/08/05/Android 面试五/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/08/05/Android 面试五/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="Android-面试五"><a href="#Android-面试五" class="headerlink" title="Android 面试五"></a>Android 面试五</h1><h1 id="OkHttp-网络框架面试问题讲解"><a href="#OkHttp-网络框架面试问题讲解" class="headerlink" title="OkHttp 网络框架面试问题讲解"></a>OkHttp 网络框架面试问题讲解</h1><h2 id="OkHttp-源码解析"><a href="#OkHttp-源码解析" class="headerlink" title="OkHttp 源码解析"></a>OkHttp 源码解析</h2><h3 id="一-OkHttp-使用简介"><a href="#一-OkHttp-使用简介" class="headerlink" title="一.OkHttp 使用简介"></a>一.OkHttp 使用简介</h3><ol>
+<li><p>创建一个 OkHttpClient 对象</p>
+</li>
+<li><p>创建一个 request 对象，通过内部类 Builder 调用生成 Request 对象</p>
+</li>
+<li><p>创建一个 Call 对象，调用 execute / enqueue</p>
+</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+
+
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span>Bundle savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setContentView</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">volleyStringRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">volleyJsonRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">retrofitHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">okhttpAsyGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token function">OkHttpSyncGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//volley第一步</span>
+    RequestQueue mQueue <span class="token operator">=</span> Volley<span class="token punctuation">.</span><span class="token function">newRequestQueue</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyStringRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//volley第二步</span>
+        StringRequest stringRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.baidu.com"</span><span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>String response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//volley第三步</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stringRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyJsonRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        JsonObjectRequest jsonObjectRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JsonObjectRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.sina.com/sports/101010100.html"</span><span class="token punctuation">,</span> null<span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>JSONObject<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>JSONObject response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jsonObjectRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//okhttp第一步</span>
+    <span class="token keyword">private</span> <span class="token keyword">final</span> OkHttpClient client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">OkHttpClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">okhttpAsyGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//okhttp第二步</span>
+        Request request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Request<span class="token punctuation">.</span>Builder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">url</span><span class="token punctuation">(</span><span class="token string">"http://publicobject.com/helloworld.txt"</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//okhttp第三步</span>
+        okhttp3<span class="token punctuation">.</span>Response response <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">newCall</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>response<span class="token punctuation">.</span><span class="token function">isSuccessful</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IOException</span><span class="token punctuation">(</span><span class="token string">"Unexpected code "</span> <span class="token operator">+</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        Headers responseHeaders <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">headers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> responseHeaders<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>responseHeaders<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">": "</span> <span class="token operator">+</span> responseHeaders<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">OkHttpSyncGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> Exception <span class="token punctuation">{</span>
+        Request request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Request<span class="token punctuation">.</span>Builder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">url</span><span class="token punctuation">(</span><span class="token string">"http://publicobject.com/helloworld.txt"</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        client<span class="token punctuation">.</span><span class="token function">newCall</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span>Call call<span class="token punctuation">,</span> IOException e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>Call call<span class="token punctuation">,</span> okhttp3<span class="token punctuation">.</span>Response response<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>response<span class="token punctuation">.</span><span class="token function">isSuccessful</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IOException</span><span class="token punctuation">(</span><span class="token string">"Unexpected code "</span> <span class="token operator">+</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                Headers responseHeaders <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">headers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> size <span class="token operator">=</span> responseHeaders<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> size<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>responseHeaders<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">": "</span> <span class="token operator">+</span> responseHeaders<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">retrofitHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Retrofit retrofit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Retrofit<span class="token punctuation">.</span>Builder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">baseUrl</span><span class="token punctuation">(</span><span class="token string">"https://api.github.com/"</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        netApi repo <span class="token operator">=</span> retrofit<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>netApi<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call <span class="token operator">=</span> repo<span class="token punctuation">.</span><span class="token function">contributorsBySimpleGetCall</span><span class="token punctuation">(</span><span class="token string">"userName"</span><span class="token punctuation">,</span> <span class="token string">"path"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        call<span class="token punctuation">.</span><span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">retrofit2<span class="token punctuation">.</span>Callback</span><span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call<span class="token punctuation">,</span> retrofit2<span class="token punctuation">.</span>Response<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">//response</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span>retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call<span class="token punctuation">,</span> Throwable t<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token punctuation">}</span>
+
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>从代码中可以看到使用 OkHttp 的第一步创建 OkHttpClient 对象，这个对象表示了 Http 请求的客服端类。</p>
+<p>第二步就是创建一个 Request 对象，Request 对象封装了一些请求报文的信息。在这里创建 Request 是使用 Builder 模式来创建的，Builder 模式可以把它显示和创建进行分离。</p>
+<p>第三步我们用 OkHttpClient 对象的 newcall 方法，创建了 Response 对象，这里 Response 对象就代表实际的 Http 请求，它是连接 Request 和 Response 的桥梁。</p>
+<p>这 newCall 的对象即可以同步获取数据也可以异步获取数据，而在这里使用 excute() 方法它就可以同步获取数据。同步获取数据，它就阻塞当前线程去获取数据，然后方法返回 Response 对象给我们的线程。enqueue() 方法用来异步获取数据，这方法接收的是 Callback 参数。enqueue() 方法它不会阻塞当前线程，它和同步方法是不一样的，它会开启一个子线程，让实际的网络请求在子线程中进行操作。当异步请求成功的话，它就回调 onResponse() 方法，在这个方法中会获得我们 OkHttp 的 Response 对象。当请求失败的时候，它会回调 onFailure() 这个方法。需要注意的是，这两个方法都是在工作线程中执行的。</p>
+<h3 id="二-OkHttp-源码剖析"><a href="#二-OkHttp-源码剖析" class="headerlink" title="二.OkHttp 源码剖析"></a>二.OkHttp 源码剖析</h3><h4 id="OkHttp-同步请求"><a href="#OkHttp-同步请求" class="headerlink" title="OkHttp 同步请求"></a>OkHttp 同步请求</h4><p><img src="http://i.imgur.com/mtW5DUT.png" alt=""></p>
+<p>我们的程序会发出 Requset 对象，给网络 OkHttp core（核心层）进行处理。而在 OkHttp 中最重要的它有个拦截器的作用，它会把你的网络请求，经过拦截器在分发 Request 给我们的 UI 线程。</p>
+<p><img src="http://i.imgur.com/FkyxeN4.png" alt=""></p>
+<p>我们从代码中进行分析，在这里我们回到同步请求第一步。第一步我们创建了一个 OkHttpClinet client 对象，client 就是网络请求的客服端，每一个请求它都会有个客户端。这里的第二步，通过 Request.Builder 模式来创建 Request 对象。Builder 模式在 Android 开发中用的比较多，它是一个比较简单的设计模式，它的作用就是将一个比较复杂对象的构建与它的表示相分离，这样可以使同样的构建过程创建不同的表示。</p>
+<p>接下来我们看第三步 Call.newCall 这个方法</p>
+<p><img src="http://i.imgur.com/rL3ghG8.png" alt=""></p>
+<p>我们从源码中可以看到，它返回的是 RealCall 对象，所以我们就知道了 newCall 后的 execute() 方法具体是在 RealCall 里面实现的。我们去 RealCall 里面看下，execute() 到底是怎么实现的。</p>
+<p><img src="http://i.imgur.com/VCf2iiw.png" alt=""></p>
+<p>在这里我们可以看到，首先会做一个同步的检查，判断这个 request 请求是否已经被执行了。因为它是同步的请求，所以每一个 request 请求只能被请求一次。如果你想要一个完全的 executed，你可以调用 executed 的 clone 方法进行克隆。接下来在 try 当中，会调用 dispatchar().executed 这个方法，然后进行同步的执行。在这里我们可以看到 dispatched() 方法，这是在 OkHttp 比较重要的方法。在官方文档中它表示的是异步 Http 请求执行策略，但在这里我们是同步请求，其实 dispatched 也会做一些同步请求的操作。</p>
+<p>接下来我们看下面一行：getResponseWithInterceptorChain()，这个方法应该是 OkHttp 最精髓所在，它是 OkHttp 拦截器的体现，在这里我们知道经过拦截器之后，它会返回 Reponse 结果给我们的 Http。最后在 finally 当中也会调用我们 OkHttp 非常重要的机制，即它会通知我们的 dispatcher 我们的任务已经执行完了。</p>
+<p><img src="http://i.imgur.com/Q0F8Yi6.png" alt=""></p>
+<p>我们可以看下 finished 里面到底执行什么样的操作，这里还有一个 finished 我们在点击看下有什么操作。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4034742-1288167e98afe1d9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>在这里面它把请求队列关闭，大体做这样的操作。</p>
+<p>回到原来的代码</p>
+<p><img src="http://i.imgur.com/VCf2iiw.png" alt=""></p>
+<p>dispatch 这个类我们先不去关注，因为在同步的执行过程中涉及到 dispatch 它不是真正的去做异步操作，它只是告诉我们它的执行状态，比如说它开始执行了它会调用 executed 方法，如果执行完了它会调用 dispatch 的 finished 方法。</p>
+<p>在这里真正的做网络请求，并返回结果的是 getResponseWithInterceptorChain() 这个方法，</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4034742-36a48bc2ecf8b8b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>这方法里创建了一堆 Interceptor 对象，Interceptor 是 OkHttp 最核心的东西：拦截器。它把网络请求、缓存、透明压缩等所有功能都统一起来了，每一个功能我们都把它继承了 Interceptor。然后在把它连接成 Interceptor.Chain 一个锁链的形式，通过这个锁链我们可以执行一次完美的网络请求，我们来具体看下它的内部。</p>
+<p><strong>retryAndFollowUpInterceptor</strong></p>
+<p>首先是 retryAndFollowUpInterceptor 这代表是失败重试重定向，即有时候你的网络会失败，就会重定向 Url，它是这样一个拦截器。</p>
+<p><strong>BridgeInterceptor</strong></p>
+<p>还有一个是 BridgeInterceptor，它就是把用户构造的请求转化为发送到服务器的请求，然后会把服务器返回的响应转回给我们的用户进行一些友好输出的响应，这是一个桥接的 Interceptor。</p>
+<p><strong>CacheInterceptor</strong></p>
+<p>还有一个 CacheInterceptor，它是一个缓存的拦截器，即它会自己读取缓存或更新缓存的拦截器。</p>
+<p><strong>ConnectInterceptor</strong></p>
+<p>接下来是 ConnectInterceptor，这是负责和服务端连接的拦截器。</p>
+<p><strong>CallServerInterceptor</strong></p>
+<p>CallServerInterceptor 主要负责一个网络的服务端的连接。</p>
+<p>我们在这具体分析一个拦截器：CallServerInterceptor，让我们有个更具体的认识。</p>
+<p><img src="http://i.imgur.com/EKQQeas.png" alt=""></p>
+<p>这里最重要的就是 intercept 方法，我们不用具体细看，我们只要知道大概的流程。它主要作用就是想服务器发送头部，如果有 body 的话也会想服务器发送，然后发送了 body 和 head 之后，就会获取 Reponse 的 head 和 body，大体就是这样的流程。这里我们需要关注的是 httpCodec 这个对象，这 httpCodec 对象内部是 OkIo 这个对象。所以深入源码我们发现 OkHttp，没什么神奇的，只不过是把以前的网络框架封装了一层又一层，让我们使用起来方便，这和 Volley 其实是一样的。但是我们要记住 Intercept 它是一种分层的设计思想，每一个 Intercept 就是一层，这和我们的 Http 协议有异曲同工之力。每一层它都简化了，所以说它这一层只关心这一层的事。所以它会把各种复杂的任务拆分成一个个简单的任务，这样对我们以后的扩展是很有帮助的。</p>
+<h4 id="OkHttp-异步请求"><a href="#OkHttp-异步请求" class="headerlink" title="OkHttp 异步请求"></a>OkHttp 异步请求</h4><p><img src="http://i.imgur.com/8wHe8Hy.png" alt=""></p>
+<p>异步请求和同步请求最大不一样的地方就是它调用的 enqueue 方法</p>
+<p><img src="http://i.imgur.com/o7D4stx.png" alt=""></p>
+<p>enqueue 方法也是在 RealCall 里面实现的，其他它很简单，它最后调用的是 dispatcher 的 enqueue，这里 enqueue 就是真正要用到的地方。</p>
+<p><img src="http://i.imgur.com/CUAys53.png" alt=""></p>
+<p>这个方法很简单，但是在这个类中有三个集合</p>
+<p><img src="http://i.imgur.com/gqSVIW7.png" alt=""></p>
+<p><strong>readyAsyncCalls</strong></p>
+<p>readyAsyncCalls 代表正在准备的请求。</p>
+<p><strong>runningAsyncCalls</strong></p>
+<p>runningAsyncCalls 代表正在运行的请求</p>
+<p><strong>runningSyncCalls</strong></p>
+<p>runningSyncCalls 代表正在运行当中的同步请求</p>
+<p>我们回到 enqueue 方法里面</p>
+<p><img src="http://i.imgur.com/CUAys53.png" alt=""></p>
+<p>它这里做了一个判断，正在运行的队列是满足它的最小值，它就会直接把加到它正在执行的队列里面，如果不是它就会把它加到准备就绪的一个异步请求队列里面。当它可以执行的时候它会调用线程池的方法（executorService）</p>
+<p><img src="http://i.imgur.com/NOZyAbU.png" alt=""></p>
+<p>executorService 返回 Java 当中的并发类，它表示的是异步执行的机制，它内部其实也是开启一个线程池然后让任务在后台执行。最后我们的任务还是会调用拦截器，只是这里它做了一个线程池的封装，这就是同步请求和异步请求不一样的地方。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="http://i.imgur.com/nQm1E3G.png" alt=""></p>
+<p>这张图说明了，不管你是同步请求还是异步请求，最终都会通过拦截器来进行网络数据的获取。而拦截器的具体操作包括：retryAndFollowUpInterceptor、BridgeInterceptor、<br>CacheInterceptor、ConnectInterceptor、CallServerInterceptor 这里会进行具体的网络获取，但获取完数据之后，它会在缓存中缓存一份，它和 Volley 是一样的，最终会通过线程池告诉 UI 线程执行 UI 的操作。</p>
+<h1 id="retrofit-网络框架面试问题讲解"><a href="#retrofit-网络框架面试问题讲解" class="headerlink" title="retrofit 网络框架面试问题讲解"></a>retrofit 网络框架面试问题讲解</h1><h2 id="retrofit-源码解析"><a href="#retrofit-源码解析" class="headerlink" title="retrofit 源码解析"></a>retrofit 源码解析</h2><h3 id="一-retrofit-使用简介"><a href="#一-retrofit-使用简介" class="headerlink" title="一.retrofit 使用简介"></a>一.retrofit 使用简介</h3><ol>
+<li><p>在 retrofit 中通过一个接口作为 http 请求的 api 接口</p>
+</li>
+<li><p>创建一个 Retrofit 实例</p>
+</li>
+<li><p>调用 api 接口</p>
+</li>
+</ol>
+<p>我们来看具体的代码</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">netApi</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@GET</span><span class="token punctuation">(</span><span class="token string">"repos/{owner}/{repo}/contributors"</span><span class="token punctuation">)</span>
+    Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> <span class="token function">contributorsBySimpleGetCall</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Path</span><span class="token punctuation">(</span><span class="token string">"owner"</span><span class="token punctuation">)</span> String owner<span class="token punctuation">,</span> <span class="token annotation punctuation">@Path</span><span class="token punctuation">(</span><span class="token string">"repo"</span><span class="token punctuation">)</span> String repo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>第一步我们会创建一个 java 接口，用于存放我们的请求方法。在这里我们定义了一个 contributorsBySimpleGetCall 的请求方法，然后我们用注解的形式告诉我们是 GET 请求。而 GET 请求使用过 Http 的都知道，它是一个最常见的请求方法，它主要是用来获取数据的。在这里我们定义 Url 的时候（Url 就是 GET 请求后面的参数），这里我们使用动态获取 Url 的方式，来进行请求的。你只要在请求方法后面添加一个 @Path 这个属性，就能动态获取 Url。在 @GET 注解后面的参数有个大括号括起来的 {owner}，它对应的就是我们 @Path(“owner”)。就是说我们要使用 retrofit 对象动态代理的时候，我们就会调用这 netApi 这里面的方法。当我们调用了 netApi 里面的方法之后，我们会动态的传入 UrL，然后 retrofit 会根据不同的 url 进行不同的网络请求。</p>
+<p>接下来我们看下 Java 代码</p>
+<pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">retrofitHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Retrofit retrofit <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Retrofit<span class="token punctuation">.</span>Builder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">baseUrl</span><span class="token punctuation">(</span><span class="token string">"https://api.github.com/"</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        netApi repo <span class="token operator">=</span> retrofit<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>netApi<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call <span class="token operator">=</span> repo<span class="token punctuation">.</span><span class="token function">contributorsBySimpleGetCall</span><span class="token punctuation">(</span><span class="token string">"userName"</span><span class="token punctuation">,</span> <span class="token string">"path"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        call<span class="token punctuation">.</span><span class="token function">enqueue</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">retrofit2<span class="token punctuation">.</span>Callback</span><span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call<span class="token punctuation">,</span> retrofit2<span class="token punctuation">.</span>Response<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">//response</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFailure</span><span class="token punctuation">(</span>retrofit2<span class="token punctuation">.</span>Call<span class="token operator">&lt;</span>ResponseBody<span class="token operator">></span> call<span class="token punctuation">,</span> Throwable t<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token punctuation">}</span>
+
+
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>在这里我们第一步通过 Builder 模式来创建好 Retrofit 对象，然后通过 baseUrl 这个方法来拼接我们的 url。在这里我们要注意这里的 baseUrl 不是完整的 url，我们会在这个 url 后面加入 GET 属性当中的 url，同时由于我们是动态的通过 Path 属性来添加的，在添加的时候会把 owner 属性换成我们需要的 url 地址。这样是第一步创建好了 retrofit 对象。</p>
+<p>第二步就是通过 retrofit.create() 方法，创建好我们需要的网络请求接口，然后通过这个接口调用它的方法来获取网络请求 retrofit2.Call（它的底层是用 OkHttp.Call 封装的）。创建好 call 对象之后，我们<br>通过 call.enqueue 异步方法，来进行异步网络请求操作。</p>
+<h3 id="二-retrofit-源码剖析"><a href="#二-retrofit-源码剖析" class="headerlink" title="二.retrofit 源码剖析"></a>二.retrofit 源码剖析</h3><ol>
+<li><p>创建一个 retrofit 对象</p>
+</li>
+<li><p>通过 Retrofit.create() 方法是怎么把我们所定义的接口转化成接口实例并使用接口中的方法</p>
+</li>
+<li><p>最终的网络请求调用的 okhttp</p>
+</li>
+</ol>
+<h4 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h4><ol>
+<li><p>首先，通过 method 把它转换成 ServiceMethod;</p>
+</li>
+<li><p>然后，通过 serviceMethod, args 获取到 okHttpCall 对象；</p>
+</li>
+<li><p>最后，再把 okHttpCall 进一步封装并返回 Call 对象。</p>
+</li>
+</ol>
+<p>我们知道 Retrofit 对象是通过 Builder 模式来创建的，所以我们来看下 Builder 源码。</p>
+<p><img src="http://i.imgur.com/jFH8muj.png" alt=""></p>
+<p>在 Builder 构建的时候，它首先会传入 platform (平台信息)，然后会把内置的转换器工厂（BuiltInCoverters）加入到我们的工厂集合converterFactories 里面。它主要作用是：当使用多种转换器的时候，能真正引导 retrofit 请求所真正需要的转换器。</p>
+<p>回到刚才的方法</p>
+<p><img src="http://i.imgur.com/mwBJskP.png" alt=""></p>
+<p>在这方法里面，我们可以看到 baseUrl 判空操作，这里它就说用了，如果你没有使用 retrofit，这个 baseUrl 必须被传入，而且是不能为空，因为你一旦为空了它就会抛出这个异常。</p>
+<p>接下来我们看第二步：okhttp3.Call.Factory，它的作用是用来数据转化的。请求网络我们会获取数据，数据就会在 callFactory 转换成我们需要的数据类型。</p>
+<p>第三步我们会创建一个 OkHttpClinet，它是一个网络请求的客户端，在这里我们可以添加我们自己想要的属性。</p>
+<p>第四步是：callbackExecutor，从名字上我们就可以看出它就是一个回调的执行者，即我们 OkHttp.Call 的网络请求，从网络获取数据是在子线程中进行的。子线程获取数据之后，要在 UI 线程中进行显示。而这个功能就是由 Executor，回调执行者来进行执行。</p>
+<p>最后就会返回 new Retrofit，然后把刚才所说的一些参数全部返回给它，这就做好 retrofit 的第一步。</p>
+<p>我们在代码中介绍的动态代理，它是在 create 方法中实现的，在这方法里面最后三行实现的。</p>
+<p><img src="http://i.imgur.com/3bweuyy.png" alt=""></p>
+<p>我们调用 create 方法，是怎么把我们刚才定义的 Java 接口转化成一个实例，然后来请求这实例当中的方法呢？</p>
+<p>我们看下到它的返回值，返回值第一行，它会返回一个 Proxy 代理。create 方法使用的就是动态代理，动态代理模式在 retrofit 里面封装的很简单了，它主要调用 Proxy.newProxyInstance 这个方法，然后它会返回一个类的代理实例。它的内部需要传入一个 service.getClassLoader() 内加载器，以及类的本身 Class，然后还要传入一个 InvocationHandler 这处理器，其实它所有的操作都是在 InvocationHandler 这个类里面来操作的，它里面只有一个方法：invoke。每当我们调用代理类方法的时候，这个 invoke 都会被执行，并且我们可以从 invoke 这个方法的参数，获取到我们想要的信息，invoke 参数有 Object proxy，Method method(赋值到我们所需要的方法)，Object[] args。</p>
+<p>接下来我们就来看 retrofit 当中最重要最精髓的三行代码</p>
+<p><img src="http://i.imgur.com/X5s7qsd.png" alt=""></p>
+<p>首先我们可以看到，它通过 ServiceMethod 调用 loadServiceMethod 来获取 ServiceMethod 对象，我们来看第一步 ServiceMethod。</p>
+<p><img src="http://i.imgur.com/sr67f7u.png" alt=""></p>
+<p>点到 loadServiceMethod 方法里面，我们可以看到它主要是通过 ServiceMethod.Builder 这个模式来创建 ServiceBuilder，并且它会把它给缓存中取出来，以便下次我们可以直接使用 ServiceMethod，这里调用 put 方法，从缓存中取出来。</p>
+<p>我们来看下 build 模式</p>
+<p><img src="http://i.imgur.com/lQuNHcy.png" alt=""></p>
+<p>在 build 方法里面，首先初始化一些参数，然后返回给我们的调用者。我们来看下 build 方法第一行，它是通过 createCallAdapter 来创建 callAdapter。callAdapter 就是进行一些数据转发用的，它也是 retrofit 的核心。</p>
+<p>我们来具体看下</p>
+<p><img src="http://i.imgur.com/pRoIzCB.png" alt=""></p>
+<p>这里面最主要的核心，就是获取到整个方法所需要的注解和类型，然后调用 retrofit.callAdapter 这个方法，我们来看下这个方法是怎么实现的。</p>
+<p><img src="http://i.imgur.com/kWEBtxR.png" alt=""></p>
+<p>这方法是通过 nextCallAdapter 来实现的，来看下这个方法</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4034742-b90407fb8ae420f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>它其实是通过 for 循环，for 循环从 adapterFactories 里面获取 CallAdapter 对象，但是 adapterFactories 里面到底有哪些 CallAdapter 对象呢？这就需要回到 Builder 构造器中查看有哪些 Factories。</p>
+<p><img src="http://i.imgur.com/vre3v04.png" alt=""></p>
+<p>这里我们可以看到 converterFactories 里面添加了好多的converterFactories，但是它里面会默认传入一个 converterFactories，这里大家有一个影响即可。</p>
+<p>然后我们回到刚才的方法</p>
+<p><img src="http://i.imgur.com/lQuNHcy.png" alt=""></p>
+<p>在方法里面创建好 callAdapter 之后，就会创建 responseConverter 从字面上也可以理解，它就是把我们网络数据返回的 response 进行转换，转换成客户端所需要的数据类型。</p>
+<p>接下来我们返回 create 方法当中</p>
+<p><img src="http://i.imgur.com/3bweuyy.png" alt=""></p>
+<p>这是我们进行的第一步，第一步就要把我们需要网络请求的方法进行封装返回给 ServiceMethod 对象。</p>
+<p>第二步其实比较简单，它其实通过 OkHttpCall 这个构造函数，创建 OkHttp 对象，在这里我们要传入我们刚才封装好的 serviceMethod 和我们所需要的一些参数，这样就创建好了 okHttpCall 对象。</p>
+<p>接下来我们看第三步，在这里我们通过 serviceMethod.callAdapter.adapt() 方法，然后把我们刚才封装好的 okHttpCall 对象传递进去，进行网络请求的操作。这个方法其实是真的很绕，我们如果想理清楚 retrofit 网络请求的原理，必须把第一步理解透彻。通过第一步找到 serviceMethod.callAdapter 其实就是一个 ExecutorCallAdapterFactory 这个对象。这就是我们刚才所说的 callAdapter 的工厂类，那么如何通过 adapter 方法来获取网络数据呢？我们点击 adapter 方法看下</p>
+<pre class=" language-java"><code class="language-java"><span class="token function">adapt</span><span class="token punctuation">(</span>Call<span class="token operator">&lt;</span><span class="token operator">></span> call<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>这里只是一个抽象方法什么都没做，但是我们知道刚才第一步的时候介绍的 ServiceMethod 的 CallAdapter，它其实返回的就是 ExecutorCallAdapterFactory 所以说 get 方法应该重写在这里面，我们回到这个方法果然重写 get 方法。</p>
+<p><img src="http://i.imgur.com/yKcAjPm.png" alt=""></p>
+<p>这个方法它会返回一个 new CallAdapter，这就验证了我们刚才所说的。这里就是通过代理，来获取它的接口代理的实例。然后我们可以通过调用里面的方法，就可以触发我们第一步里面 InvocationHandler 的 invoke 方法，从而就完成整个网络请求的操作，当然最后还要通过 OkHttpCall 来进行网络请求的。</p>
+<p>我们回到 ExecutorCallAdapterFactory 这个类中</p>
+<p><img src="http://i.imgur.com/cWcEB5A.png" alt=""></p>
+<p>retrofit 和 OkHttp 一样提供了两种网络请求的方式，一种是同步的一种是异步的，这里我们介绍比较难的异步。</p>
+<p><img src="http://i.imgur.com/12bZlUf.png" alt=""></p>
+<p>我们来看下 enqueue 这个方法，这个方法里面有个回调函数 onResponse，这个回调函数里面重写了 onFailuer 和 onResponse，一个代表成功，一个代表网络失败的回调方法。</p>
+<p>我们想知道它的原理到底是什么呢？我们可以看下这个 ExcutorCallbackCall </p>
+<p><img src="http://i.imgur.com/npzwXNY.png" alt=""></p>
+<p>ExcutorCallbackCall 里面有两个变量，一个 callbackExecuto 用来主线程和子线程灵活切换，通过子线程做耗时操作，然后把数据传递给 UI 线程。还有一个成员变量：delegate，delegate 是真正的做网络请求操作的。其实回想到刚才 Retrofit.create 方法里面，我们传入的 adapt 方法里面传入的是 okHttpCall，也就代表了这个 delegate 就代表了 okHttpCall 这个对象，所以这就验证了我们 retrofit 所有的网络请求都是由 OkHttpCall 来完成的。所以它的 enqueue 这个方法，最后还是会调用 OkHttpCall 里面的 enqueue 方法。</p>
+<p>最后也就是说 Retrofit 不管它的上层通过接口、注解的方式做了多少的封装，但是最后网络请求还是用到了 OkHttp，这就是 Retrofit 网络请求的全全过程。</p>
+<h1 id="Volley-网络框架面试问题讲解"><a href="#Volley-网络框架面试问题讲解" class="headerlink" title="Volley 网络框架面试问题讲解"></a>Volley 网络框架面试问题讲解</h1><h2 id="Volley-源码解析"><a href="#Volley-源码解析" class="headerlink" title="Volley 源码解析"></a>Volley 源码解析</h2><h3 id="一-Volley-使用简介"><a href="#一-Volley-使用简介" class="headerlink" title="一.Volley 使用简介"></a>一.Volley 使用简介</h3><ol>
+<li><p>首先需要获取到一个 RequestQueue 对象</p>
+</li>
+<li><p>创建一个 StringRequest 对象</p>
+</li>
+<li><p>将 StringRequest 对象添加到 RequestQueue 里面</p>
+</li>
+</ol>
+<p>一句话概括：通过 newRequestQueue(…) 函数新建并启动一个请求队列 RequestQueue 后，只需要往这个 RequestQueue 不断 add Request 即可。</p>
+<p>Volley 是谷歌公司推出的异步网络请求框架，同时它还可以加载图片。从这个名字上去其实我们可以看出 Volley 一些特点，它特别适合数据量小，但通讯频繁的网络操作。Android 开发经验多以后，大家就会发现 Android 绝大部分网络操作都属于这部分。</p>
+<p>我们从代码中看下</p>
+<pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">//volley第一步</span>
+    RequestQueue mQueue <span class="token operator">=</span> Volley<span class="token punctuation">.</span><span class="token function">newRequestQueue</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyStringRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//volley第二步</span>
+        StringRequest stringRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.baidu.com"</span><span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>String response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//volley第三步</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stringRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyJsonRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        JsonObjectRequest jsonObjectRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JsonObjectRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.sina.com/sports/101010100.html"</span><span class="token punctuation">,</span> null<span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>JSONObject<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>JSONObject response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jsonObjectRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>首先我们知道我们要进行网络操作，肯定是要有权限。我们知道发起 Http 请求，你肯定会接收到 Http 响应。所以这里第一步，我们就要获取 RequestQueue 这个对象，这对象是通过 Volley 里面一个静态内部方法 newRequestQueue，然后创建了一个 RequestQueue 对象。注意这里拿到的 RequestQueue 对象，它是一个请求队列对象，它可以缓存所有的 Http 请求，然后按照一定的算法并发的发出这些请求。RequestQueue 内部设计就是非常适合并发的，因此我们每一次 Http 请求，都不必创建 RequestQueue，这是非常浪费资源的。</p>
+<p>在这代码中，做了两个 Volley 的请求：volleyStringRequest、volleyJsonRequest，但这里我的 RequestQueue 只创建了一份。基本上如果你在 Volley 进行网络交互，只要创建一个 RequestQueue 就足够了，因为它是高并发的。</p>
+<p>第二步，要创建一个 StringRequest 对象，在代码中我们可以看到 new  出了 StringRequest 对象，还有两个参数：一个是 url，另一个是 Listener。第一个参数就是我们 url 服务器的地址，第二参数就是服务器成功响应的回调和服务器失败响应的回调。这和一般的网络监听都很像，如果当你网络请求成功了，就回调一个成功的响应。</p>
+<p>最后一步，把刚才创建好的 stringRequest 添加到 RequestQueue 里面，然后就可以高并发的做异步请求了。</p>
+<h3 id="二-Volley-源码剖析"><a href="#二-Volley-源码剖析" class="headerlink" title="二.Volley 源码剖析"></a>二.Volley 源码剖析</h3><p>我们回到刚才的代码中 </p>
+<pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">//volley第一步</span>
+    RequestQueue mQueue <span class="token operator">=</span> Volley<span class="token punctuation">.</span><span class="token function">newRequestQueue</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyStringRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//volley第二步</span>
+        StringRequest stringRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.baidu.com"</span><span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>String response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//volley第三步</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stringRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>我们知道 Volley 第一步，就是通过 Volley.newRequestQueue 来获取 RequestQueue 对象，那么我们就从 newRequestQueue 这个方法开始。</p>
+<p><img src="http://i.imgur.com/qO8SXFQ.png" alt=""></p>
+<p>这个方法内部，调用了两个参数的 newRequestQueue 的方法，我们可以看到它第二个参数传的是 null，所以我们来看下有两个参数的 newRequestQueue。</p>
+<p><img src="http://i.imgur.com/I90z2aG.png" alt=""></p>
+<p>我们可以看第 10 行，这里做了一个判断，如果 stack == null，它就会去创建一个 HttpStack。这里还做了一个手机版本的判断，如果你的手机版本号大于 9 的时候，它就会去创建 HurlStack，HurlStack 内部是使用 OkHttpUrlConnection。如果小于 9 的话，就用 HttpClientStack 来进行网络操作的。不是是用 HurlStack 还是 HttpClientStack，它都会创建一个 Network。它是根据传入的 stack 来处理网络请求的，紧接着在创建好 Network 之后，我们会 new 出一个 RequestQueue 对象，并调用它的 start 方法进行启动，然后将这个 RequestQueue 返回，这样 newRequestQueue 这个方法就执行结束了。</p>
+<p>queue.start() 方法，将网络请求开启了，那它内部到底是执行了什么东西呢？我们可以点进去看下。</p>
+<p><img src="http://i.imgur.com/E96S8eD.png" alt=""></p>
+<p>这里我们可以看到，它创建了一个 CacheDispatcher 实例，然后调用了它的 start 方法，CacheDispatcher 是一个缓存的分发器。</p>
+<p>我们具体看下 CacheDispatcher </p>
+<p><img src="http://i.imgur.com/99ydnWo.png" alt=""></p>
+<p>CacheDispatcher 内部就是一个线程，继承线程，它是一个开启子线程的缓存请求队列。</p>
+<p>回到原来的 start 方法中</p>
+<p><img src="http://i.imgur.com/E96S8eD.png" alt=""></p>
+<p>接下来它开启了 for 循环，for 循环里我们创建了 NetWorkDispatcher，同样也调用了它的 start 方法。这里我们可以类比的猜测，NetWorkDispatcher 它是一个子线程，这里和 CacheDispatcher 不同的是，它处理的是网络请求。这样其实 Volley 整体框架的雏形已经出来了，就是说当它第一次请求网络操作的时候，它会判断这个数据在我们的本地是否有一份，如果有我们就直接从缓存当中直接读取，这就加快了我们读取数据的速度。如果没有的话，我们才会从 NetWorkDispatcher 从网络中获取数据。当从网络中获取数据后，我们会把这数据保存在 CacheDispatcher 子线程里面，这样我们第二次获取数据的时候，速度就加快了，这就是 Volley 加载缓存的一个机制。</p>
+<p>我们在回到使用 Volley 代码中</p>
+<pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">//volley第一步</span>
+    RequestQueue mQueue <span class="token operator">=</span> Volley<span class="token punctuation">.</span><span class="token function">newRequestQueue</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">volleyStringRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//volley第二步</span>
+        StringRequest stringRequest <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringRequest</span><span class="token punctuation">(</span><span class="token string">"http://www.baidu.com"</span><span class="token punctuation">,</span>
+                <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>Listener</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token annotation punctuation">@Override</span>
+                    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onResponse</span><span class="token punctuation">(</span>String response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        Log<span class="token punctuation">.</span><span class="token function">d</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Response<span class="token punctuation">.</span>ErrorListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onErrorResponse</span><span class="token punctuation">(</span>VolleyError error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Log<span class="token punctuation">.</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token string">"TAG"</span><span class="token punctuation">,</span> error<span class="token punctuation">.</span><span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//volley第三步</span>
+        mQueue<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>stringRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>第三步，大家可以看到它 RequestQueue add 一个 StringRequest，这方法是 Volley 里比较繁琐的。</p>
+<p>我们可以看下它的内部实现</p>
+<p><img src="http://i.imgur.com/JC71bok.png" alt=""></p>
+<p>这里我们可以看到，前面是做一些 if 的判断，这里最重要的一行是</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>request<span class="token punctuation">.</span><span class="token function">shouldCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+</code></pre>
+<p>它会判断当前的请求，是否可以缓存，如果不能缓存的话，它就会直接把这个网络请求加载到网络请求这个队列里面。如果可以缓存的话，它就会加载到缓存队列里面。</p>
+<p><img src="http://i.imgur.com/C6luq8G.png" alt=""></p>
+<p>我们要记住默认情况下，每条请求都是可以缓存的。既然我们不断的提高缓存、网络请求队列，我们还是需要去 CacheDispatcher 看下内部到底是怎么样实现的。</p>
+<p>我们看下 CacheDispatcher </p>
+<p><img src="http://i.imgur.com/lfWzp9X.png" alt=""></p>
+<p>我们刚才说过了 CacheDispatcher 它内部是一个线程，所以说是一个线程的话，我们就要看里面最重要的 run 方法。</p>
+<p><img src="http://i.imgur.com/pYywS8G.png" alt=""></p>
+<p>在 run 方法里面，我们可以看到开启了一个 while 死循环，说明这缓存线程始终都是在运行的，接着会尝试在缓存中获取结果。</p>
+<p><img src="http://i.imgur.com/vumofzi.png" alt=""></p>
+<p>Cache.Entry 它是一个内部类，内部类从缓存中获取数据，然后进行判断。如果 entry 为空的话，它就会加载到网络请求队列里面，大体就是这样一个过程。</p>
+<p>我们总结下，CacheDispatcher 它会从缓存中获取请求结果，如果它是为空的话，它就把这个请求加入到网络请求当中。如果不为空的话，我们在判断缓存是否过期</p>
+<p><img src="http://i.imgur.com/sCKSZEs.png" alt=""></p>
+<p>它是有一个 isExpired 的值，如果 entry 它是过期的话，在把它加入到网络请求队列。</p>
+<p><img src="http://i.imgur.com/MnCa7n3.png" alt=""></p>
+<p>这里最后会调用 request.parseNetworkResponse 来进行数据的解析，在往后就是将解析出来的信息进行回调。</p>
+<p>接下来我们看下与 CacheDispatcher 对应的 NetworkDispatcher</p>
+<p><img src="http://i.imgur.com/Bbq8mRo.png" alt=""></p>
+<p>它内部到底是怎么实现的，我们看到，它内部也是继承了 Thread 线程，所以我们还是看它的 run 方法。</p>
+<p><img src="http://i.imgur.com/8e0HlYx.png" alt=""></p>
+<p>我们可以看到它内部也是开启了 while 的循环，说明这网络请求也是在不断进行的。</p>
+<p><img src="http://i.imgur.com/KT9pMT8.png" alt=""></p>
+<p>我们可以看到在这里，它执行了 performRequest 这个方法，这方法就是用来发送网络请求的。而 NetWorkResponse 它其实是一个接口，具体的实现是在 BaseNetWork 实现的。</p>
+<p><img src="http://i.imgur.com/FH9Xl08.png" alt=""></p>
+<p>当 NetworkDispatcher 它收到了 reponse 返回值以后，它又会调用 parseNetworkResponse，来进行 networkResponse 当中数据的解析。</p>
+<p><img src="http://i.imgur.com/eb5xglu.png" alt=""></p>
+<p>然后它会将数据保存在 mCache 当中，当然这个方法是交给 request 来实现的，不同的 request 当然是不一样的。</p>
+<p><img src="http://i.imgur.com/AECqktc.png" alt=""></p>
+<p>当这些数据都处理完之后，我们会看到它会交给一个 mDelivery 来进行 postResponse 方法，进行解析出来的数据最后的作用。</p>
+<p><img src="http://i.imgur.com/7L5MCQ9.png" alt=""></p>
+<p>这部分我们可以看下，但不是特别重要，ResponseDelivery 它其实是一个 Response 分发器，大家只要记住你把 response 返回到 ResponseDelivery，然后让 ResponseDelivery 来进行处理就可以了。</p>
+<p>我们来总结下源码</p>
+<p><img src="http://i.imgur.com/jaWorYe.png" alt=""></p>
+<p>这张图就是把 Volley 最精髓的两个思想都告诉了，一个就是当 Volley 开启网络请求之后，它内部会开启两个请求队列，一个 CachDispatcher 缓存请求队列，还有一个就是 NetworkDispatcher 它是网络的请求队列。就是说每次发起一个请求的时候，它会先去缓存中去判断是否存在这样的请求，如果这个请求是存在同时又不是过期的，就可以从缓存中读取这个请求，然后交给主线程进行响应。而如果在缓存中是没有存在这份数据的，同时这个数据又可能过期的，就会从网络中获取这个请求，然后交给 NetworkDispatcher 做异步操作，最后还是会交给主线程进行响应。</p>
+<p>最后我们还是回顾下整个源代码的过程</p>
+<p>Volley 的使用其实很简单，它就是先创建一个 RequestQueue 对象，然后在创建具体的 StringRequest。第三步，就是把我们刚才创建好的 StringRequest 加入到 RequestQueue 里面，就可以进行轮询操作。然后我们会根据 CachDispatcher 和 NetworkDispacther 来进行请求的分发，根据请求的实质选择不同的 HttpClinet 来进行操作并返回数据。返回的数据通过 ResponseDelivery 来进行分发。</p>
+<h1 id="Butterknife-注解框架面试问题讲解"><a href="#Butterknife-注解框架面试问题讲解" class="headerlink" title="Butterknife 注解框架面试问题讲解"></a>Butterknife 注解框架面试问题讲解</h1><h2 id="Butterknife-原理"><a href="#Butterknife-原理" class="headerlink" title="Butterknife 原理"></a>Butterknife 原理</h2><h3 id="一-Butterknife-使用简介"><a href="#一-Butterknife-使用简介" class="headerlink" title="一.Butterknife 使用简介"></a>一.Butterknife 使用简介</h3><ol>
+<li><p>绑定一个 View</p>
+</li>
+<li><p>给一个 View 添加点击事件</p>
+</li>
+<li><p>给多个 View 添加点击事件</p>
+</li>
+<li><p>给 ListView setItemClickListener</p>
+</li>
+</ol>
+<p>令人头痛的 findViewByUd，其实在我们的代码中，由于控件不断的越来越多，你会不断的使用 findViewById 获取它的控件。这代码是很简单，但是你又不得不写。同时 findViewById 你还不能用重构、泛型的技术来擦除掉，但这里 Butterknife 就可以帮我们不写 findViewById 这么长的代码。</p>
+<p>那么这个 Butterknife 注入框架到底是怎么实现的呢？</p>
+<p>其实就是一个依托 Java 的注解机制来实现辅助代码生成的框架，即在 Java 中它会在编译代码的时候，把 java 要编译的字节码处理成我们需要的绑定事件。</p>
+<p>我们来在代码中进行具体的讲解</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainActivity</span> <span class="token keyword">extends</span> <span class="token class-name">AppCompatActivity</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> ImageView imageviewBtn<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//1.绑定一个View （View不能为private 或者static）</span>
+    <span class="token annotation punctuation">@BindView</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>textview<span class="token punctuation">)</span>
+    TextView mTxt<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//1.绑定一个View （View不能为private 或者static）</span>
+    <span class="token annotation punctuation">@BindView</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>mlistview<span class="token punctuation">)</span>
+    ListView mlistview<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//2.给一个View添加点击事件</span>
+    <span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>textview<span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onImageClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Toast<span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"onImageClick"</span><span class="token punctuation">,</span> Toast<span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//3.给多个View添加点击事件：</span>
+    <span class="token annotation punctuation">@OnClick</span><span class="token punctuation">(</span><span class="token punctuation">{</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>mlistview<span class="token punctuation">,</span> R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>mtextview<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onclick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Toast<span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"onImageClick"</span><span class="token punctuation">,</span> Toast<span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//4.给ListView setItemClickListener</span>
+    <span class="token annotation punctuation">@OnItemClick</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>mlistview<span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onItemClick</span><span class="token punctuation">(</span>AdapterView parent<span class="token punctuation">,</span> View view<span class="token punctuation">,</span> <span class="token keyword">int</span> position<span class="token punctuation">,</span> <span class="token keyword">long</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Toast<span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">"onItemClick"</span> <span class="token operator">+</span> position<span class="token punctuation">,</span> Toast<span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span>Bundle savedInstanceState<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setContentView</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ButterKnife<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Picasso<span class="token punctuation">.</span><span class="token function">with</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span>imageviewBtn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+        Glide<span class="token punctuation">.</span><span class="token function">with</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"http://www.baidu.com/img/bdlogo.png"</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span>imageviewBtn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>首先我们会绑定一个 View，在绑定 View 上，我们只要加入这样一行：@BindView，然后里面传入一个资源 ID 即可。在这里 Butterknife 就能够自动的帮你找到 View，并自动进行转换，即将 View 转换成特定的子类，比例：TextView、ImageView 等等。相比其他的注入框架采用反射机制，而反射机制虽然它是很灵活，但是性能上也非常的慢。Butterknife 这里是采用编译时在生成代码来执行 View 的查找，因此我们不用担心注解的性能。不用担心 findViewById 会不会很慢，这里 Butterknife 已经帮我们做好了处理。</p>
+<p>接下来我们看下第二种用法，给一个 View 添加点击事件。我们知道其实相比 findViewById，点击事件也很多。在我们的 Butterknife 你可以加一个 @OnClick 注解，就可以表明这个方法就是点击事件了，然后它在编译的时候就会做相应的处理。</p>
+<p>第三 Butterknife 还可以给多个 View 添加点击事件，你只要在里面加一个大括号，把 id 写在里面，用逗号隔开就可以。</p>
+<p>第四 Butterknife 还可以给 ListView 设置 item 点击事件，用法其实也是一样，添加一个 @OnItemClick 注解，里面传入我们的 ListVeiw id 号就可以。</p>
+<p>Butterknife 是专注于 Android 系统 View 的注入框架，它能够简化我们的代码，能够简化我们的 findViewById、setItemClickListener 以及 View 的点击事件等等。所以我们就不用写那些冗余的代码，提高我们的效率。</p>
+<h3 id="二-Butterknife-原理"><a href="#二-Butterknife-原理" class="headerlink" title="二.Butterknife 原理"></a>二.Butterknife 原理</h3><p>在讲解 Butterknife 原理之前，我们还是要来了解 Java 的注解处理机制。</p>
+<p><img src="http://i.imgur.com/tytTRH4.png" alt=""></p>
+<p>为什么大家会有这样一种错觉，一提到注入框架大家就想到是用反射来实现的。因为我们其他的那些注入框架就是用反射来实现的，但是用反射来实现注入框架它有很多不好的地方。比如说大家自己来实现一个 Butterknife，大家有可能这样实现。我们在 butter 的时候，通过反射获取到这个类所有的注解属性，并且获取当中注解的 Layout 的值，最后通过反射的 findViewById 获取到这个 View 并赋值给 Activity 当中的属性，这就是常用的注入框架的实现方式。它比较原始，它一个很大的缺点，就是 Activity 在运行时会大量的使用反射，而反射它是会影响我们 app 的性能，特别是运行时的性能。它容易造成卡顿，然后会产生很多的临时变量，临时变量又会引起垃圾回收。在 UI 优化的时候，我们知道大量的临时变量垃圾回收，会造成 UI 的卡顿，UI 卡顿也是一种性能的标志之一。</p>
+<p>Butterknife 它没用使用这种机制，看到上面这张图。它使用的是 Java 的 Annotation Processing 的技术，即 Java 的注解处理机制。也就是在 Java 代码编译的时候，编译成 Java 字节码的时候，它已经处理好刚才所说的 @BindView、@OnClick 这些注解。我们可以把 Java 的注解处理技术，认为 JavaC 在编译扫描时，解析 Java 注解的工具。我们可以自定义解析器来处理它们，但是有一点非常的重要，就是注解处理技术它是在编译阶段执行的。它的原理是通过读入我们 Java 的源代码解析注解，然后生成新的 Java 代码。新生成的 Java 代码当中，最后被编译成 Java 字节码。由于注解解释器，它是不能独立的改变 Java 类的，这就是 Butterknife 注解原理。</p>
+<p>我们回到刚才代码，在绑定好所有的控件之后，你需要调用 ButterKnife.bind(this)，来完成 Butterknife 最后一步。为什么，我们可以看下它源代码是怎么实现的。</p>
+<p><img src="http://i.imgur.com/wAGfOlj.png" alt=""></p>
+<p>它会创建一个 Binding，在这里它会调用 findBindingConstructorForClass 方法，这方法很重要。它就要是用来，刚才我们绑定的注解和我们的 Java 源代码进行结合。</p>
+<p>我们开看下 Butterknife 它工作流程到底是怎么样的。</p>
+<ol>
+<li><p>开始它会扫描 Java 代码中所有的 ButterKnife 注解</p>
+</li>
+<li><p>ButterKnifeProcessor -&gt; <classname>$$ViewBinder</classname></p>
+<p> 在 Butterknife 源码中，它会有 ButterKnifeProcessor 这个类。在这个类中，它会帮我们生成一个 Java 类，Java 类的形式就是 <classname>$$ViewBinder，这个新生成的类会实现一个 ViewBinder 泛型的接口。</classname></p>
+</li>
+<li><p>调用 bind 方法加载生成的 ViewBinder 类</p>
+<p> 这时候它会动态的注入，我们刚才在 Activity 当中的所有 View 的属性和 listner。如果我们的 Acitivity 当中，有我们刚才所说 @OnClick 注解方法，Butterknife 就会在 ViewBinder 这个类当中，为这个 View 设置 OnClickListner 并且将 OnClick 注解方法传入其中。</p>
+</li>
+</ol>
+<p>在绑定 View 的时候，View 不能为 private 或者 static，这是为什么？它答案就是性能。如果我们把 View 设置成 private，那么这个框架就不能通过注解的方式来获取了，它只能通过反射来获取，这时候不管你的 CPU 性能多快，都会影响你的性能，这是必须要避免的，这也是 Butterknife 和其他框架不同的地方。</p>
+<p>总结下 Butterknife 工作原理</p>
+<p>开始它会扫描 Java 代码中所有的 ButterKnife 注解，而当 Butterknife 发现有一个类中含有一个注解的时候，ButterKnife 源码当中有个 ButterKnifeProcessor 这个类，它会帮我们生成一个 Java 类，这个 Java 类就是按 Java 的名字，生成的一个 ViewBinder 的内部类。最后它会调用 ButterKnife 的 bind 方法加载生成的 ViewBinder 类。它会动态注入，刚才我们所在的 Activity 当中唯一的属性和所有的注解，如果我们在 Activity 当中定义了 @OnClick 注解，这时候 Butterkinfe 就会帮我们在 ViewBinder 类里面设置 OnClickListner，并且传入 OnClickListner 注入的方法。同时要注意，在绑定 View 的时候，View 不能为 private 或者 static。</p>
+<h1 id="Glide-图片框架面试问题"><a href="#Glide-图片框架面试问题" class="headerlink" title="Glide 图片框架面试问题"></a>Glide 图片框架面试问题</h1><p>Glide 的使用非简单</p>
+<pre class=" language-java"><code class="language-java">Glide<span class="token punctuation">.</span><span class="token function">with</span><span class="token punctuation">(</span>MainActivity<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">into</span><span class="token punctuation">(</span>imageviewBtn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>在上述代码中，调用了 Glide 的 with（添加上下文）、load（加载图片的资源）、into（把图片添加到哪个控件）。</p>
+<p>我们首先来看下 Glide 的 with 方法</p>
+<p><img src="http://i.imgur.com/tUuRAq9.png" alt=""></p>
+<p>可以看到，with 方法就要是获取 RequestManager 这个对象。RequestManager 是我们图片加载请求的一个 Request 管理类，我们可以看下它内部的实现。</p>
+<p><img src="http://i.imgur.com/W07A3vr.png" alt=""></p>
+<p>它内部实现我们可以看到它实现了一个 LifecycleListener 的接口，这个接口它是管理一些生命周期的，这个生命周期是和我们的 Activity 或 Fragment 所绑定的。这样我们可以把我们的 Activity 绑定到我们的组件当中，然后我们可以通过生命周期的方法，进行暂定、恢复和清除操作。</p>
+<p>我们回到 with 方法里面</p>
+<p><img src="http://i.imgur.com/tUuRAq9.png" alt=""></p>
+<p>在这方法的第一行，我们可以看到，我们会通过 RequestManagerRetriever.get() 方法，获得一个 RequestManagerRetriever 这个实例。RequestManagerRetriever 它会将我们的 RequestManager 请求管理类和我们的 Activity、Fragment 进行绑定的一个大的综合的一个大管家的类。它的作用就是将我们刚才所说的 RequestManager 这个类和我们以后即将自定义的 Activity、Fragment 进行绑定，然后这样它就可以通过生命来进行归纳管理。这个就是 Glide 一个特点之一，Glide 它可以绑定到组件当中，然后通过组件的生命周期来进行处理。</p>
+<p>我们可以看下 retriever.get() 方法，它是怎么实现的。</p>
+<p><img src="http://i.imgur.com/R5RW0Cm.png" alt=""></p>
+<p>这里它做了一个 if else 的判断，在 if 里面它调用了 Util.isOnBackgroundeThread() 方法，我们具体来看下它是怎么实现的。</p>
+<p><img src="http://i.imgur.com/xHSDpNb.png" alt=""></p>
+<p>它就是判断是否在主线程里面的，最后它返回一个非的主线程。</p>
+<p><img src="http://i.imgur.com/j3VTSbL.png" alt=""></p>
+<p>这里 isOnMainThread 实现，就是返回一个 Looper 的判断。它通过 Looper.myLooper 是不是等于我们主线程的 Looper（Looper.getMainLooper()）来进行判断，它是否在主线程。</p>
+<p>在这里如果它是在主线程当中的，它会通过全局来获得 ReuqestManger：get(activity.getApplicationContext())。</p>
+<p>然后如果你不是在子线程当中，在主线程中的话，即 else 里面。在这里面第一行会去做一个断言的判断（assertNotDestroyed(activity)），它会去判断这个 Activity 是否被销毁。为什么要这个判断？因为我们知道 Glide 所有的 Request 请求，是通过 RequestManagerRestrievet 这个类，把我们的 Request 绑定到我们的 Activity 或 Fragment。如果这个时候你销毁了，Requset 应该销毁。所以说接下来的判断就没有必要，但是如果没有销毁的话，我们会通过传入的参数 Activity，去获得一个 FragmentManager，然后通过 supportFragmentGet 方法去获得一个 RequestManager 这个类。</p>
+<p>接下来我们看下 supportFragmentGet 方法是怎么实现的</p>
+<p><img src="http://i.imgur.com/jEx8Mpk.png" alt=""></p>
+<p>在这个 supportFragmentGet 方法里面，分为两大部分。第一部分它去实现获得一个 SupportRequestManagerFragment 对象，其实它就是一个 Fragment，第二它会去获得一个 RequestManger。</p>
+<p><img src="http://i.imgur.com/cR8jkBi.png" alt=""></p>
+<p>我们来看第一部分，这个 SupportRequestManagerFragment 我们可以点击去看先。</p>
+<p><img src="http://i.imgur.com/0ADyIpV.png" alt=""></p>
+<p>这里我们可以看到，它的内部继承了 Fragment 这就行了。</p>
+<p>然后它通过我们以前熟悉的 fm.findFragmentByTag()，通过 Tag 值来找到我们相应的 Fragment。然后会做一个空的判断，如果 current == null 的话，我们就会从哈希 Map 里面 （pendingSupportRequestManagerFragments.get(fm)）中取获得一个 Fragment，如果哈希 Map 中没有的话，它自己会 new 出来一个 Fragment（new SupportRequestMangerFragment()），然后它会开启一个事务（fm.beginTransaction），并提交（commitAllowingStateLoss()）。最后它会通过 handler 来发送消息给我们的主线程，来进行响应的操作。</p>
+<p><img src="http://i.imgur.com/KmLFtAB.png" alt=""></p>
+<p>第二部分，它会去创建一个 RequestManger，然后它会进行一个非空的判断，如果是空的话，我们就会去重新创建一个 RequestManger，并把我们一个 Lifecycler 这个参数传给它。Lifecycler 我们刚才知道，它其实是和 RequestManager 相关联的，因为 ReuqestManager 它是要绑定到我们的 Acitivty 或 Fragment 当中的，所以这里要传入一个 Lifecycler 这个参数。大家一定要记住，在 Glide 当中生命周期是一个非常重要的概念。因为它的其他的图片加载框架不一样，它是结合组件的生命周期，来进行图片的 Request 请求。</p>
+<p>接下来我们看下 SupportRequestManagerFragment 内部到底是怎么实现的</p>
+<p><img src="http://i.imgur.com/8rYicGR.png" alt=""></p>
+<p>在这里其实我们知道，它内部继承的是 Fragment，同时还有一个很重要的参数：lifecycle，点击 ActivtyFragmentLifecycle 类具查看。</p>
+<p><img src="http://i.imgur.com/mx2gvhQ.png" alt=""></p>
+<p>在 lifecycle 里面，我们可以看到它实现的是 Lifecycle 生命周期的接口。然后它可以通过添加 LifecycleListener 回调相应，想要响应我们的刚才 Fragment 里面生命周期的回调方法。</p>
+<p><img src="http://i.imgur.com/4M4vzBY.png" alt=""></p>
+<p>大家可以看到这里通过回调方法，来调用生命周期的。而这个 lifecycle<br>是绑定到 RequestManager 当中的，这时候我们图片请求的管理类，就和我们的 Fragment 绑定到一起。</p>
+<p><img src="http://i.imgur.com/jrcwak0.png" alt=""></p>
+<p>接下来我们详细看下 ReuqestManager 到底是怎么实现，我们先看下 RequestManager 这个类，在这类里面我们先看下它的构造方法。在构造方法，我们只要注意这个变量就行。一个 lifecycle，大家都知道肯定是要有 lifecycle，来跟 ReuqestManager 来绑定 Fragment。第二个是 requestTracker 是最重要的一个变量，它是一个请求的追踪器。所以它会跟踪我们的请求对象，是否取消，是否重启，是否完成，监听它们的状态，这就是我们的 RequestManager。</p>
+<p>接下来我们总结下：首先是我们前面比较重要的三个类，一个是 RequestManagerFragment，它就是一个 Fragment，它主要是用来连接 Fragment 和我们的 RequestManager 生命周期的方法，并把它们绑定到一起，通过我们的 RequestManagerRetriever 类来绑定到一起。而 RequestManager 这个类，是我们所有图片请求的管理类，它是用来实现我们生命周期的方法，这就是我们的 Glide 的 with 方法。</p>
+<p>接来下我们看下 load 方法</p>
+<p><img src="http://i.imgur.com/cSCBW0C.png" alt=""></p>
+<p>我们可以看到 load 方法，它传入的参数不仅可以是 String，还可以传入 url 等等，在这里我们就拿 String 来分析。我们可以看到这个方法主要是返回一个 DrawbleTypeRequest 一个类型的参数，我们可以看下它是什么类型。</p>
+<p><img src="http://i.imgur.com/EiYpi3A.png" alt=""></p>
+<p>它继承的是 DrawableRequestBuilder，它是图片请求通过构造者模式来创建的一个请求类，我们可以具体到下这个类到底做了哪些操作。</p>
+<p><img src="http://i.imgur.com/V1QL2nP.png" alt=""></p>
+<p>在这里它的父类 super，我们点击具体查看。</p>
+<p><img src="http://i.imgur.com/0wJd0RK.png" alt=""></p>
+<p>在这里还是给我们赋值生命周期（lifecycle），请求的追踪类（requestTracker）和我们刚才的 RequestManager 是一样的。这个类比较简单，就是做一个些变量的赋值，大家这里有一个影响即可。</p>
+<p>接下来我们看我们的重头戏 into 方法</p>
+<p>当我们做好了 with 方法，获取到我们的 RequestManager之后，同时又调用了 load 方法，给我们的成员变量以及一个些 lifecycler 和我们的 requestTracker 跟踪器赋值好之后，我们就会调用我们的 Glide 框架的最后一个步 into 方法。</p>
+<p><img src="http://i.imgur.com/TybCm9T.png" alt=""></p>
+<p>在这里我们可以看到，它是通过它的父类来实现的，所以我们看下它父类的实现方法。</p>
+<p><img src="http://i.imgur.com/4kUexVI.png" alt=""></p>
+<p>这个方法会做一些字段的判断，最后核心还是通过调用 into 这个方法。</p>
+<p><img src="http://i.imgur.com/sgWD8WU.png" alt=""></p>
+<p>在这里要为大家介绍 target，这里我们可以把它理解成 View 就行。只是这个 Glide 对我们的 View 进行了封装，然后把它命名了泛型的 target，这里大家一定要知道。接下来我们看下这个 into 方法的代码，我们来看下第一行。在这里也是断言，判断是否在主线程当中。其实我们很好理解，因为总有更新 UI 的操作，必然要在主线程当中，所以在这里它做了 Util.asserMainThread() 的判断。接下来我们看通过 target.getRequest() 方法，来获取我们请求，然后它会去做一个非空的判断。如果先前的请求它不为空的话，我们需要调用 previous.clear() 这个方法，把它清理掉。清理完成之后，我们会重新创建一个 Request，这里是通过 buildRequest() 来创建的。</p>
+<p>接下来我们看下 buildRequest() 方法到底是怎么做的</p>
+<p><img src="http://i.imgur.com/EOl8lHJ.png" alt=""></p>
+<p>它内部最重要的就是 buildReuqestRecursive 递归这个方法，来创建 Reuqest。</p>
+<p>我们看下 buildReuqestRecursive 是怎么实现的</p>
+<p><img src="http://i.imgur.com/ZsfAjpJ.png" alt=""></p>
+<p>我们可以看到这个方法的最后一行，它调用了 obtainRequest 方法。这个方法代码很多，但只是做了一个逻辑上的判断，最终还是调用了 obtainRequest，我们来看下这个方法到底是怎么实现的。</p>
+<p><img src="http://i.imgur.com/PkIj7hm.png" alt=""></p>
+<p>在这里面 obtainRequest 调用了它的父类 GenerioRequest.obtain 方法，我们来看下这个父类是怎么实现的。</p>
+<p><img src="http://i.imgur.com/JCPT73a.png" alt=""></p>
+<p>这个父类主要初始化了一些参数，这样就完成了我们的 Request 的创建。</p>
+<p>我们回到 into 方法里面</p>
+<p><img src="http://i.imgur.com/sgWD8WU.png" alt=""></p>
+<p>当我们通过 buildRequest 方法创建好我们的请求之后，我们还要通过 setRequest 方法，给我们的 target 设置我们的请求。并通过 addListener 将我们的 imageView 加到我们的 lifecycler 当中，即把我们的 imageView 和我们的生命周期关联起来。最终调用了 runRequest 方法，即表明我们整个图片的请求开始运作了。</p>
+<p>接下来我们看下图片请求是如何运作的，走进 runRequest 方法。</p>
+<p><img src="http://i.imgur.com/LutBcGH.png" alt=""></p>
+<p>runRequest 方法比较简单，我们可以看下这里的 request 到底是什么属性。</p>
+<p><img src="http://i.imgur.com/B7ixlxo.png" alt=""></p>
+<p>我们可以看到它是 Set 属性的集合，即我们每次请求，将会把这次请求加入到集合当中。然后用这个集合来管理请求，最后我们会调用 request.begin() 这个方法，开启请求的加载，我们看下这个 begin 方法到底是怎么实现的。</p>
+<p><img src="http://i.imgur.com/fjczikL.png" alt=""></p>
+<p><img src="http://i.imgur.com/2FlJIQV.png" alt=""></p>
+<p>它只是一个接口，我们可以看下它具体的实现类 GenericRequest 是怎么实现的。</p>
+<p><img src="http://i.imgur.com/mkPRjtI.png" alt=""></p>
+<p>这是 GenericRequest 的 begin 方法，在这里首先它会对时间的计算。接下来我们看下第一步，它首先会对我们的状态进行判断（status），即我们的图片是处于什么状态，等待还是运行状态。在状态赋值完之后，它会进行一个长宽高的对比。如果你的长宽高是小于 0 的话，它会重新计算它的长宽高（target.getSize(this)），在进行加载。而这里 onSizeReady 方法，它就是对我们的图片加载请求做一些初始化的准备。然后当我们的图片加载完成之后（!isComplete()），它会回调我们的 onLoadStarted 这个方法，这在图片加载成功之后会进行调用。</p>
+<p>接下来我们看下如何对我们的图片加载请求进行准备操作，看下 onSizeReady() 方法。</p>
+<p><img src="http://i.imgur.com/UFMx54f.png" alt=""></p>
+<p>这个方法还是比较复杂，我们抽取重要的来看。首先它还是给它 status 加载图片的状态给它赋值，这里给它赋值运行的状态:Status.RUNNING。接下来我们看下最重要的一个方法：engine.load 方法，这就是所有所有的 Gilde 的核心，这个 engine 我们可以看下它到底是什么类。</p>
+<p><img src="http://i.imgur.com/HkPnz9J.png" alt=""></p>
+<p>它是一个 Engine 的类，Engine 的中文意思是引擎，大家知道这里大概封装了一些线程池之类的东西，为我们做图片加载请求。</p>
+<p>我们具体来看下 Engine 类</p>
+<p><img src="http://i.imgur.com/cgw8nfm.png" alt=""></p>
+<p>这个类主要是管理我们的图片，一旦加载了之后，然后还会管理图片加载那些活动资源和缓存图片资源。</p>
+<p>回到刚才的 load 方法，来看下它具体是怎么实现的。</p>
+<p><img src="http://i.imgur.com/pLRl7h3.png" alt=""></p>
+<p>load代码很长，这里只截取了一部分。但是我们有了看很多源代码的经验，源代码不过如此。我们看第一行，它也是做一个主线程的判断。判断是否在主线程，内部也是通过 Looper 来实现的，它会判断你主线程的 Looper 和子线程 Looper 到底是不是同一个 Looper。如果是同一个 Looper 那么就是在主线程，不是的话就不再主线程它是子线程。然后我们会创建一个 EngineKey，它是我们引擎的 Key 值，它会在 Engine 池里面找到相应的 Key，主要是这个作用。首先它第一步会在缓存中加载图片，这里调用的是 loadFromCacahe 方法。接下来当我们的图片获取成功之后，它会调用我们的 onResourceReady 方法。如果我们从缓存中没有获得图片，我们会从活动的一些图片资源去获得我们的 EngineResource。这里也会做一个判断，如果 active 不为空的话，说明已经从活动资源中获取到了，这时候也会调用我们的 onResourceReady 这个回调方法，接下来我们会从 HasMap 里面获得一个 EngineJob。</p>
+<p>我们看下 EngineJob 到底是什么</p>
+<p><img src="http://i.imgur.com/tobemYV.png" alt=""></p>
+<p>它也是一个管理类，管理我们的加载，通过添加、删除我们的回调接口。</p>
+<p><img src="http://i.imgur.com/ZlnqV8u.png" alt=""></p>
+<p>最终这个方法，调到最后创建了一个 EngineRunnable，它就是一个子线程。子线程最后调用了 engineJob.start() 方法，开启了整个子线程的运作。</p>
+<p>我们来看下这个 start 方法是怎么实现的</p>
+<p><img src="http://i.imgur.com/BF6qijY.png" alt=""></p>
+<p>代码里面也不是很清楚，我们可以看下 diskCacheService 是什么</p>
+<p><img src="http://i.imgur.com/evC54hy.png" alt=""></p>
+<p>我们看到它是一个 ExecutorService，它的内部是线程池。</p>
+<p>这样我们就知道，到了最后 Glide 还是把我们的图片请求交给了线程池去处理。</p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/31/Android 面试四/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/daily_pic.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="http://imgtu.5011.net/uploads/content/20170620/9403141497925594.jpg" alt="Koc's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        kocd726@163.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: kocd726@163.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">9</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">13</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/chihaiyishen" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;痴海博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setTimeout(function(){
+            setInterval(function(){
+                queue.execNext();
+            },200);
+        },3000);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
